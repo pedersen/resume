@@ -1,0 +1,38 @@
+February 13, 2008
+
+IT Director/Title  
+Company Name  
+Street Address  
+City, State, Zip
+
+Re: Position
+
+Dear Prospective Employer:
+
+As a developer / administrator with over 15 years of experience, I can offer your firm a diverse set of skills in:
+
+* Dramatically improving performance with key enhancements and effective streamlining
+* Providing innovative web solutions for major market advantage
+* Easily mastering and applying new technologies for an organization’s strategic benefit
+* Delivering mission-critical projects with substantial bottom-line impact, ensuring client satisfaction
+
+My recent successes at OrcaTec, as well as 6th Avenue Electronics, illustrates that I can achieve high-impact, cost-effective solutions. Recent career highlights include:
+
+* Migrating between ERP platforms in 3 months
+* Enabling new revenue stream by providing accurate client usage data
+* Data transformation between proprietary format and ODBC compatible format
+* Optimizing performance of monitoring systems, making them responsive
+
+The combination of my strong technical skills and focused drive has ensured that project goals were not only met but consistently exceeded. 
+
+My experience has taught me that technical skill alone cannot guarantee success. I have also developed – and can offer to your firm – qualities of leadership, flexibility, dedication to excellence and the critical ability to work productively with others in challenging situations.
+
+I welcome the opportunity to speak with you further about how my skills and background could bring real advantage to your company’s upcoming, strategic projects.
+
+Please feel free to contact me directly at 908-718-1337 or via email at m.pedersen@icelus.org
+
+Sincerely,
+
+Michael Pedersen  
+42 Henry St  
+Oxford, NJ 07863

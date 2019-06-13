@@ -1,0 +1,15 @@
+BEGIN:VCARD
+VERSION:2.1
+N:Pedersen;Michael
+FN:Michael Pedersen
+TITLE:Geek at Large
+TEL;MOBILE;VOICE:(908) 718-1337
+TEL;WORK;VOICE:(212) 817-4401
+ADR;HOME:;;42 Henry St.;Oxford;NJ;07863;United States of America
+LABEL;HOME;ENCODING=QUOTED-PRINTABLE:42 Henry St.=0D=0AOxford, NJ 07863=0D=0AUnited States of America
+EMAIL;PREF;INTERNET:m.pedersen@icelus.org
+EMAIL;INTERNET:michael.pedersen@weightwatchers.com
+URL:http://www.icelus.org/
+NOTE:Google Talk ID: m.pedersen@icelus.org
+REV:20120618T143400Z
+END:VCARD

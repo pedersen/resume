@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"$if(lang)$ lang="$lang$" xml:lang="$lang$"$endif$>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="generator" content="pandoc" />
+    $for(author-meta)$
+    <meta name="author" content="$author-meta$" />
+    $endfor$
+    $if(date-meta)$
+    <meta name="date" content="$date-meta$" />
+    $endif$
+    <title>$if(title-prefix)$$title-prefix$ - $endif$$pagetitle$</title>
+    <style type="text/css">code{white-space: pre;}</style>
+    $if(quotes)$
+    <style type="text/css">q { quotes: "“" "”" "‘" "’"; }</style>
+    $endif$
+    $if(highlighting-css)$
+    <style type="text/css">
+      $highlighting-css$
+    </style>
+    $endif$
+    $for(css)$
+    <link rel="stylesheet" href="$css$" $if(html5)$$else$type="text/css" $endif$/>
+    $endfor$
+    $if(math)$
+    $math$
+    $endif$
+    $for(header-includes)$
+    $header-includes$
+    $endfor$
+    <meta name="google-site-verification" content="Ey2_NDdTkB-r1wVx3RJfJF5BydZEGNO1FOhsLLygfGQ" />    
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    
+    <link rel="stylesheet" href="./jquery-ui.min.css"/>
+    <link rel="stylesheet" href="./jquery-ui.structure.min.css"/>
+    <link rel="stylesheet" href="./jquery-ui.theme.min.css"/>
+    <link rel="stylesheet" href="./resume.css"/>
+    
+    <script type="text/javascript" src="./jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="./jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./resume.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-193664-1', 'auto');
+      ga('require', 'displayfeatures');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+    <div id="leftcolumn">
+      <div id="photo">
+	<img src="./mjp_photo.png" title="Photo of Michael Pedersen" id="headshot" />
+      </div>
+      <div id="navcontainer">
+	<div id="searchbox">
+	  <p>Search for<br/>
+	    <input type="text" name="searchvalue" maxlength="20"/><br/>
+	    <input type="submit" value="Search" />
+	    <input type="reset" value="Collapse All"/></p>
+	</div>
+	<ul id="navmenu">
+	  <li id="downloadable-menu"><a href="#">Printable Resumes</a>
+	    <ul>
+	      <li><a href="./mjp-resume-ops.pdf">System Administrator</a><hr/></li>
+	      <li><a href="./mjp-resume-dev.pdf">Developer</a><hr/></li>
+	      <li><a href="./mjp-resume-devops.pdf">DevOps Engineer</a><hr/></li>
+	    </ul>
+	  </li>
+	  <li id="contact-menu"><a href="#" id="qrcodelink">Contact Information</a></li>
+	</ul>
+      </div>
+    </div>
+    <div id="content">
+      $for(include-before)$
+      $include-before$
+      $endfor$
+      $body$
+      $for(include-after)$
+      $include-after$
+      $endfor$
+    </div>
+    <div id="qrcode">
+      <p>You may download my <a href="michaelpedersen.vcf">virtual business card</a>. Alternately, the image below is my vcard, embedded as a QRCode. Using Barcode Reader (Android) or Scanlife (iPhone), you can scan it and add me as a contact directly on your phone.</p>
+      <img src="vcard.png" alt="QR-Code: Michael Pedersen's VCard"/>
+    </div>
+  </body>
+</html>
