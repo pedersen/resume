@@ -1,12 +1,12 @@
 FROM mjpgpp:latest as resumebase
 
-ENV PDOPTS="-s --columns=120 --filter ./newpage-filter.hs"
-ENV PDTABLES="-simple_tables-pipe_tables-grid_tables"
-ENV PDDEV="-DDEV=1"
-ENV PDOPS="-DOPS=1"
-ENV PDMGR="-DMGR=1"
-ENV PDFULL="${PDMGR} ${PDDEV} ${PDOPS}"
-ENV PDALL="${PDFULL} -DWEB=1 -DEPUB=1"
+ARG PDOPTS="-s --columns=120 --filter ./newpage-filter.hs"
+ARG PDTABLES="-simple_tables-pipe_tables-grid_tables"
+ARG PDDEV="-DDEV=1"
+ARG PDOPS="-DOPS=1"
+ARG PDMGR="-DMGR=1"
+ARG PDFULL="${PDMGR} ${PDDEV} ${PDOPS}"
+ARG PDALL="${PDFULL} -DWEB=1 -DEPUB=1"
 
 # Possibly better build structure
 # gpp the various combinations I want to have, produce the input files for everything
