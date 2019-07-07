@@ -35,19 +35,22 @@ RUN pandoc ${PDOPTS} -o /tmp/html/mjp-resume-dev.odt -t odt${PDTABLES} --templat
     pandoc ${PDOPTS} -o /tmp/html/mjp-resume-devops.odt -t odt${PDTABLES} --template resume-style.odt resume-devops.md
 
 
-FROM mjplibreoffice as odt
-COPY --from=mjppandoc /tmp/html /tmp/html
-RUN libreoffice "-env:UserInstallation=file:///tmp/LibO_Conversion" --headless --invisible --convert-to pdf /tmp/html/mjp-resume-dev.odt --outdir /tmp/html && \
-    libreoffice "-env:UserInstallation=file:///tmp/LibO_Conversion" --headless --invisible --convert-to pdf /tmp/html/mjp-resume-ops.odt --outdir /tmp/html && \
-    libreoffice "-env:UserInstallation=file:///tmp/LibO_Conversion" --headless --invisible --convert-to pdf /tmp/html/mjp-resume-devops.odt --outdir /tmp/html
+FROM mjplibreoffice as mjpodt
+RUN mkdir /tmp/mjpodt
+WORKDIR /tmp/mjpodt
+COPY --from=mjppandoc /tmp/html/*.odt /tmp/mjpodt/
+RUN libreoffice "-env:UserInstallation=file:///tmp/LibO_Conversion" --headless --invisible --convert-to pdf /tmp/mjpodt/mjp-resume-dev.odt --outdir /tmp/mjpodt && \
+    libreoffice "-env:UserInstallation=file:///tmp/LibO_Conversion" --headless --invisible --convert-to pdf /tmp/mjpodt/mjp-resume-ops.odt --outdir /tmp/mjpodt && \
+    libreoffice "-env:UserInstallation=file:///tmp/LibO_Conversion" --headless --invisible --convert-to pdf /tmp/mjpodt/mjp-resume-devops.odt --outdir /tmp/mjpodt
 
 
-RUN libreoffice "-env:UserInstallation=file:///tmp/LibO_Conversion" --headless --invisible --convert-to docx /tmp/html/mjp-resume-dev.odt --outdir /tmp/html && \
-    libreoffice "-env:UserInstallation=file:///tmp/LibO_Conversion" --headless --invisible --convert-to docx /tmp/html/mjp-resume-ops.odt --outdir /tmp/html && \
-    libreoffice "-env:UserInstallation=file:///tmp/LibO_Conversion" --headless --invisible --convert-to docx /tmp/html/mjp-resume-devops.odt --outdir /tmp/html
+RUN libreoffice "-env:UserInstallation=file:///tmp/LibO_Conversion" --headless --invisible --convert-to docx /tmp/mjpodt/mjp-resume-dev.odt --outdir /tmp/mjpodt && \
+    libreoffice "-env:UserInstallation=file:///tmp/LibO_Conversion" --headless --invisible --convert-to docx /tmp/mjpodt/mjp-resume-ops.odt --outdir /tmp/mjpodt && \
+    libreoffice "-env:UserInstallation=file:///tmp/LibO_Conversion" --headless --invisible --convert-to docx /tmp/mjpodt/mjp-resume-devops.odt --outdir /tmp/mjpodt
 
 
 # build final nginx image
 FROM nginx:latest
 RUN rm /usr/share/nginx/html/50x.html
-COPY --from=odt /tmp/html /usr/share/nginx/html
+COPY --from=mjppandoc /tmp/html/* /usr/share/nginx/html/
+COPY --from=mjpodt /tmp/mjpodt/* /usr/share/nginx/html/

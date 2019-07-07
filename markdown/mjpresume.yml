@@ -23,7 +23,7 @@ kind: Service
 metadata:
   name: mjpresume-svc
   labels:
-    app: hello-world
+    app: mjpresume
 spec:
   type: NodePort
   ports:

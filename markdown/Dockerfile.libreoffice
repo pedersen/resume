@@ -1,5 +1,6 @@
 FROM debian:stretch-slim
 
 RUN apt update && \
+    mkdir -p /usr/share/man/man1/ && \
     apt install -y libreoffice && \
     apt clean
