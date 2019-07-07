@@ -1,0 +1,9 @@
+apiVersion: skaffold/v1beta12
+kind: Config
+build:
+  artifacts:
+  - image: registry.h.icelus.org:5000/mjpresume
+deploy:
+  kubectl:
+    manifests:
+    - mjpresume.yml
