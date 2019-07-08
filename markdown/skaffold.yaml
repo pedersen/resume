@@ -7,3 +7,22 @@ deploy:
   kubectl:
     manifests:
     - mjpresume.yml
+profiles:
+- name: prod
+  activation:
+    - kubeContext: do-nyc3-icelus-k8s-do-ny3
+  build:
+    artifacts:
+    - image: spectralhawke/resume
+  deploy:
+    kubectl:
+      manifests:
+      - prod.yml
+- name: dev
+  activation:
+    - kubeContext: kubernetes-admin@kubernetes
+  portForward:
+  - resourceType: deployment
+    resourceName: mjpresume
+    port: 80
+    localPort: 8080
