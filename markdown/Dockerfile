@@ -1,7 +1,5 @@
 FROM mjpgpp:latest as resumebase
 
-ARG PDOPTS="-s --columns=120 --filter ./newpage-filter.hs"
-ARG PDTABLES="-simple_tables-pipe_tables-grid_tables"
 ARG PDDEV="-DDEV=1"
 ARG PDOPS="-DOPS=1"
 ARG PDFULL="${PDDEV} ${PDOPS}"
@@ -24,9 +22,15 @@ RUN \
     gpp ${PDDEV} ${PDOPS} -o resume-devops.md resume.md
 
 FROM mjppandoc:latest as mjppandoc
+
+ARG PDOPTS="-s --columns=120 --filter /tmp/markdown/newpage-filter.hs"
+ARG PDTABLES="-simple_tables-pipe_tables-grid_tables"
+
+RUN mkdir -p /tmp/markdown
 COPY ./html /tmp/html
 COPY ./resume-style.html /usr/share/pandoc/data/templates/resume-style.html
-COPY --from=resumebase /tmp/markdown /tmp/markdown
+COPY ./newpage-filter.hs /tmp/markdown
+COPY --from=resumebase /tmp/markdown/* /tmp/markdown/
 WORKDIR /tmp/markdown
 RUN pandoc ${PDOPTS} -o /tmp/html/index.html -t html${PDTABLES} --template=resume-style.html resume-all.md
 
