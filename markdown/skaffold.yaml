@@ -1,28 +1,17 @@
-apiVersion: skaffold/v1beta12
+apiVersion: skaffold/v3
 kind: Config
+metadata:
+  name: mjpresume-svc
+  labels:
+    app: mjpresume
+
 build:
   artifacts:
-  - image: registry.h.icelus.org:5000/mjpresume
+  - image: spectralhawke/resume
+
 deploy:
-  kubectl:
-    manifests:
-    - mjpresume.yml
-profiles:
-- name: prod
-  activation:
-    - kubeContext: do-nyc3-icelus-k8s-do-ny3
-  build:
-    artifacts:
-    - image: spectralhawke/resume
-  deploy:
-    kubectl:
-      manifests:
-      - prod.yml
-- name: dev
-  activation:
-    - kubeContext: kubernetes-admin@kubernetes
-  portForward:
-  - resourceType: deployment
-    resourceName: mjpresume
-    port: 80
-    localPort: 8080
+  kubectl: {}
+
+manifests:
+  rawYaml:
+    - prod.yml

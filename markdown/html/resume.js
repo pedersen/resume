@@ -125,10 +125,14 @@ $(document).ready(function() {
     buildNavMenu();
     buildAutoComplete();
     
-    collapseAll();
     $('h2').click(function() { toggleNode($(this)); });
     $('#searchbox p input[name=searchvalue]').autocomplete({source: searchTerms});
     $('#searchbox p input[type=submit]').click(showSearchResults);
-    $('#searchbox p input[type=reset]').click(collapseAll);
-
+    if (window.location.pathname.endsWith("products.html")) {
+	// hide last two, printable resumes and contact info, when viewing the wishlist
+	$('#navmenu a:visible').slice(-2).each(function(){$(this).hide()});
+    } else {
+	collapseAll();
+	$('#searchbox p input[type=reset]').click(collapseAll);
+    }
 })

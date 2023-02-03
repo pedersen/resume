@@ -4,6 +4,9 @@
 % October 31, 2014
 #endif
 #ifdef WEB
+---
+title: "Resume: Michael J. Pedersen"
+---
 # Summary
 
 I'm a DevOps Engineer with over 12 years of experience managing [Windows][WINDOWS], Linux, UNIX, and Macintosh systems. This means that I look at the whole picture, not just System Administration or Software Development. Shepherding a system through the creation and deployment process, and seeing the customer pleasure at having things work the way they need it to, is a particular joy of mine. Making people's lives better is the point of technology, after all.
@@ -16,7 +19,7 @@ I am comfortable in a wide range of working conditions. Work environments have b
  42 Henry St 
  Oxford, NJ 07863 
  <m.pedersen@icelus.org>
- (908) 718-1337
+ (908) 283-0318
 -------------------------
 
 # Executive Summary
