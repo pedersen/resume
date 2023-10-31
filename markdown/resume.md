@@ -1,7 +1,7 @@
 #ifdef EPUB
 % Resume: Michael J. Pedersen
 % Michael J. Pedersen
-% October 31, 2014
+% October 28, 2023
 #endif
 #ifdef WEB
 ---
@@ -9,9 +9,11 @@ title: "Resume: Michael J. Pedersen"
 ---
 # Summary
 
-I'm a DevOps Engineer with over 12 years of experience managing [Windows][WINDOWS], Linux, UNIX, and Macintosh systems. This means that I look at the whole picture, not just System Administration or Software Development. Shepherding a system through the creation and deployment process, and seeing the customer pleasure at having things work the way they need it to, is a particular joy of mine. Making people's lives better is the point of technology, after all.
+I'm a manager with 5 years of experience guiding teams through challenging conditions, ranging from technical challenges through COVID-19 related challenges. I have kept my team together, and we have thrived on the challenges of taking care of the data for a $200 million company.
 
-I am comfortable in a wide range of working conditions. Work environments have been heterogeneous ([Windows][WINDOWS], OSX, and several flavors of Linux), small to medium sized (from 10 to 120 servers, 20 to 300 workstations), and mixed locations (all local to all remote teams).
+Furthermore, as a DevOps Engineer, I have 23 years of experience managing Linux, UNIX, [Windows][WINDOWS], and OSX/macOS systems. This means that I look at the whole picture, not just System Administration or Software Development. Shepherding a system through the creation and deployment process, and seeing the customer's happiness at having things work the way they need it to, is a particular joy of mine. Making people's lives better is the point of technology, after all.
+
+I am comfortable in a wide range of working conditions. Work environments have been heterogeneous (several flavors of Linux, [Windows][WINDOWS], and OSX/macOS), small to medium sized (from 10 to 1200 servers, 20 to 300 workstations), and mixed locations (all local to all remote teams).
 
 #else
 -------------------------
@@ -24,10 +26,10 @@ I am comfortable in a wide range of working conditions. Work environments have b
 
 # Executive Summary
 
-#ifdef DEV
-Developer with over 20 years of experience writing software in multiple different languages. A strong focus on Web development, especially writing software to connect systems. Work environments have been heterogeneous ([Windows][WINDOWS], OSX, and several flavors of Linux/UNIX), and mixed locations (all local to all remote teams).
+#ifdef MGR
+Manager with 5 years of experience guiding teams through challenging conditions, ranging from technical challenges through COVID-19 related challenges. I have kept my team together, and we have thrived on the challenges of taking care of the data for a $200 million company.
 #else
-DevOps Engineer with over 20 years of experience managing [Windows][WINDOWS], Linux/UNIX, and OSX. Strong focus on automation. Work environments have been heterogeneous ([Windows][WINDOWS], OSX, and several flavors of Linux/UNIX), small to medium sized (10-120 servers, 20-300 workstations), and mixed locations (all local to all remote teams).
+DevOps Engineer with 23 years of experience managing Linux, UNIX, [Windows][WINDOWS], and OSX/macOS systems. Programming languages have included Python, PHP, Perl, and Java. Work environments have been heterogeneous (several flavors of Linux, [Windows][WINDOWS], and OSX/macOS), small to medium sized (from 10 to 1200 servers, 20 to 300 workstations), and mixed locations (all local to all remote teams). 
 #endif
 
 #endif
@@ -36,6 +38,58 @@ DevOps Engineer with over 20 years of experience managing [Windows][WINDOWS], Li
 # Job History
 #else
 # Relevant Job History
+#endif
+
+## Pulsepoint - Data Engineer (2015-2017), Director of Infrastructure for Data (2017-current)
+
+New York City, NY (Telecommute) - 2015-Current
+
+#ifdef WEB
+Pulsepoint is an internet healthcare marketing company with a focus on activating health care providers. Pulsepoint was acquired by WebMD in June 2021.
+
+My role evolved over time from dealing with individual data jobs to overseeing the entire ETL pipeline to leading the entire department.
+
+#endif
+#ifdef MGR
+* Migrated data center, moving processing of data flows to new data center.
+* Split data management team into data platform and data product development.
+* Insituted and formalized processes and procedures for the team.
+* Planned capacity to ensure we could handle incoming data throughout the year.
+* Replaced [Vertica][VERTICA] with [Trino][TRINO].
+* Reported on system wide data latency using [ElasticSearch][ELASTIC], [Kibana][KIBANA], and [Grafana][GRAFANA].
+* Conducted interviews for my team and for teams that work closely with my team.
+* Automated distribution of incident reports to all affected parties.
+* Changed hardware profiles for [Hadoop][HADOOP] to remove storage and compute colocation.
+* Split the monolithic repository that housed all ETL and library code.
+* Migrated ETL pipeline from Python 2 to Python 3.
+* Acted as scrum master for the team.
+* Onboarded new team members, helping them to fully integrate into the team.
+* Held weekly 1 on 1 meetings with team members.
+* Participated in on-call rotation.
+#endif
+#ifdef DEV
+* Established data streaming that is now up to 40T of data/day.
+* Established new data centers in Europe and in Virginia.
+* Performance tuned [Kafka][KAFKA].
+* Upgraded [Kafka][KAFKA] with zero downtime for users of [Kafka][KAFKA].
+* Enabled integration with [Active Directory][ACTIVEDIRECTORY] for [Hadoop][HADOOP] systems.
+* Deployed and configured [Alluxio][ALLUXIO] for caching and data orchestration.
+* Troubleshooting of issues with [Hadoop][HADOOP], [Kafka][KAFKA], [SQL Server][MSSQL], and [Kubernetes][KUBERNETES].
+* Developed new ETL jobs to aggregate data from Pulsepoint's RTB exchange.
+* Ingested third party data to make it available internally.
+* Production maintenance of data pipelines, including after hours support.
+* Built tool to graphically show the flow of data through the system.
+* Tested new tools for suitability, including [MariaDB][MARIADB], [Clickhouse][CLICKHOUSE], and [Kudu][KUDU].
+* Installed and configured multiple [Hadoop][HADOOP] clusters.
+#endif
+#ifdef WEB
+* Optimized [Hadoop][HADOOP] jobs.
+* Maintained [Vertica][VERTICA] cluster, including troubleshooting.
+* Transitioned ETL pipeline from crontabs to [Mesos][MESOS] and then into [Kubernetes][KUBERNETES].
+* Switched build server from [TeamCity][TEAMCITY] to [Jenkins][JENKINS], recreating all build jobs.
+* Implemented data duplication between two [Hadoop][HADOOP] clusters.
+* Tested [Cassandra][CASSANDRA] as a potential reporting database.
+* Upgraded [Hadoop][HADOOP] clusters with as little downtime as possible.
 #endif
 
 ## Weight Watchers - Systems Engineering Lead
@@ -48,12 +102,12 @@ Weight Watchers is a Fortune 500 company focused on helping customers manage the
 My role was focused on providing internal support within the company to enable other groups to support the customer base.
 
 #endif
+#ifdef MGR
+* Worked to transfer from [Rackspace Cloud][RSCLOUD] to [Openstack][OPENSTACK] based private cloud.
+#endif
 #ifdef DEV
 * Developed lightweight monitoring tool for use within my group.
-#endif
-#ifdef OPS
 * Configured [Vormetric][VORMETRIC] products to ensure [HIPAA][HIPAA] compliance for customer data.
-* Worked to transfer from [Rackspace Cloud][RSCLOUD] to [Openstack][OPENSTACK] based private cloud.
 #endif
 
 ## OrcaTec, LLC - Developer
@@ -66,24 +120,26 @@ OrcaTec is in the litigation support industry (they help their clients reduce th
 The team structure at OrcaTec is geographically very diverse. In addition to my own telecommuting, I have teammates in many states. We all work remotely, and we all work together to make the product the best that it can be.
 
 #endif
+#ifdef MGR
+* Mentored other developers in the use of [TurboGears][TG], [SQLAlchemy][SQLALCHEMY], [Python][PYTHON], and JavaScript.
+* Organized weekly meetings for members of the frontend (OTGUI) team, providing a chance to discuss (in depth) the issues the team was facing.
+#endif
 #ifdef DEV
 * Developed advanced search tool using [Python][PYTHON], [TurboGears][TG], and [jQuery][JQUERY].
 * Created new document production framework from scratch.
-* Spearheaded conversion from [YUI 2][YUI] to [jQuery][JQUERY] and [jQueryUI][JQUERYUI].
 * Reduced multi-hour [SQLAlchemy][SQLALCHEMY] bulk database jobs to minutes.
 * Found major security hole (remote code execution) and closed it.
-#endif
-#ifdef OPS
 * Debugged and resolved memory issues that were causing systems to shut down.
-* Incorporated memcached into our stack to handle sessions and cached data.
-* Installed and configured [WSO2 Identity Server][WSO2] for our [OpenID][OPENID] implementation
-* Switched web server from [Paster][PASTER] to [Apache][APACHE] with [mod_wsgi][MODWSGI].
 #endif
 #ifdef WEB
+* Incorporated memcached into our stack to handle sessions and cached data.
+* Switched web server from [Paster][PASTER] to [Apache][APACHE] with [mod_wsgi][MODWSGI].
+* Installed and configured [WSO2 Identity Server][WSO2] for our [OpenID][OPENID] implementation
+* Spearheaded conversion from [YUI 2][YUI] to [jQuery][JQUERY] and [jQueryUI][JQUERYUI].
 * Documented internal server API, wrote a [Python][PYTHON] class to standardize it's use.
 * Added tag cloud (using [awesomecloud plugin for jQuery][AWESOME]).
 * Corrected Unicode handling errors in the code.
-* Added holds and matters framework, allowing customers to state that documents belonging to specific cases and should not be deleted while the cases are ongoing.
+* Added holds and matters framework, allowing customers to state that documents belong to specific cases and should not be deleted while the cases are ongoing.
 * Created a tool to allow copying settings between instances.
 * Added support for allowing customers to login using [OpenID][OPENID].
 * Added user preferences to the frontend.
@@ -92,10 +148,9 @@ The team structure at OrcaTec is geographically very diverse. In addition to my 
 * Identified weaknesses in the database model, and added code to prevent those weaknesses from being hit.
 * Wrote [Python][PYTHON] framework to manage long running background jobs.
 * Refactored [Python][PYTHON] and JavaScript code on a regular basis to reduce code repetition and increase legibility.
-* Mentored other developers in the use of [TurboGears][TG], [SQLAlchemy][SQLALCHEMY], [Python][PYTHON], and JavaScript.
-* Organized weekly meetings for members of the frontend (OTGUI) team, providing a chance to discuss (in depth) the issues the team was facing.
 #endif
 
+#ifdef WEB
 ## Choopa.com - Developer
 
 Sayreville, NJ - 2012
@@ -108,8 +163,6 @@ As a developer at Constant.com (renamed from Choopa.com in Jan, 2012), I worked 
 #ifdef DEV
 * Developed library to manage [OpenStack][OPENSTACK] nodes, and gather billing information.
 * Built [Nagios][NAGIOS] configuration file generator for in-house web interface for [Nagios][NAGIOS].
-#endif
-#ifdef OPS
 * Configured [Bacula][BACULA] backup system as replacement for custom backup scripts.
 * Reconfigured [Nagios][NAGIOS] monitoring, reducing full check from 8 hours to 2 minutes.
 #endif
@@ -133,8 +186,6 @@ The environment at 6th Avenue covered a wide range of platforms spread out over 
 * Developed [Python][PYTHON] validation scripts for data going from [SAP][SAP] into [Tyler][TYLER].
 * Automated configuration options within [Tyler][TYLER] that could not be done via import.
 * Developed [Python][PYTHON] program to copy sales data from [Tyler][TYLER] POS to [PostgreSQL][PG].
-#endif
-#ifdef OPS
 * Installed and configured [Zenoss][ZENOSS] for full systems monitoring.
 * Implemented [VMware][VMWARE] Virtual Infrastructure 3.
 * Maintained [Tyler][TYLER] POS/ERP system on [HP-UX][HPUX] (and, later, Linux).
@@ -175,8 +226,6 @@ My team structure is worth describing briefly as well: My immediate manager work
 #ifdef DEV
 * Created reporting system called StorageWeb (using [TurboGears][TG]), enabling new revenue stream.
 * Developed [Python][PYTHON] app named unixops, allows server access via one time [SSH][SSH] keys.
-#endif
-#ifdef OPS
 * Optimized [PostgreSQL][PG] on [FreeBSD][FREEBSD]. Bulk inserts reduced from hours to 20 minutes.
 * Debugged [Python][PYTHON], [FreeBSD][FREEBSD], [Apache][APACHE], and [modwsgi][MODWSGI] working together.
 #endif
@@ -189,7 +238,7 @@ My team structure is worth describing briefly as well: My immediate manager work
 * Evaluated potential replacements for [Subversion][SVN], including [Git][GIT] and [Mercurial][HG].
 #endif
 
-## Diversified Systems - Systems Adminisrator / Developer
+## Diversified Systems - Systems Administrator / Developer
 
 Hackettstown, NJ - 2002-2005
 
@@ -201,8 +250,6 @@ Diversified Systems is a small company that focuses on low voltage wiring and su
 #ifdef DEV
 * Developed GUI to [new software system][SBN] using [PHP][PHP], [Apache][APACHE], and [Mozilla][MOZILLA].
 * Automated sending faxes to techs, saving five hours/day (in a 10 person office).
-#endif
-#ifdef OPS
 * Deployed [Unattended][UNATTENDED], an automated [Windows][WINDOWS] installation system.
 * Implemented [HylaFax][FAX] fax server for incoming and outgoing faxes, allowing electronic receipt of over 200 pages of faxes per day from field technicians.
 #endif
@@ -319,7 +366,7 @@ When I'm not working on projects for my employer, I'm working on projects for my
 #endif
 * Studying Android application development at [Udacity.com][UDACITY].
 * Starting in 2009, I began participating in the [TurboGears][TG] project, working primarily on the documentation. In 2011 and 2012, I was the lead project maintainer, and we put out three releases in 2011 alone. As of now, I still manage the server and DNS for [turbogears.org][TG], with work on documentation, bug fixing, new features, and mailing list management, as time permits.
-* Created [Java][JAVA] [plugin][VBXMPP] for [Openfire XMPP][OPENFIRE] server, allowing [vBulletin][VB] forums to have a working XMPP server for their communities.
+* Created [Java][JAVA] plugin for [Openfire XMPP][OPENFIRE] server, allowing [vBulletin][VB] forums to have a working XMPP server for their communities.
 #ifdef WEB
 * Created Linux-based network featuring NIS, NFS, DHCP, Linux firewall (using iptables), [Samba][SAMBA], [SSH][SSH], [Subversion][SVN] server, and [Mercurial][HG].
 * Customized installation of [Request Tracker][RT] for San Diego firm.
@@ -331,46 +378,23 @@ When I'm not working on projects for my employer, I'm working on projects for my
 * Helped clients, family, and friends resolve various computer and home networking issues.
 #endif
 #endif
+#endif
 
 <<<
 
-# Specific Skills
+# Relevant Technical Skills
 
-#ifdef DEV
-## Software Configuration Management Tools
-
------------------------------------------------------------------------------ ------------ ------------ --------------------
-                                                                               Time Used    Last Used   Proficiency 
------------------------------------------------------------------------------ ------------ ------------ --------------------
-[Git][GIT]                                                                      2 years      2014       Fair       
-
-[Mercurial][HG]                                                                 4 years      2014       Good       
-
-[Subversion][SVN]                                                               2 years      2010       Good      
------------------------------------------------------------------------------ ------------ ------------ --------------------
-
-## Markup Languages
-
------------------------------------------------------------------------------ ------------ ------------ --------------------
-                                                                                Time Used   Last Used   Proficiency
------------------------------------------------------------------------------ ------------ ------------ --------------------
-CSS                                                                              2 years     2014       Fair      
-
-HTML                                                                             1 years     2014       Very Good 
-
-XML                                                                              2 years     2011       Fair      
------------------------------------------------------------------------------ ------------ ------------ --------------------
-
+#ifdef MGR
 ## Programming Skills
 
 ----------------------------------------------------------------------------- ------------ ------------ --------------------
                                                                                 Time Used   Last Used   Proficiency
 ----------------------------------------------------------------------------- ------------ ------------ --------------------
-Object-Oriented Design                                                          8 years      2014       Very Good
+Object-Oriented Design                                                          10 years     2023       Very Good
 
-Object-Oriented Programming                                                     8 years      2014       Very Good
+Object-Oriented Programming                                                     10 years     2023       Very Good
 
-Refactoring                                                                     4 years      2014       Very Good
+Refactoring                                                                      6 years     2023       Very Good
 ----------------------------------------------------------------------------- ------------ ------------ --------------------
 
 ## Database Skills
@@ -380,24 +404,64 @@ Refactoring                                                                     
 ----------------------------------------------------------------------------- ------------ ------------ --------------------
 [PostgreSQL][PG] Database Administration                                         1 year      2011       Fair
 
-Relational Schema Design                                                         5 years     2014       Very Good
+Relational Schema Design                                                        14 years     2023       Very Good
 
-Structured Query Language (SQL)                                                 12 years     2014       Very Good
+Structured Query Language (SQL)                                                 14 years     2023       Very Good
 ----------------------------------------------------------------------------- ------------ ------------ --------------------
 
+## Big Data
+----------------------------------------------------------------------------- ------------ ------------ --------------------
+                                                                               Time Used    Last Used   Proficiency 
+----------------------------------------------------------------------------- ------------ ------------ --------------------
+[HDFS][HADOOP]                                                                  9 years      2023        Very Good
+
+[Hive][HIVE]                                                                    9 years      2023        Good
+
+[YARN][HADOOP]                                                                  9 years      2023        Good
+
+[Alluxio][ALLUXIO]                                                              3 years      2023        Good
+
+[Impala][IMPALA]                                                                9 years      2023        Fair
+
+[Trino][TRINO]                                                                  3 years      2023        Good
+
+[Kafka][KAFKA]                                                                  9 years      2023        Very Good
+
+[Kubernetes][KUBERNETES]                                                        4 years      2023        Good
+----------------------------------------------------------------------------- ------------ ------------ --------------------
 #endif
 
-#ifdef OPS
-## Operating Systems Administered
+#ifdef DEV
+## Programming and Scripting Languages
 
 ----------------------------------------------------------------------------- ------------ ------------ --------------------
                                                                                 Time Used   Last Used   Proficiency
 ----------------------------------------------------------------------------- ------------ ------------ --------------------
-Linux ([Debian][DEBIAN], [RedHat][REDHAT], [Suse][SUSE], [Ubuntu][UBUNTU])      12 years     2014       Excellent
+[Bash][BASH]                                                                    10 years     2014       Good
 
-Microsoft Windows (2008/7/Vista/2003/XP/NT/98/95)                               12 years     2011       Very Good
+C/C++                                                                           12 years     2009       Good
 
-UNIX ([Solaris][SOLARIS], [AIX][AIX], [HP-UX][HPUX])                             5 years     2011       Very Good
+[Java][JAVA]                                                                     2 years     2021       Fair
+
+Javascript                                                                       3 years     2021       Good
+
+[Perl][PERL]                                                                     6 years     2012       Fair
+
+[PHP][PHP]                                                                       2 years     2012       Fair
+
+[Python][PYTHON]                                                                15 years     2023       Excellent
+----------------------------------------------------------------------------- ------------ ------------ --------------------
+
+## Software Configuration Management Tools
+
+----------------------------------------------------------------------------- ------------ ------------ --------------------
+                                                                               Time Used    Last Used   Proficiency 
+----------------------------------------------------------------------------- ------------ ------------ --------------------
+[Git][GIT]                                                                     11 years      2023       Good
+
+[Mercurial][HG]                                                                 4 years      2014       Fair
+
+[Subversion][SVN]                                                               2 years      2010       Fair
 ----------------------------------------------------------------------------- ------------ ------------ --------------------
 
 ## Database Servers
@@ -405,13 +469,41 @@ UNIX ([Solaris][SOLARIS], [AIX][AIX], [HP-UX][HPUX])                            
 ----------------------------------------------------------------------------- ------------ ------------ --------------------
                                                                                 Time Used   Last Used   Proficiency
 ----------------------------------------------------------------------------- ------------ ------------ --------------------
-[MySQL][MYSQL]                                                                  3 years      2014       Fair
+[MySQL][MYSQL]                                                                   3 years     2021       Fair
 
-[PostgreSQL][PG]                                                                5 years      2011       Fair
+[PostgreSQL][PG]                                                                 5 years     2011       Fair
 
-[Microsoft SQL Server][MSSQL]                                                   3 years      2008       Fair
+[Microsoft SQL Server][MSSQL]                                                    3 years     2023       Fair
 ----------------------------------------------------------------------------- ------------ ------------ --------------------
 
+## Operating Systems Administered
+
+----------------------------------------------------------------------------- ------------ ------------ --------------------
+                                                                                Time Used   Last Used   Proficiency
+----------------------------------------------------------------------------- ------------ ------------ --------------------
+Linux ([Debian][DEBIAN], [RedHat][REDHAT], [Suse][SUSE], [Ubuntu][UBUNTU])      21 years     2023       Excellent
+
+Microsoft Windows (2008/7/Vista/2003/XP/NT/98/95)                               12 years     2011       Very Good
+
+UNIX ([Solaris][SOLARIS], [AIX][AIX], [HP-UX][HPUX])                             5 years     2011       Very Good
+----------------------------------------------------------------------------- ------------ ------------ --------------------
+
+## Markup Languages
+
+----------------------------------------------------------------------------- ------------ ------------ --------------------
+                                                                                Time Used   Last Used   Proficiency
+----------------------------------------------------------------------------- ------------ ------------ --------------------
+CSS                                                                              2 years     2023       Fair
+
+HTML                                                                             5 years     2023       Very Good
+
+Markdown                                                                         3 years     2023       Good
+
+XML                                                                              2 years     2023       Fair
+----------------------------------------------------------------------------- ------------ ------------ --------------------
+#endif
+
+#ifdef WEB
 ## Applications
 
 ----------------------------------------------------------------------------- ------------ ------------ --------------------
@@ -425,7 +517,7 @@ UNIX ([Solaris][SOLARIS], [AIX][AIX], [HP-UX][HPUX])                            
 
 [VirtualBox][VIRTUALBOX]                                                         3 years     2014       Good
 
-[VMware][VMWARE]                                                                 6 years     2011       Fair
+[VMware][VMWARE]                                                                 6 years     2023       Fair
 
 [Zenoss][ZENOSS]                                                                <1 year      2011       Fair
 ----------------------------------------------------------------------------- ------------ ------------ --------------------
@@ -441,31 +533,10 @@ Cisco                                                                           
 
 Firewall Design                                                                  5 years     2011       Good
 
-TCP/IP                                                                          10 years     2014       Very Good
+TCP/IP                                                                          10 years     2023       Good
 ----------------------------------------------------------------------------- ------------ ------------ --------------------
 
 #endif
-
-## Programming and Scripting Languages
-
------------------------------------------------------------------------------ ------------ ------------ --------------------
-                                                                                Time Used   Last Used   Proficiency
------------------------------------------------------------------------------ ------------ ------------ --------------------
-[Bash][BASH]                                                                    6 years      2014       Good
-
-C/C++                                                                          12 years      2009       Good
-
-[Java][JAVA]                                                                    1 year       2014       Fair
-
-Javascript                                                                      2 years      2014       Good
-
-[Perl][PERL]                                                                    6 years      2012       Fair
-
-[PHP][PHP]                                                                      2 years      2012       Fair
-
-[Python][PYTHON]                                                                6 years      2014       Excellent
------------------------------------------------------------------------------ ------------ ------------ --------------------
-
 ## Education
 Bachelor of Science in Computer Science, 2000  
 East Stroudsburg University, East Stroudsburg, Pennsylvania
@@ -473,7 +544,73 @@ East Stroudsburg University, East Stroudsburg, Pennsylvania
 <<<
 
 # Project History
+
+#ifdef MGR
+## Migrate To New Data Center
+
+------------- -------------------------------------------------------------------------------------------
+**Period**    2022-2023
+
+**Company**   Pulsepoint
+
+**Tools**     [Alluxio][ALLUXIO], [Hadoop][HADOOP], [Kafka][KAFKA], [Python][PYTHON]
+
+**Platform**  [CentOS][CENTOS], [Kubernetes][KUBERNETES]
+------------- -------------------------------------------------------------------------------------------
+
+Pulsepoint is in the process of migrating between data centers. A significant portion of the existing hardware has gone past its end of life, so we chose to build a new data center, with new hardware. At the same time, we used the latest versions of all relevant software that we could ([Hadoop][HADOOP], [Kubernetes][KUBERNETES], etc).
+
+This provided us with an opportunity to fix some design flaws in the original big data clusters, and we used this chance to make things better for us overall.
+
+The work remaining at this point comes down to verifying that the new versions of the ETL jobs function as expected, producing valid output. The process is expected to complete in 2025.
+
+* Created new clusters, with new versions of relevant software, in the new data center.
+* Updated ETL jobs as needed so that they would run exclusively in the new data center.
+* Configured those ETL jobs to output copies of their data to the original data center.
+* Removed those ETL jobs from the original data center, configuring the original to use the output from the new data center.
+
+## Migrate From Python 2 to Python 3
+
+------------- -------------------------------------------------------------------------------------------
+**Period**    2022-2023
+
+**Company**   Pulsepoint
+
+**Tools**     [Python][PYTHON]
+
+**Platform**  [CentOS][CENTOS], [Kubernetes][KUBERNETES]
+------------- -------------------------------------------------------------------------------------------
+
+Pulsepoint built the entire ETL pipeline using [Python][PYTHON] 2. On January 1, 2020, Python 2 reached its end of life. In order for the ETL pipeline to continue to grow, we needed to migrate to Python 3.
+
+The path we chose was to extract the code that was common to the pipeline, and turn that code into a library. We then began the normal route of making backwards incompatible changes. Because of the scope of this work (nearly 200K lines in Python files), and the work being done during a data center migration, the project is still ongoing. However, over 50K lines have been successfully completed so far.
+
+* Established a library cutoff version, after which the library would no longer support Python 2.
+* Began regular release cycles for the library
+* Ensured that developers outside of the library maintenance team could use the library to easily migrate ETL jobs.
+
+#endif
 #ifdef DEV
+## Dataflow Explorer
+
+------------ -------------------------------------------------------------------------------------------
+**Period**   Dataflow Explorer
+
+**Company**  Pulsepoint
+
+**Tools**    [Python][PYTHON], [Graphviz Dot][GRAPHVIZ], [Luigi][LUIGI]
+
+**Platform** [Mesos][MESOS], [CentOS][CENTOS], [NGINX][NGINX]
+------------ -------------------------------------------------------------------------------------------
+
+At Pulsepoint, we have a large number of data aggregation jobs that are coordinated with each other via Spotify's [Luigi][LUIGI] tool. [Luigi][LUIGI] has the user create a [Python][PYTHON] codebase that resolves which order to do jobs similar to how [GNU Make][MAKE] actually works. A negative side effect of this is difficulty for humans to understand the order of jobs that will be run when the number gets to any significant size.
+
+The Dataflow Explorer would walk the [Python][PYTHON] code that represented all of the jobs, and extract the attributes that would allow construction of a dependency tree. It would then pass that tree to the [Graphviz DOT][GRAPHVIZ] tool, which would run dot to produce an SVG file showing the graph of all the jobs. Finally, it would publish that output onto [Mesos][MESOS] using [NGINX][NGINX], allowing people to browse, zoom, and search the resulting graph.
+
+* Wrote code to walk a [Python][PYTHON] code base and extract specific attributes
+* Produced syntactically valid [Dot][GRAPHVIZ] files.
+* Automatically published updated versions of the graph for myself and others to use.
+
 ## Advanced Search Tool
 
 ------------ -------------------------------------------------------------------------------------------
@@ -496,6 +633,8 @@ When this project was completed, this tool had transformed noticeably. It now is
 * Designed new interface for maximum flexibility, and to allow easy refinement of queries as they are being built.
 * Incorporated user feedback to improve that design.
 
+#endif
+#ifdef WEB
 ## StorageWeb
 
 ------------ -------------------------------------------------------------------------------------------
@@ -515,9 +654,6 @@ Datapipe manages thousands of servers. Many of these servers are connected to va
 * Developed multi-threaded backend daemon which connected to the various storage systems and gathered the data about the stored data for reporting.
 * Developed backend daemon that pushed aggregate data to the billing system, allowing billing to finally happen for all clients.
 
-#endif
-
-#ifdef OPS
 ## [Paster][PASTER] to [Apache][APACHE]/[mod_wsgi][MODWSGI] Conversion
 
 ------------ -------------------------------------------------------------------------------------------
@@ -685,83 +821,105 @@ IBM was under contract to develop a complete clinical information system for Kai
 * Evaluated, tested, integrated, and deployed new compilation tools.
 #endif
 
-[3PAR]: http://www.3par.com/
-[AIX]: http://www.ibm.com/systems/power/software/aix/
-[APACHE]: http://httpd.apache.org/
-[AWESOME]: https://github.com/indyarmy/jQuery.awesomeCloud.plugin
+[3PAR]: https://www.hpe.com/us/en/storage/3par.html
+[ACTIVEDIRECTORY]: https://en.wikipedia.org/wiki/Active_Directory
+[AIX]: https://www.ibm.com/products/aix
+[ALLUXIO]: https://www.alluxio.io/
+[APACHE]: https://httpd.apache.org/
+[AWESOME]: https://github.com/russelporosky/jQuery.awesomeCloud.plugin
 [AUTOIT]: https://www.autoitscript.com/site/autoit/
-[BACULA]: http://www.bacula.org/
-[BASH]: http://www.gnu.org/software/bash/manual/bashref.html
-[CCMAIL]: http://en.wikipedia.org/wiki/Cc:Mail
-[CENTOS]: http://www.centos.org/
-[CHECKPOINT]: http://www.checkpoint.com/
-[COMMVAULT]: http://www.commvault.com/
+[BACULA]: https://www.bacula.org/
+[BASH]: http://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html
+[CASSANDRA]: https://cassandra.apache.org/_/index.html
+[CCMAIL]: https://en.wikipedia.org/wiki/Cc:Mail
+[CENTOS]: https://www.centos.org/
+[CHECKPOINT]: https://www.checkpoint.com/
+[CLICKHOUSE]: https://clickhouse.com/
+[COMMVAULT]: https://www.commvault.com/
 [CVS]: http://www.nongnu.org/cvs/
 [CYGWIN]: https://www.cygwin.com/
-[DEBIAN]: http://www.debian.org/
-[DELPHI]: http://en.wikipedia.org/wiki/Delphi_(programming_language)
-[FAX]: http://www.hylafax.org/content/Main_Page
+[DEBIAN]: https://www.debian.org/
+[DELPHI]: https://en.wikipedia.org/wiki/Delphi_(programming_language)
+[ELASTIC]: https://www.elastic.co/elasticsearch/
+[FAX]: https://www.hylafax.org/
 [FREEBSD]: https://www.freebsd.org/
-[GHOST]: http://en.wikipedia.org/wiki/Ghost_(software)
-[GIT]: http://www.git-scm.com/
-[HG]: http://mercurial.selenic.com/
-[HIPAA]: http://en.wikipedia.org/wiki/Health_Insurance_Portability_and_Accountability_Act
-[HPUX]: http://www8.hp.com/us/en/products/servers/hp-ux.html
-[INTERBASE]: http://en.wikipedia.org/wiki/InterBase
-[ISILON]: http://www.isilon.com/
-[JAVA]: http://www.java.com/
-[JQUERY]: http://www.jquery.com/
-[JQUERYUI]: http://www.jqueryui.com/
+[GHOST]: https://en.wikipedia.org/wiki/Ghost_(software)
+[GIT]: https://www.git-scm.com/
+[GRAFANA]: https://grafana.com/
+[GRAPHVIZ]: https://graphviz.org/
+[HADOOP]: https://hadoop.apache.org/
+[HG]: https://www.mercurial-scm.org/
+[HIVE]: https://hive.apache.org/
+[HIPAA]: https://en.wikipedia.org/wiki/Health_Insurance_Portability_and_Accountability_Act
+[HPUX]: https://www.hpe.com/us/en/servers/hp-ux.html
+[IMPALA]: https://impala.apache.org/
+[INTERBASE]: https://en.wikipedia.org/wiki/InterBase
+[ISILON]: https://en.wikipedia.org/wiki/Dell_EMC_Isilon
+[JAVA]: https://www.java.com/en/
+[JENKINS]: https://www.jenkins.io/
+[JIRA]: https://www.atlassian.com/software/jira
+[JQUERY]: https://jquery.com/
+[JQUERYUI]: https://jqueryui.com/
+[KAFKA]: https://kafka.apache.org/
+[KIBANA]: https://www.elastic.co/kibana
+[KUBERNETES]: https://kubernetes.io/
+[KUDU]: https://kudu.apache.org/
+[LUIGI]: https://github.com/spotify/luigi
 [MAKE]: http://www.gnu.org/software/make/
-[MAXDB]: http://mapdb.sap.com/
-[MINGW]: http://www.mingw.org/
-[MODWSGI]: https://code.google.com/p/modwsgi/
-[MOZILLA]: http://www.mozilla.org/
-[MSDOS]: http://en.wikipedia.org/wiki/MS-DOS
-[MSSQL]: http://www.microsoft.com/en-us/server-cloud/products/sql-server/
-[MYSQL]: http://www.mysql.com/
-[MYTHTV]: http://www.mythtv.org/
-[NAGIOS]: http://www.nagios.org/
-[NETWARE]: http://en.wikipedia.org/wiki/NetWare
+[MARIADB]: https://mariadb.org/
+[MAXDB]: https://maxdb.sap.com/
+[MESOS]: https://mesos.apache.org/
+[MINGW]: https://www.mingw-w64.org/
+[MODWSGI]: https://code.google.com/archive/p/modwsgi
+[MOZILLA]: https://www.mozilla.org/en-US/
+[MSDOS]: https://en.wikipedia.org/wiki/MS-DOS
+[MSSQL]: https://www.microsoft.com/en-us/sql-server
+[MYSQL]: https://www.mysql.com/
+[MYTHTV]: https://www.mythtv.org/
+[NAGIOS]: https://www.nagios.org/
+[NETWARE]: https://en.wikipedia.org/wiki/NetWare
+[NGINX]: https://www.nginx.com/
 [OPENFIRE]: http://www.igniterealtime.org/projects/openfire/
-[OPENID]: http://www.openid.net/
-[OPENSTACK]: http://www.openstack.org/
-[PAM]: http://en.wikipedia.org/wiki/Pluggable_authentication_module
+[OPENID]: https://www.openid.net/
+[OPENSTACK]: https://www.openstack.org/
+[PAM]: https://en.wikipedia.org/wiki/Pluggable_authentication_module
 [PASTER]: http://www.pythonpaste.org/
 [PERL]: https://www.perl.org/
-[PG]: http://www.postgresql.org/
-[PHP]: http://www.php.net/
-[PQXX]: http://www.pqxx.org/
-[PYTHON]: http://www.python.org/
-[REDHAT]: http://www.redhat.com/
-[RHKS]: http://en.wikipedia.org/wiki/Kickstart_(Linux)
-[RSCLOUD]: http://www.rackspace.com/cloud
-[RT]: https://www.bestpractical.com/rt/
-[SAMBA]: http://www.samba.org/
-[SAP]: http://www.sap.com/
-[SBN]: http://www.ibsoft-us.com/sbn-complete/
-[SOLARIS]: http://www.oracle.com/solaris
-[SQLALCHEMY]: http://www.sqlalchemy.org/
+[PG]: https://www.postgresql.org/
+[PHP]: https://www.php.net/
+[PQXX]: https://pqxx.org/libpqxx/
+[PYTHON]: https://www.python.org/
+[REDHAT]: https://www.redhat.com/en
+[RHKS]: https://en.wikipedia.org/wiki/Kickstart_(Linux)
+[RSCLOUD]: https://www.rackspace.com/cloud
+[RT]: https://bestpractical.com/request-tracker
+[SAMBA]: https://www.samba.org/
+[SAP]: https://www.sap.com/index.html
+[SBN]: https://www.business-software.com/product/sbn-complete/
+[SOLARIS]: https://www.oracle.com/solaris/solaris11/
+[SQLALCHEMY]: https://www.sqlalchemy.org/
 [SQLLEDGER]: http://www.sql-ledger.com/
-[SSH]: http://www.openssh.org/
-[SUSE]: http://www.suse.com/
+[SSH]: http://www.openssh.com/
+[SUSE]: https://www.suse.com/
 [SVN]: https://subversion.apache.org/
-[SYBASE]: http://www.sybase.com/
+[SYBASE]: https://www.sap.com/products/acquired-brands/what-is-sybase.html
 [TCL]: http://www.tcl.tk/
-[TG]: http://www.turbogears.org/
-[TYLER]: http://www.tylernet.com/
-[UBUNTU]: http://www.ubuntu.com/
-[UDACITY]: http://www.udacity.com/
-[UNATTENDED]: http://unattended.sourceforge.net/
-[VB]: http://www.vbulletin.com/
-[VBXMPP]: https://bitbucket.org/pedersen/openfire_vbulletin
-[VIRTUALBOX]: http://www.virtualbox.com/
-[VMWARE]: http://www.vmware.com/
-[VORMETRIC]: http://www.vormetric.com/
-[WEBGUI]: http://www.webgui.org/
-[WHATSUP]: http://www.whatsupgold.com/
-[WINDOWS]: http://windows.microsoft.com/en-US/windows/home
-[WSO2]: http://wso2.com/products/identity-server
-[WSUS]: http://technet.microsoft.com/en-us/windowsserver/bb332157.aspx
+[TEAMCITY]: https://www.jetbrains.com/teamcity/
+[TG]: https://www.turbogears.org/
+[TRINO]: https://trino.io/
+[TYLER]: https://www.tylernet.com/
+[UBUNTU]: https://ubuntu.com/
+[UDACITY]: https://www.udacity.com/
+[UNATTENDED]: https://unattended.sourceforge.net/
+[VB]: https://www.vbulletin.com/
+[VERTICA]: https://www.vertica.com/
+[VIRTUALBOX]: https://www.virtualbox.org/
+[VMWARE]: https://www.vmware.com/
+[VORMETRIC]: https://cpl.thalesgroup.com/encryption/vormetric-data-security-manager
+[WEBGUI]: https://en.wikipedia.org/wiki/WebGUI
+[WHATSUP]: https://www.whatsupgold.com/
+[WINDOWS]: https://www.microsoft.com/en-us/windows/
+[WSO2]: https://wso2.com/identity-and-access-management/
+[WSUS]: https://learn.microsoft.com/en-us/windows/deployment/deploy-whats-new
 [YUI]: http://yui.github.io/yui2/
-[ZENOSS]: http://www.zenoss.org/
+[ZENOSS]: https://www.zenoss.com/

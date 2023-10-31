@@ -1,7 +1,13 @@
 #!/usr/bin/env bash
-./build.sh
 
-. ${HOME}/.bashrc
-kc icelus
+set -e
 
-skaffold run
+rsync -avP ./ planetx:resume/
+ssh planetx 'cd resume && skaffold build'
+ssh -t planetx 'sudo systemctl stop mjpresume'
+ssh -t planetx 'sudo systemctl start mjpresume'
+
+#. ${HOME}/.bashrc
+#kc icelus
+
+#skaffold run

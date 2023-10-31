@@ -1,7 +1,10 @@
 #!/usr/bin/runhaskell
-import Text.Pandoc.JSON
+{-# LANGUAGE OverloadedStrings #-}
 
-pgBrkXml :: String
+import Text.Pandoc.JSON
+import Data.Text (Text)
+
+pgBrkXml :: Text
 pgBrkXml = "<text:p text:style-name=\"PageBreak\"/>"
 
 pgBrkBlock :: Block

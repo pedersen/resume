@@ -1,5 +1,5 @@
 ##################################
-FROM debian:stretch-slim as builder
+FROM debian:stable-slim as builder
 
 RUN \
     mkdir -p /usr/share/man/man1/ && \
@@ -9,8 +9,8 @@ RUN \
     apt clean
 
 ARG PDDEV="-DDEV=1"
-ARG PDOPS="-DOPS=1"
-ARG PDFULL="${PDDEV} ${PDOPS}"
+ARG PDMGR="-DMGR=1"
+ARG PDFULL="${PDDEV} ${PDMGR}"
 ARG PDALL="${PDFULL} -DWEB=1"
 
 
@@ -37,16 +37,14 @@ WORKDIR /tmp/markdown
 RUN \
     gpp ${PDALL} -o resume-all.md resume.md && \
     gpp ${PDDEV} -o resume-dev.md resume.md && \
-    gpp ${PDOPS} -o resume-ops.md resume.md && \
-    gpp ${PDDEV} ${PDOPS} -o resume-devops.md resume.md
-
+    gpp ${PDMGR} -o resume-mgr.md resume.md
 
 ##########
 # pandoc: create html and opendocument formats of inputs
 ##########
 
 ARG PDOPTS="-s --columns=120 --filter /tmp/markdown/newpage-filter.hs"
-ARG PDTABLES="-simple_tables-pipe_tables-grid_tables"
+ARG PDTABLES=""
 
 RUN mkdir -p /tmp/markdown
 COPY ./html /tmp/html
@@ -59,8 +57,7 @@ RUN pandoc ${PDOPTS} -o /tmp/html/index.html -t html${PDTABLES} --template=resum
 RUN pandoc ${PDOPTS} -o /tmp/html/products.html -t html${PDTABLES} --template=resume-style.html products.md
 
 RUN pandoc ${PDOPTS} -o /tmp/html/mjp-resume-dev.odt -t odt${PDTABLES} --template resume-style.odt resume-dev.md && \
-    pandoc ${PDOPTS} -o /tmp/html/mjp-resume-ops.odt -t odt${PDTABLES} --template resume-style.odt resume-ops.md && \
-    pandoc ${PDOPTS} -o /tmp/html/mjp-resume-devops.odt -t odt${PDTABLES} --template resume-style.odt resume-devops.md
+    pandoc ${PDOPTS} -o /tmp/html/mjp-resume-mgr.odt -t odt${PDTABLES} --template resume-style.odt resume-mgr.md
 
 
 ##########
@@ -71,14 +68,11 @@ RUN mkdir /tmp/mjpodt && \
     cp /tmp/html/*.odt /tmp/mjpodt
 WORKDIR /tmp/mjpodt
 RUN libreoffice "-env:UserInstallation=file:///tmp/LibO_Conversion" --headless --invisible --convert-to pdf /tmp/mjpodt/mjp-resume-dev.odt --outdir /tmp/mjpodt && \
-    libreoffice "-env:UserInstallation=file:///tmp/LibO_Conversion" --headless --invisible --convert-to pdf /tmp/mjpodt/mjp-resume-ops.odt --outdir /tmp/mjpodt && \
-    libreoffice "-env:UserInstallation=file:///tmp/LibO_Conversion" --headless --invisible --convert-to pdf /tmp/mjpodt/mjp-resume-devops.odt --outdir /tmp/mjpodt
+    libreoffice "-env:UserInstallation=file:///tmp/LibO_Conversion" --headless --invisible --convert-to pdf /tmp/mjpodt/mjp-resume-mgr.odt --outdir /tmp/mjpodt
 
 
 RUN libreoffice "-env:UserInstallation=file:///tmp/LibO_Conversion" --headless --invisible --convert-to docx /tmp/mjpodt/mjp-resume-dev.odt --outdir /tmp/mjpodt && \
-    libreoffice "-env:UserInstallation=file:///tmp/LibO_Conversion" --headless --invisible --convert-to docx /tmp/mjpodt/mjp-resume-ops.odt --outdir /tmp/mjpodt && \
-    libreoffice "-env:UserInstallation=file:///tmp/LibO_Conversion" --headless --invisible --convert-to docx /tmp/mjpodt/mjp-resume-devops.odt --outdir /tmp/mjpodt
-
+    libreoffice "-env:UserInstallation=file:///tmp/LibO_Conversion" --headless --invisible --convert-to docx /tmp/mjpodt/mjp-resume-mgr.odt --outdir /tmp/mjpodt
 
 # build final nginx image
 FROM nginx:latest

@@ -8,6 +8,8 @@ metadata:
 build:
   artifacts:
   - image: spectralhawke/resume
+  tagPolicy:
+    sha256: {}
 
 deploy:
   kubectl: {}
