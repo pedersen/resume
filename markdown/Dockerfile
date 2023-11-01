@@ -8,12 +8,6 @@ RUN \
     	ttf-bitstream-vera gpp && \
     apt clean
 
-ARG PDDEV="-DDEV=1"
-ARG PDMGR="-DMGR=1"
-ARG PDFULL="${PDDEV} ${PDMGR}"
-ARG PDALL="${PDFULL} -DWEB=1"
-
-
 ##########
 # pre-process input markdown files
 ##########
@@ -25,8 +19,10 @@ ARG PDALL="${PDFULL} -DWEB=1"
 # prep files/folders
 ENV TZ="America/New_York"
 
-RUN mkdir /tmp/markdown
+RUN mkdir /tmp/markdown /tmp/markdown/segments
 COPY ./*.md ./*.odt /tmp/markdown/
+COPY ./segments/* /tmp/markdown/segments/
+
 RUN echo "" >> /tmp/markdown/products.md && \
     echo "" >> /tmp/markdown/products.md  && \
     echo -n "Last updated: " >> /tmp/markdown/products.md  && \
@@ -35,9 +31,9 @@ RUN echo "" >> /tmp/markdown/products.md && \
 # build default html resume
 WORKDIR /tmp/markdown
 RUN \
-    gpp ${PDALL} -o resume-all.md resume.md && \
-    gpp ${PDDEV} -o resume-dev.md resume.md && \
-    gpp ${PDMGR} -o resume-mgr.md resume.md
+    gpp -o resume-all.md resume-gpp.md && \
+    gpp -o resume-dev.md resume-dev-gpp.md && \
+    gpp -o resume-mgr.md resume-mgr-gpp.md
 
 ##########
 # pandoc: create html and opendocument formats of inputs

@@ -1,0 +1,1 @@
+I was hired at MaxTech as a customer service representative. Over the time I worked there, I earned the opportunity to participate in system administration and the development of a new call tracking system to be used by the customer service team.

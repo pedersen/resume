@@ -1,0 +1,1 @@
+Diversified Systems is a small company that focuses on low voltage wiring and subcontracting. While there, I wore many hats, and did work on every system. The total number of servers for this company was less than 10, and the entire IT department consisted of myself.

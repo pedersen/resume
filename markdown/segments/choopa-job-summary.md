@@ -1,0 +1,1 @@
+As a developer at Constant.com (renamed from Choopa.com in Jan, 2012), I worked with a variety of technologies, with the heaviest focus being on [OpenStack][OPENSTACK] and [Nagios][NAGIOS]. I helped bring two products to production level availability for their customers (specifically: the Dedicated Cloud Server and Backup systems).

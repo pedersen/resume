@@ -1,0 +1,1 @@
+Working for Sykes Enterprises, I was contracted out to Sun's internal Resolution Center. I worked with Sun employees around the world to resolve their issues with the workstations and servers they relied on daily.
