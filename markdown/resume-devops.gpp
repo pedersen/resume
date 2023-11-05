@@ -1,12 +1,15 @@
 #include <segments/contact-info.md>
 
-#include <segments/executive-summary-devops.md>
+#include <segments/summaries.gpp>
+#include <segments/pulsepoint-job.gpp>
+SUMMARY_HEADER_EXEC
+SUMMARY_DATA_ENGINEER
 
 # Relevant Job History
 
-#include <segments/pulsepoint-job-header.md>
+PP_JOB_HEADER
 
-#include <segments/pulsepoint-job-devops.md>
+PP_JOB_BULLETS_DEVOPS
 
 #include <segments/weight-watchers-job-header.md>
 
@@ -36,7 +39,7 @@
 
 # Project History
 
-#include <segments/pulsepoint-project-dataflow-explorer.md>
+PP_JOB_PRJ_DATAFLOW_EXPLORER
 
 #include <segments/orcatec-project-advanced-search-tool.md>
 

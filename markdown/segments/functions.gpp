@@ -1,0 +1,19 @@
+#ifndef FUNCTIONS_GPP
+#define FUNCTIONS_GPP 1
+#define JOB_PROJECT(PROJECT_NAME, PROJECT_PERIOD, PROJECT_COMPANY, PROJECT_TOOLS, PROJECT_PLATFORM, PROJECT_SUMMARY, PROJECT_BULLETS) \
+## PROJECT_NAME\
+\
+------------ -------------------------------------------------------------------------------------------\
+**Period**   PROJECT_PERIOD\
+\
+**Company**  PROJECT_COMPANY\
+\
+**Tools**    PROJECT_TOOLS\
+\
+**Platform** PROJECT_PLATFORM\
+------------ -------------------------------------------------------------------------------------------\
+\
+PROJECT_SUMMARY\
+\
+PROJECT_BULLETS
+#endif

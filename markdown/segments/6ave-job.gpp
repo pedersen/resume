@@ -1,0 +1,114 @@
+#ifndef 6AVE_JOB_ALL
+#define 6AVE_JOB_ALL 1
+#include <functions.gpp>
+#define 6AVE_JOB_HEADER ## 6th Avenue Electronics - Systems Administrator, DevOps Engineer\
+\
+Springfield, NJ - 2005-2008, 2011
+#define 6AVE_JOB_SUMMARY In 2007, 6th Avenue began switching from their then-current POS system (named [Tyler][TYLER]) to [SAP][SAP]. At the end of 2010, [SAP][SAP] was declared unworkable, and the effort was begun to switch back to [Tyler][TYLER].\
+\
+The environment at 6th Avenue covered a wide range of platforms spread out over 120 servers (both physical and virtual). We had [VMware][VMWARE] ESX, [Windows][WINDOWS] Server 2003, [Windows][WINDOWS] Server 2008, [CentOS][CENTOS] Linux, [Suse][SUSE] Linux, and [Debian][DEBIAN] GNU/Linux. In 2011, I was brought back to transition the point of sale system and become the IT Manager. At the time the point of sale transition was completed, we had a team of 6 people managing the servers and about 300 desktops.
+#define 6AVE_JOB_BULLET_01 * Successfully lead migration from [SAP][SAP] to [Tyler][TYLER] Point of Sale system.
+#define 6AVE_JOB_BULLET_02 * Developed [Python][PYTHON] validation scripts for data going from [SAP][SAP] into [Tyler][TYLER].
+#define 6AVE_JOB_BULLET_03 * Automated configuration options within [Tyler][TYLER] that could not be done via import.
+#define 6AVE_JOB_BULLET_04 * Developed [Python][PYTHON] program to copy sales data from [Tyler][TYLER] POS to [PostgreSQL][PG].
+#define 6AVE_JOB_BULLET_05 * Installed and configured [Zenoss][ZENOSS] for full systems monitoring.
+#define 6AVE_JOB_BULLET_06 * Implemented [VMware][VMWARE] Virtual Infrastructure 3.
+#define 6AVE_JOB_BULLET_07 * Maintained [Tyler][TYLER] POS/ERP system on [HP-UX][HPUX] (and, later, Linux).
+#define 6AVE_JOB_BULLET_08 * Maintained Active Directory, including implementation of group policy.
+#define 6AVE_JOB_BULLET_09 * Wrote scripts to satisfy company needs using [AutoIt3][AUTOIT] and [Python][PYTHON].
+#define 6AVE_JOB_BULLET_10 * Wrote automated installer for the [Tyler][TYLER] client program to incorporate the program plus the mandatory pieces that we needed.
+#define 6AVE_JOB_BULLET_11 * Developed workaround to resolve issue in point of sales system causing store wide sales terminal lockups.
+#define 6AVE_JOB_BULLET_12 * Maintained heterogeneous environment (>60 Linux, >40 [Windows][WINDOWS] servers).
+#define 6AVE_JOB_BULLET_13 * Implemented ticket tracking system for help desk issues.
+#define 6AVE_JOB_BULLET_14 * Deployed [Windows Software Update Server][WSUS] for Microsoft product updates.
+#define 6AVE_JOB_BULLET_15 * Updated customer facing web site to reflect changes to NJ sales tax rates.
+#define 6AVE_JOB_BULLET_16 * Exported data from [Tyler][TYLER] point of sale system for import into [SAP][SAP] system.
+#define 6AVE_JOB_BULLET_17 * Created an internal wiki for use by the IT department, including populating with over 30 pages of documentation at time of deployment.
+#define 6AVE_JOB_BULLET_18 * Wrote several scripts to extract data from [Tyler][TYLER] POS system before [PostgreSQL][PG] database was available.
+#define 6AVE_JOB_BULLET_19 * Maintained [CommVault][COMMVAULT] backup system and disaster recovery site.
+#define 6AVE_JOB_BULLET_20 * Developed intranet pages (using AJAX) to allow customer service representatives to find old invoices in the database copy of [Tyler][TYLER]'s data.
+#define 6AVE_JOB_BULLET_21 * Created intranet pages (using AJAX) to assist in the selling of complex systems.
+#define 6AVE_JOB_BULLET_22 * Retrieved bulk information from [Tyler][TYLER] point of sale system for audits.
+#define 6AVE_JOB_BULLET_23 * Performed field certification of [MaxDB][MAXDB] system for [CommVault][COMMVAULT], providing reliable and supported backups for [SAP][SAP] databases.
+#define 6AVE_JOB_BULLET_24 * Configured all servers for newly implemented [SAP][SAP] system.
+#define 6AVE_JOB_BULLET_25 * Spearheaded server room cleanup: Shut down over 30 servers, removed over a mile of wire.
+#define 6AVE_JOB_BULLET_26 * Rack mounted, installed, and prepared newly arrived servers for use in projects.
+
+#defeval 6ave_JOB_BULLETS_ALL 6AVE_JOB_BULLET_01\
+6AVE_JOB_BULLET_02\
+6AVE_JOB_BULLET_03\
+6AVE_JOB_BULLET_04\
+6AVE_JOB_BULLET_05\
+6AVE_JOB_BULLET_06\
+6AVE_JOB_BULLET_07\
+6AVE_JOB_BULLET_08\
+6AVE_JOB_BULLET_09\
+6AVE_JOB_BULLET_10\
+6AVE_JOB_BULLET_11\
+6AVE_JOB_BULLET_12\
+6AVE_JOB_BULLET_13\
+6AVE_JOB_BULLET_14\
+6AVE_JOB_BULLET_15\
+6AVE_JOB_BULLET_16\
+6AVE_JOB_BULLET_17\
+6AVE_JOB_BULLET_18\
+6AVE_JOB_BULLET_19\
+6AVE_JOB_BULLET_20\
+6AVE_JOB_BULLET_21\
+6AVE_JOB_BULLET_22\
+6AVE_JOB_BULLET_23\
+6AVE_JOB_BULLET_24\
+6AVE_JOB_BULLET_25\
+6AVE_JOB_BULLET_26
+
+#define 6AVE_JOB_PRJ_NAME_PYTYLER PyTyler - [Tyler][TYLER] POS to [PostgreSQL][PG] Migration Tool
+#define 6AVE_JOB_PRJ_PERIOD_PYTYLER 2007, 2011
+#define 6AVE_JOB_PRJ_COMPANY_PYTYLER 6th Avenue Electronics
+#define 6AVE_JOB_PRJ_TOOLS_PYTYLER [Python][PYTHON], [PostgreSQL][PG], [Tyler][TYLER] POS System
+#define 6AVE_JOB_PRJ_PLATFORM_PYTYLER [HP-UX][HPUX], [Debian][DEBIAN] GNU/Linux
+#define 6AVE_JOB_PRJ_SUMMARY_PYTYLER [Tyler][TYLER] is a point of sale system used by many smaller retail establishments. [Tyler][TYLER] stores data in a set of proprietary ISAM files. These files do not have a modern access tool available (such as Crystal Reports) to perform reporting.\
+\
+The users needed an easy way to report on the data, and this meant a tool was needed to copy the data from the on-disk files into a formal SQL server of some variety. In less than a month, I wrote a tool in [Python][PYTHON] to read the [Tyler][TYLER] data files and load the information into a [PostgreSQL][PG] database on a nightly basis.\
+\
+This tool copied the entire database, comprising approximately 36,000,000 records, 140 tables, and 22 gigabytes of disk space. The program worked by reading the structure definition from the configuration files and recreating the structure in [PostgreSQL][PG]. PyTyler would then read each table, row by row, parse the data in the row, and load it into [PostgreSQL][PG] server.\
+\
+This allowed the users to use standard ODBC drivers to access and report on the data.
+#define 6AVE_JOB_PRJ_BULLETS_PYTYLER * Developed a tool to read configuration of ISAM files, and generate SQL "create table" statements mirroring the structure of the file.\
+* Created a specialized reader class which could read the data stored in the ISAM table.\
+* Developed small web server application to provide status page for administrators while migration tool runs\
+* Reduced total run time from 13 hours to 5 hours by converting the entire application into a multi-threaded application.\
+* Verified that data is being copied into the system correctly.\
+* [Tyler][TYLER] POS system was in production until the closure of the company in December, 2011, so data copy ran every night to bring in updated data from previous day's activities.
+
+#defeval 6AVE_JOB_PRJ_PYTYLER JOB_PROJECT(6AVE_JOB_PRJ_NAME_PYTYLER, 6AVE_JOB_PRJ_PERIOD_PYTYLER, 6AVE_JOB_PRJ_COMPANY_PYTYLER, 6AVE_JOB_PRJ_TOOLS_PYTYLER, 6AVE_JOB_PRJ_PLATFORM_PYTYLER, 6AVE_JOB_PRJ_SUMMARY_PYTYLER, 6AVE_JOB_PRJ_BULLETS_PYTYLER)
+
+
+#define 6AVE_JOB_PRJ_NAME_SAP [SAP][SAP] to [Tyler][TYLER] Conversion
+#define 6AVE_JOB_PRJ_PERIOD_SAP 2011
+#define 6AVE_JOB_PRJ_COMPANY_SAP 6th Avenue Electronics
+#define 6AVE_JOB_PRJ_TOOLS_SAP [AutoIt3][AUTOIT], [CentOS][CENTOS] Linux, [Python][PYTHON]
+#define 6AVE_JOB_PRJ_PLATFORM_SAP Server: [CentOS][CENTOS] Linux, Client: [Windows][WINDOWS]
+#define 6AVE_JOB_PRJ_SUMMARY_SAP 6th Avenue Electronics found that [SAP][SAP] was not a workable solution for them. The decision was made to switch back to the [Tyler][TYLER] POS system, clearing out old mistakes and improving maintainability. I managed the technical aspects of the migration, while my immediate managers handled the business aspects.\
+\
+Due to the costs associated with [SAP][SAP], we had just over three months, in total, to complete the transition. We were successful.
+#def 6AVE_JOB_PRJ_BULLETS_SAP * Wrote several one-off scripts to check data that was sent in various Excel spreadsheets. Validate that all entries in column A of File 1/Sheet 1 are in Column C of File 2/Sheet 1.\
+* Used [AutoIt3][AUTOIT] to automate the update of several items that could only be keyed into the client. No import existed at all. This reduced work from several hours down to an hour (including the initial script creation).\
+* Developed an automated installer that was used to handle installing all components (receipt printer, fonts, initial configuration) on every machine in the company.\
+* Worked with [Tyler][TYLER] Retail Systems to configure the server properly.\
+* Developed snapshot backup strategy that reduces downtime for [Tyler][TYLER] to mere minutes per night.
+
+#defeval 6AVE_JOB_PRJ_SAP JOB_PROJECT(6AVE_JOB_PRJ_NAME_SAP, 6AVE_JOB_PRJ_PERIOD_SAP, 6AVE_JOB_PRJ_COMPANY_SAP, 6AVE_JOB_PRJ_TOOLS_SAP, 6AVE_JOB_PRJ_PLATFORM_SAP, 6AVE_JOB_PRJ_SUMMARY_SAP, 6AVE_JOB_PRJ_BULLETS_SAP)
+
+#define 6AVE_JOB_PRJ_NAME_VMWARE [VMware][VMWARE] Implementation
+#define 6AVE_JOB_PRJ_PERIOD_VMWARE 2005-2007
+#define 6AVE_JOB_PRJ_COMPANY_VMWARE 6th Avenue Electronics
+#define 6AVE_JOB_PRJ_TOOLS_VMWARE [VMware][VMWARE] Virtual Infrastructure 3, [VMware][VMWARE] Virtual Center
+#define 6AVE_JOB_PRJ_PLATFORM_VMWARE Linux (Various distributions), [Windows][WINDOWS] Server 2003
+#define 6AVE_JOB_PRJ_SUMMARY_VMWARE 6th Avenue Electronics, like many companies, had a growing need for individual servers for various internal services. They chose to implement [VMware][VMWARE] to reduce hardware costs, downtime, and environmental costs.
+#define 6AVE_JOB_PRJ_BULLETS_VMWARE * Installed and configured iSCSI based SAN disks.\
+* Installed and configured all aspects of [VMware][VMWARE] Virtual Center and [VMware][VMWARE] Virtual Infrastructure 3.\
+* Developed (and tested) virtual machine templates to allow rapid deployment of new virtual servers using various operating systems ([Windows][WINDOWS] XP, [Windows][WINDOWS] 2003, [Debian][DEBIAN] GNU/Linux, [RedHat][REDHAT] Linux).\
+* Monitored daily usage of [VMware][VMWARE] hosts.
+
+#defeval 6AVE_JOB_PRJ_VMWARE JOB_PROJECT(6AVE_JOB_PRJ_NAME_VMWARE, 6AVE_JOB_PRJ_PERIOD_VMWARE, 6AVE_JOB_PRJ_COMPANY_VMWARE, 6AVE_JOB_PRJ_TOOLS_VMWARE, 6AVE_JOB_PRJ_PLATFORM_VMWARE, 6AVE_JOB_PRJ_SUMMARY_VMWARE, 6AVE_JOB_PRJ_BULLETS_VMWARE)
+#endif

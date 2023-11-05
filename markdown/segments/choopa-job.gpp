@@ -1,0 +1,20 @@
+#ifndef CHOOPA_JOB_ALL
+#define CHOOPA_JOB_ALL
+#include <functions.gpp>
+#define CHOOPA_JOB_HEADER ## Choopa.com - Developer\
+\
+Sayreville, NJ - 2012
+#define CHOOPA_JOB_SUMMARY As a developer at Constant.com (renamed from Choopa.com in Jan, 2012), I worked with a variety of technologies, with the heaviest focus being on [OpenStack][OPENSTACK] and [Nagios][NAGIOS]. I helped bring two products to production level availability for their customers (specifically: the Dedicated Cloud Server and Backup systems).
+#define CHOOPA_JOB_BULLET_01 * Developed library to manage [OpenStack][OPENSTACK] nodes, and gather billing information.
+#define CHOOPA_JOB_BULLET_02 * Built [Nagios][NAGIOS] configuration file generator for in-house web interface for [Nagios][NAGIOS].
+#define CHOOPA_JOB_BULLET_03 * Configured [Bacula][BACULA] backup system as replacement for custom backup scripts.
+#define CHOOPA_JOB_BULLET_04 * Reconfigured [Nagios][NAGIOS] monitoring, reducing full check from 8 hours to 2 minutes.
+#define CHOOPA_JOB_BULLET_05 * Refactored in-house [Nagios][NAGIOS] web interface. This reduced the workload from six files down to one when adding new checks.
+#define CHOOPA_JOB_BULLET_06 * Several smaller bug fixes and features throughout the internal code base.
+#defeval CHOOPA_JOB_BULLETS_ALL CHOOPA_JOB_BULLET_01\
+CHOOPA_JOB_BULLET_02\
+CHOOPA_JOB_BULLET_03\
+CHOOPA_JOB_BULLET_04\
+CHOOPA_JOB_BULLET_05\
+CHOOPA_JOB_BULLET_06
+#endif

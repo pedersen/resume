@@ -1,0 +1,20 @@
+#ifndef MAXTECH_JOB_ALL
+#define MAXTECH_JOB_ALL 1
+#include <functions.gpp>
+#define MAXTECH_JOB_HEADER ## MaxTech Corporation - Developer / System Administrator\
+\
+Rockaway, NJ - 1995-1997
+#define MAXTECH_JOB_SUMMARY I was hired at MaxTech as a customer service representative. Over the time I worked there, I earned the opportunity to participate in system administration and the development of a new call tracking system to be used by the customer service team.
+#define MAXTECH_JOB_BULLET_01 * Assisted customers daily with issues installing, configuring, and using their MaxTech modems.
+#define MAXTECH_JOB_BULLET_02 * Discovered bug in the newly released modem drivers for [Windows][WINDOWS] 95 and the MaxTech 28.8kbps modems.
+#define MAXTECH_JOB_BULLET_03 * Created a new [Windows][WINDOWS] based call tracking system to replace the old [MS-DOS][MSDOS] based call tracking system. Used [Delphi][DELPHI] and [InterBase][INTERBASE] as the development environment and database.
+#define MAXTECH_JOB_BULLET_04 * Rebuilt [Novell NetWare][NETWARE] server that had experienced hard drive crash. Did so while the server was in Atlanta, GA and I was in Rockaway, NJ.
+#define MAXTECH_JOB_BULLET_05 * Fixed issues with the [Lotus cc:Mail][CCMAIL] SMTP gateway.
+#define MAXTECH_JOB_BULLET_06 * Helped test the new MaxTech website.
+#defeval MAXTECH_JOB_BULLETS_ALL MAXTECH_JOB_BULLET_01\
+MAXTECH_JOB_BULLET_02\
+MAXTECH_JOB_BULLET_03\
+MAXTECH_JOB_BULLET_04\
+MAXTECH_JOB_BULLET_05\
+MAXTECH_JOB_BULLET_06
+#endif

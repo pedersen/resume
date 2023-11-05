@@ -1,0 +1,19 @@
+#ifndef SYKES_JOB_ALL
+#define SYKES_JOB_ALL 1
+#include <functions.gpp>
+#define SYKES_JOB_HEADER ## Sykes Enterprises - Systems Technologist\
+\
+Denver, Co - 1998
+#define SYKES_JOB_SUMMARY Working for Sykes Enterprises, I was contracted out to Sun's internal Resolution Center. I worked with Sun employees around the world to resolve their issues with the workstations and servers they relied on daily.
+#define SYKES_JOB_BULLET_01 * Performed remote operating system installations and upgrades.
+#define SYKES_JOB_BULLET_02 * Resolved customer issues with [Solaris][SOLARIS] 2.5.1 and [Solaris][SOLARIS] 2.6.
+#define SYKES_JOB_BULLET_03 * Wrote a [Tcl/Tk][TCL] script to speed up the process of logging into customers' machines for use in the Resolution Center.
+#define SYKES_JOB_BULLET_04 * Wrote a Korn shell script to check a list of users and make sure that all users on the list were valid Sun employees.
+#define SYKES_JOB_BULLET_05 * Added new users throughout Sun's internal network
+
+#defeval SYKES_JOB_BULLETS_ALL SYKES_JOB_BULLET_01\
+SYKES_JOB_BULLET_02\
+SYKES_JOB_BULLET_03\
+SYKES_JOB_BULLET_04\
+SYKES_JOB_BULLET_05
+#endif

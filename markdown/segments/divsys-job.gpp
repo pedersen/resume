@@ -1,0 +1,66 @@
+#ifndef DIVSYS_JOB_ALL
+#define DIVSYS_JOB_ALL
+#include <functions.gpp>
+#define DIVSYS_JOB_HEADER ## Diversified Systems - Systems Administrator / Developer\
+\
+Hackettstown, NJ - 2002-2005
+#define DIVSYS_JOB_SUMMARY Diversified Systems is a small company that focuses on low voltage wiring and subcontracting. While there, I wore many hats, and did work on every system. The total number of servers for this company was less than 10, and the entire IT department consisted of myself.
+#define DIVSYS_JOB_BULLETS_01 * Developed GUI to [new software system][SBN] using [PHP][PHP], [Apache][APACHE], and [Mozilla][MOZILLA].
+#define DIVSYS_JOB_BULLETS_02 * Automated sending faxes to techs, saving five hours/day (in a 10 person office).
+#define DIVSYS_JOB_BULLETS_03 * Deployed [Unattended][UNATTENDED], an automated [Windows][WINDOWS] installation system.
+#define DIVSYS_JOB_BULLETS_04 * Implemented [HylaFax][FAX] fax server for incoming and outgoing faxes, allowing electronic receipt of over 200 pages of faxes per day from field technicians.
+#define DIVSYS_JOB_BULLETS_05 * Worked with upper management to completely redesign entire business processes and systems company-wide (accounting, customer service, builder coordination, sales and warehouse management).
+#define DIVSYS_JOB_BULLETS_06 * Modified [SQL-Ledger][SQLLEDGER] accounts receivable report for historical views of accounts receivable. The modified version was capable of showing how accounts receivable looked on a given day.
+#define DIVSYS_JOB_BULLETS_06 * Implemented employee remote-access system, using VPN (virtual private network).
+#define DIVSYS_JOB_BULLETS_07 * Deployed SNMP and monitored daily resource utilization.
+#define DIVSYS_JOB_BULLETS_08 * Converted structured portion of data from older system into a database, and provided training to employees on proper usage.
+#define DIVSYS_JOB_BULLETS_09 * Created [PHP][PHP] scripts to provide clean access to unstructured data from older system, and showed employees how to access and use.
+#define DIVSYS_JOB_BULLETS_10 * Managed upgrade of entire office to [Windows][WINDOWS] 2000. This involved testing programs for compatibility, replacing obsolete programs, and determining proper installation procedures for undocumented installations.
+#define DIVSYS_JOB_BULLETS_11 * Resolved issues with the various systems which Diversified Systems installs in customer homes, including alarm systems, stereos, central vacuums, and structured wiring on a daily basis.
+#define DIVSYS_JOB_BULLETS_12 * Coordinated the activities of field technicians with customers to provide the maximum service level to the customers.
+#define DIVSYS_JOB_BULLETS_13 * Authored new scripts using [Perl][PERL] and [PHP][PHP].
+
+#defeval DIVSYS_JOB_BULLETS_ALL DIVSYS_JOB_BULLETS_01\
+DIVSYS_JOB_BULLETS_02\
+DIVSYS_JOB_BULLETS_03\
+DIVSYS_JOB_BULLETS_04\
+DIVSYS_JOB_BULLETS_05\
+DIVSYS_JOB_BULLETS_06\
+DIVSYS_JOB_BULLETS_06\
+DIVSYS_JOB_BULLETS_07\
+DIVSYS_JOB_BULLETS_08\
+DIVSYS_JOB_BULLETS_09\
+DIVSYS_JOB_BULLETS_10\
+DIVSYS_JOB_BULLETS_11\
+DIVSYS_JOB_BULLETS_12\
+DIVSYS_JOB_BULLETS_13
+
+#define DIVSYS_JOB_PRJ_NAME_SBN [SBN][SBN] Implementation
+#define DIVSYS_JOB_PRJ_PERIOD_SBN 2004-2005
+#define DIVSYS_JOB_PRJ_COMPANY_SBN Diversified Systems
+#define DIVSYS_JOB_PRJ_TOOLS_SBN [SBN][SBN], [Sybase 11.0][SYBASE], [PHP][PHP]
+#define DIVSYS_JOB_PRJ_PLATFORM_SBN Microsoft [Windows][WINDOWS] 2000, [Debian][DEBIAN] GNU/Linux
+#define DIVSYS_JOB_PRJ_SUMMARY_SBN [SBN][SBN], published by IBSoft, is an ERP system for the alarm industry. Diversified Systems is a subcontractor working in the low voltage electrical industry, including alarm systems, stereo systems, central intercom systems, structured wiring, and central vacuum systems. I implemented all aspects of [SBN][SBN] at Diversified Systems.\
+\
+The provided client interface was unsuited for the intended use. This resulted in much in-house development to augment the [SBN][SBN] client with a web-based interface.
+#define DIVSYS_JOB_PRJ_BULLETS_SBN * Configured all aspects of [SBN][SBN] from base installation to full production mode, with active communication with users at each step.\
+* Implemented over 50 custom screens and reports using [PHP][PHP] on an [Apache][APACHE] web server. This included easier access to customer searches, more usable technician schedules, and easier input for large quantities of data.\
+* Developed automated system for the sending of faxes to field technicians,saving over 5 work hours per day.\
+* Implemented an automated backup system for the database.\
+* Administered [Sybase][SYBASE] instance on day to day basis, resolving issues with full log files, etc.
+
+#defeval DIVSYS_JOB_PRJ_SBN JOB_PROJECT(DIVSYS_JOB_PRJ_NAME_SBN, DIVSYS_JOB_PRJ_PERIOD_SBN, DIVSYS_JOB_PRJ_COMPANY_SBN, DIVSYS_JOB_PRJ_TOOLS_SBN, DIVSYS_JOB_PRJ_PLATFORM_SBN, DIVSYS_JOB_PRJ_SUMMARY_SBN, DIVSYS_JOB_PRJ_BULLETS_SBN)
+
+
+#define DIVSYS_JOB_PRJ_NAME_SQL_LEDGER [SQL-Ledger][SQLLEDGER] Implementation
+#define DIVSYS_JOB_PRJ_PERIOD_SQL_LEDGER 2005
+#define DIVSYS_JOB_PRJ_COMPANY_SQL_LEDGER Diversified Systems
+#define DIVSYS_JOB_PRJ_TOOLS_SQL_LEDGER [Perl][PERL], [Apache][APACHE]
+#define DIVSYS_JOB_PRJ_PLATFORM_SQL_LEDGER [Apache][APACHE], [Debian][DEBIAN] GNU/Linux
+#define DIVSYS_JOB_PRJ_SUMMARY_SQL_LEDGER The [SBN][SBN] accounting system was inadequate for the needs of Diversified Systems. This lead to the selection and installation of an external accounting package.
+#define DIVSYS_JOB_PRJ_BULLETS_SQL_LEDGER * Authored script to automatically migrate necessary data (customers, bills to be collected, etc.) from [SBN][SBN] to [SQL-Ledger][SQLLEDGER].\
+* Installed and configured [SQL-Ledger][SQLLEDGER].
+
+
+#defeval DIVSYS_JOB_PRJ_SQL_LEDGER JOB_PROJECT(DIVSYS_JOB_PRJ_NAME_SQL_LEDGER, DIVSYS_JOB_PRJ_PERIOD_SQL_LEDGER, DIVSYS_JOB_PRJ_COMPANY_SQL_LEDGER, DIVSYS_JOB_PRJ_TOOLS_SQL_LEDGER, DIVSYS_JOB_PRJ_PLATFORM_SQL_LEDGER, DIVSYS_JOB_PRJ_SUMMARY_SQL_LEDGER, DIVSYS_JOB_PRJ_BULLETS_SQL_LEDGER)
+#endif

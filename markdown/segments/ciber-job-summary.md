@@ -1,1 +1,0 @@
-Decision Consultants (DCI) was acquired by Ciber, Inc., in 2002. While working for DCI, I was contracted out to Coors, IBM, and a .com named "X-Care" (no longer in business). The points below come from all of those places.

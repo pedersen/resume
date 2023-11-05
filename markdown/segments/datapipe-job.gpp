@@ -1,0 +1,57 @@
+#ifndef DATAPIPE_JOB_ALL
+#define DATAPIPE_JOB_ALL 1
+#include <functions.gpp>
+#define DATAPIPE_JOB_HEADER ## Datapipe, Inc. - UNIX Developer\
+\
+Jersey City, NJ - 2008-2011
+#define DATAPIPE_JOB_SUMMARY Datapipe manages thousands of customers servers. Many of these servers are connected to various shared storage systems, including [3Par][3PAR], [Isilon][ISILON], and backup servers. Datapipe required an ability to do reporting on what data was being stored on these systems for each client, and then report that data back to billing. In addition, Datapipe required monitoring of the backup systems to ensure timely and complete backups of client data. My duties primarily focused on making these systems work well.\
+\
+My team structure is worth describing briefly as well: My immediate manager worked out of Austin, TX. One coworker worked in the same building as myself, and I had two "extended" teammates who worked in Jersey City, NJ (I worked in Somerset, NJ). The extended team included the [Windows][WINDOWS] developers, while I was on the UNIX development team.
+#define DATAPIPE_JOB_BULLETS_01 * Created reporting system called StorageWeb (using [TurboGears][TG]), enabling new revenue stream.
+#define DATAPIPE_JOB_BULLETS_02 * Developed [Python][PYTHON] app named unixops, allows server access via one time [SSH][SSH] keys.
+#define DATAPIPE_JOB_BULLETS_03 * Optimized [PostgreSQL][PG] on [FreeBSD][FREEBSD]. Bulk inserts reduced from hours to 20 minutes.
+#define DATAPIPE_JOB_BULLETS_04 * Debugged [Python][PYTHON], [FreeBSD][FREEBSD], [Apache][APACHE], and [modwsgi][MODWSGI] working together.
+#define DATAPIPE_JOB_BULLETS_05 * Developed multi-threaded back end daemon (in [Python][PYTHON]) which connected to the various storage systems and gathered the data about the stored data for reporting before pushing aggregate data to the billing system.
+#define DATAPIPE_JOB_BULLETS_06 * Developed web interface that would allow users to drill down and see how storage was being used (by client, by server, by data center, and/or by storage type).
+#define DATAPIPE_JOB_BULLETS_07 * Wrote tool to gather performance data from [3Par][3PAR] InServ nodes and display it via the client portal.
+#define DATAPIPE_JOB_BULLETS_08 * Updated and maintained the existing backup monitoring tool which reported backup failures to our main ticketing system.
+#define DATAPIPE_JOB_BULLETS_09 * Repackaged [Bacula][BACULA] (internal name: SureRestore) for all supported platforms.
+#define DATAPIPE_JOB_BULLETS_10 * Evaluated potential replacements for [Subversion][SVN], including [Git][GIT] and [Mercurial][HG].
+
+#defeval DATAPIPE_JOB_BULLETS_ALL DATAPIPE_JOB_BULLETS_01\
+DATAPIPE_JOB_BULLETS_02\
+DATAPIPE_JOB_BULLETS_03\
+DATAPIPE_JOB_BULLETS_04\
+DATAPIPE_JOB_BULLETS_05\
+DATAPIPE_JOB_BULLETS_06\
+DATAPIPE_JOB_BULLETS_07\
+DATAPIPE_JOB_BULLETS_08\
+DATAPIPE_JOB_BULLETS_09\
+DATAPIPE_JOB_BULLETS_10
+
+#define DATAPIPE_JOB_PRJ_NAME_STORAGEWEB StorageWeb
+#define DATAPIPE_JOB_PRJ_PERIOD_STORAGEWEB 2010
+#define DATAPIPE_JOB_PRJ_COMPANY_STORAGEWEB Datapipe
+#define DATAPIPE_JOB_PRJ_TOOLS_STORAGEWEB [FreeBSD][FREEBSD], [Python][PYTHON], [Apache][APACHE], [PostgreSQL][PG], [TurboGears][TG]
+#define DATAPIPE_JOB_PRJ_PLATFORM_STORAGEWEB [FreeBSD][FREEBSD], Web Browser
+#define DATAPIPE_JOB_PRJ_SUMMARY_STORAGEWEB Datapipe manages thousands of servers. Many of these servers are connected to various shared storage systems, including [3Par][3PAR], [Isilon][ISILON], and backup servers. Datapipe required an ability to do reporting on what data was being stored on these systems for each client, and then report that data back to billing. StorageWeb was written to fill that need.
+#define DATAPIPE_JOB_PRJ_BULLETS_STORAGEWEB * Debugged issues with [Python][PYTHON], [FreeBSD][FREEBSD], [Apache][APACHE], and [modwsgi][MODWSGI]. Turned out to require specific compilation options to get these all working correctly.\
+* Developed web interface that would allow users to drill down and see how the storage was being used (by client, by server, by data center, by storage type).\
+* Developed multi-threaded backend daemon which connected to the various storage systems and gathered the data about the stored data for reporting.\
+* Developed backend daemon that pushed aggregate data to the billing system, allowing billing to finally happen for all clients.
+
+#defeval DATAPIPE_JOB_PRJ_ JOB_PROJECT(DATAPIPE_JOB_PRJ_NAME_STORAGEWEB, DATAPIPE_JOB_PRJ_PERIOD_STORAGEWEB, DATAPIPE_JOB_PRJ_COMPANY_STORAGEWEB, DATAPIPE_JOB_PRJ_TOOLS_STORAGEWEB, DATAPIPE_JOB_PRJ_PLATFORM_STORAGEWEB, DATAPIPE_JOB_PRJ_SUMMARY_STORAGEWEB, DATAPIPE_JOB_PRJ_BULLETS_STORAGEWEB)
+
+
+#define DATAPIPE_JOB_PRJ_NAME_UNIXOPS UNIXOps
+#define DATAPIPE_JOB_PRJ_PERIOD_UNIXOPS 2010
+#define DATAPIPE_JOB_PRJ_COMPANY_UNIXOPS Datapipe
+#define DATAPIPE_JOB_PRJ_TOOLS_UNIXOPS [FreeBSD][FREEBSD], [Python][PYTHON], [Apache][APACHE], [PHP][PHP]
+#define DATAPIPE_JOB_PRJ_PLATFORM_UNIXOPS [FreeBSD][FREEBSD], Web Browser
+#define DATAPIPE_JOB_PRJ_SUMMARY_UNIXOPS Datapipe provides managed hosting for its clients. This means that customers contact Datapipe to report issues on servers, and Datapipe administrators log in to customer machines as root to fix the problems. UNIXOps provides a secure method to allow the administrators a one time SSH key to login to the customer equipment, along with providing detailed logging of everything the administrator does for later review.
+#define DATAPIPE_JOB_PRJ_BULLETS_UNIXOPS * Installed and configured client-side SSL certificate validation for Apache, requiring that machines connecting to UNIXOps provide a valid SSL certificate before being granted any access.\
+* Developed the code that would follow the workflow of Datapipe: Administrator requests access, UNIXOps configures the access on the client machine, administrator uses that access, and the access is revoked when used or 15 minutes have passed without it being used.
+
+
+#defeval DATAPIPE_JOB_PRJ_ JOB_PROJECT(DATAPIPE_JOB_PRJ_NAME_UNIXOPS, DATAPIPE_JOB_PRJ_PERIOD_UNIXOPS, DATAPIPE_JOB_PRJ_COMPANY_UNIXOPS, DATAPIPE_JOB_PRJ_TOOLS_UNIXOPS, DATAPIPE_JOB_PRJ_PLATFORM_UNIXOPS, DATAPIPE_JOB_PRJ_SUMMARY_UNIXOPS, DATAPIPE_JOB_PRJ_BULLETS_UNIXOPS)
+#endif

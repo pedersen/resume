@@ -1,1 +1,0 @@
-Robert Half International's client, StorageTek, provided large enterprises with long term backup solutions (typically involving dozens of tape drives, thousands of tape cartridges, and robotic tape libraries to manage all of it).

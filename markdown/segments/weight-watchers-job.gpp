@@ -1,0 +1,20 @@
+#ifndef WW_JOB_ALL
+#define WW_JOB_ALL 1
+#include <functions.gpp>
+#define WW_JOB_HEADER ## Weight Watchers - Systems Engineering Lead\
+\
+New York City, NY - 2014-2015
+#define WW_JOB_SUMMARY Weight Watchers is a Fortune 500 company focused on helping customers manage their weight and reduce health problems caused by it.\
+\
+My role was focused on providing internal support within the company to enable other groups to support the customer base.
+#define WW_JOB_BULLET_01 * Developed lightweight monitoring tool for use within my group.
+#define WW_JOB_BULLET_02 * Configured [Vormetric][VORMETRIC] products to ensure [HIPAA][HIPAA] compliance for customer data.
+#define WW_JOB_BULLET_03 * Worked to transfer from [Rackspace Cloud][RSCLOUD] to [Openstack][OPENSTACK] based private cloud.
+
+#defeval WW_JOB_BULLETS_MGR WW_JOB_BULLET_03
+#defeval WW_JOB_BULLETS_DEVOPS WW_JOB_BULLET_01\
+WW_JOB_BULLET_02
+#defeval WW_JOB_BULLETS_ALL WW_JOB_BULLET_01\
+WW_JOB_BULLET_02\
+WW_JOB_BULLET_03
+#endif

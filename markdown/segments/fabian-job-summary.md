@@ -1,1 +1,0 @@
-Fabian Corporation was a small virtual hosting provider for web sites during the fledgling web days, even before the dot-com era. A typical customer made a static web site and uploaded it via ftp to show to any web site visitors.
