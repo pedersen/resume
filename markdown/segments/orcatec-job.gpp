@@ -1,0 +1,99 @@
+#ifndef ORCATEC_JOB_ALL
+#define ORCATECT_JOB_ALL 1
+#include <functions.gpp>
+#define ORCATEC_JOB_HEADER ## OrcaTec, LLC - Developer\
+\
+Atlanta, GA (Telecommute) - 2012-2014
+#define ORCATEC_JOB_SUMMARY OrcaTec is in the litigation support industry (they help their clients reduce the costs of being sued). OrcaTec is primarily a software-as-a-service company, allowing OrcaTec to host customer data. While working here, my focus has been on improving the GUI. This has involved refactoring code heavily, adding new features, and adding new tests to cover existing and new code.\
+\
+The team structure at OrcaTec is geographically very diverse. In addition to my own telecommuting, I have teammates in many states. We all work remotely, and we all work together to make the product the best that it can be.
+#define ORCATEC_JOB_BULLETS_01 * Developed advanced search tool using [Python][PYTHON], [TurboGears][TG], and [jQuery][JQUERY].
+#define ORCATEC_JOB_BULLETS_02 * Created new document production framework from scratch.
+#define ORCATEC_JOB_BULLETS_03 * Reduced multi-hour [SQLAlchemy][SQLALCHEMY] bulk database jobs to minutes.
+#define ORCATEC_JOB_BULLETS_04 * Found major security hole (remote code execution) and closed it.
+#define ORCATEC_JOB_BULLETS_05 * Debugged and resolved memory issues that were causing systems to shut down.
+#define ORCATEC_JOB_BULLETS_06 * Mentored other developers in the use of [TurboGears][TG], [SQLAlchemy][SQLALCHEMY], [Python][PYTHON], and JavaScript.
+#define ORCATEC_JOB_BULLETS_07 * Organized weekly meetings for members of the frontend (OTGUI) team, providing a chance to discuss (in depth) the issues the team was facing.
+#define ORCATEC_JOB_BULLETS_08 * Incorporated memcached into our stack to handle sessions and cached data.
+#define ORCATEC_JOB_BULLETS_09 * Switched web server from [Paster][PASTER] to [Apache][APACHE] with [mod_wsgi][MODWSGI].
+#define ORCATEC_JOB_BULLETS_10 * Installed and configured [WSO2 Identity Server][WSO2] for our [OpenID][OPENID] implementation
+#define ORCATEC_JOB_BULLETS_11 * Spearheaded conversion from [YUI 2][YUI] to [jQuery][JQUERY] and [jQueryUI][JQUERYUI].
+#define ORCATEC_JOB_BULLETS_12 * Documented internal server API, wrote a [Python][PYTHON] class to standardize it's use.
+#define ORCATEC_JOB_BULLETS_13 * Added tag cloud (using [awesomecloud plugin for jQuery][AWESOME]).
+#define ORCATEC_JOB_BULLETS_14 * Corrected Unicode handling errors in the code.
+#define ORCATEC_JOB_BULLETS_15 * Added holds and matters framework, allowing customers to state that documents belong to specific cases and should not be deleted while the cases are ongoing.
+#define ORCATEC_JOB_BULLETS_16 * Created a tool to allow copying settings between instances.
+#define ORCATEC_JOB_BULLETS_17 * Added support for allowing customers to login using [OpenID][OPENID].
+#define ORCATEC_JOB_BULLETS_18 * Added user preferences to the frontend.
+#define ORCATEC_JOB_BULLETS_19 * Resolved intermittent issue with drag/drop events that had been unsolvable by the existing team.
+#define ORCATEC_JOB_BULLETS_20 * Implemented login idle timeout functionality.
+#define ORCATEC_JOB_BULLETS_21 * Identified weaknesses in the database model, and added code to prevent those weaknesses from being hit.
+#define ORCATEC_JOB_BULLETS_22 * Wrote [Python][PYTHON] framework to manage long running background jobs.
+#define ORCATEC_JOB_BULLETS_23 * Refactored [Python][PYTHON] and JavaScript code on a regular basis to reduce code repetition and increase legibility.
+
+#defeval ORCATEC_JOB_BULLETS_ALL ORCATEC_JOB_BULLETS_01\
+ORCATEC_JOB_BULLETS_02\
+ORCATEC_JOB_BULLETS_03\
+ORCATEC_JOB_BULLETS_04\
+ORCATEC_JOB_BULLETS_05\
+ORCATEC_JOB_BULLETS_06\
+ORCATEC_JOB_BULLETS_07\
+ORCATEC_JOB_BULLETS_08\
+ORCATEC_JOB_BULLETS_09\
+ORCATEC_JOB_BULLETS_10\
+ORCATEC_JOB_BULLETS_11\
+ORCATEC_JOB_BULLETS_12\
+ORCATEC_JOB_BULLETS_13\
+ORCATEC_JOB_BULLETS_14\
+ORCATEC_JOB_BULLETS_15\
+ORCATEC_JOB_BULLETS_16\
+ORCATEC_JOB_BULLETS_17\
+ORCATEC_JOB_BULLETS_18\
+ORCATEC_JOB_BULLETS_19\
+ORCATEC_JOB_BULLETS_20\
+ORCATEC_JOB_BULLETS_21\
+ORCATEC_JOB_BULLETS_22\
+ORCATEC_JOB_BULLETS_23
+
+#defeval ORCATEC_JOB_BULLETS_MGR ORCATEC_JOB_BULLETS_06\
+ORCATEC_JOB_BULLETS_07
+
+#defeval ORCATEC_JOB_BULLETS_DEVOPS ORCATEC_JOB_BULLETS_01\
+ORCATEC_JOB_BULLETS_02\
+ORCATEC_JOB_BULLETS_03\
+ORCATEC_JOB_BULLETS_04\
+ORCATEC_JOB_BULLETS_05
+
+#define ORCATEC_JOB_PRJ_NAME_ADV_SEARCH_TOOL Advanced Search Tool
+#define ORCATEC_JOB_PRJ_PERIOD_ADV_SEARCH_TOOL 2014
+#define ORCATEC_JOB_PRJ_COMPANY_ADV_SEARCH_TOOL OrcaTec, LLC
+#define ORCATEC_JOB_PRJ_TOOLS_ADV_SEARCH_TOOL [Python][PYTHON], [jQuery][JQUERY], [jQueryUI][JQUERYUI]
+#define ORCATEC_JOB_PRJ_PLATFORM_ADV_SEARCH_TOOL Server: [TurboGears][TG], Browser (Cross Browser)
+#define ORCATEC_JOB_PRJ_SUMMARY_ADV_SEARCH_TOOL At OrcaTec, the primary tool we provided to our customers was the ability to search collections of documents quickly. In addition to having simple search tools, we also had a helper tool in the "Advanced Search".\
+\
+This tool allowed the user to search based on a dozen different fields, but was still limited and fragile. It was unable to help the user build queries which combined different fields in a single clause. In addition, it had issues with encoding <> in email addresses, and did not support drag and drop on all of our supported browsers.\
+\
+When this project was completed, this tool had transformed noticeably. It now is its own miniature investigative tool, allowing customers to easily search through collections of documents. One customer reported narrowing their searches from 80,000 possible documents down to under 2,000 within an hour through use of this tool. Due to extensive test coverage when the code was published, even the problems that were found were quickly fixable. All of this was accomplished while reducing the total code for it by 50%.
+#define ORCATEC_JOB_PRJ_BULLETS_ADV_SEARCH_TOOL * Debugged issues with drag/drop on mobile browsers.\
+* Designed new interface for maximum flexibility, and to allow easy refinement of queries as they are being built.\
+* Incorporated user feedback to improve that design.
+
+
+#defeval ORCATEC_JOB_PRJ_ADV_SEARCH_TOOL JOB_PROJECT(ORCATEC_JOB_PRJ_NAME_ADV_SEARCH_TOOL, ORCATEC_JOB_PRJ_PERIOD_ADV_SEARCH_TOOL, ORCATEC_JOB_PRJ_COMPANY_ADV_SEARCH_TOOL, ORCATEC_JOB_PRJ_TOOLS_ADV_SEARCH_TOOL, ORCATEC_JOB_PRJ_PLATFORM_ADV_SEARCH_TOOL, ORCATEC_JOB_PRJ_SUMMARY_ADV_SEARCH_TOOL, ORCATEC_JOB_PRJ_BULLETS_ADV_SEARCH_TOOL)
+
+
+#define ORCATEC_JOB_PRJ_NAME_PASTER [Paster][PASTER] to [Apache][APACHE]/[mod_wsgi][MODWSGI] Conversion
+#define ORCATEC_JOB_PRJ_PERIOD_PASTER 2013
+#define ORCATEC_JOB_PRJ_COMPANY_PASTER OrcaTec, LLC
+#define ORCATEC_JOB_PRJ_TOOLS_PASTER [Python][PYTHON], [Apache][APACHE], [mod_wsgi][MODWSGI], [Paster][PASTER]
+#define ORCATEC_JOB_PRJ_PLATFORM_PASTER [Ubuntu][UBUNTU] Linux
+#define ORCATEC_JOB_PRJ_SUMMARY_PASTER [Paster][PASTER] is meant to be used in a development environment, allowing the developer to use a (single threaded) lightweight, easily managed webserver while writing code before it goes to production. At OrcaTec, we were using [Paster][PASTER] both in development and in production. Due to the demands being placed on [Paster][PASTER] (in many instances, loading up documents that were over 100M), the entire system could appear (to one user) to freeze up due to it responding to a request from another user.\
+\
+After analysis, we were able to determine that [Paster][PASTER] was no longer suitable for our needs. Since [Apache][APACHE], with [mod_wsgi][MODWSGI], provides an at least adequate performance web server (in comparison to others like Nginx), and the [Apache][APACHE] configuration was already known to the team, we chose to switch from [Paster][PASTER] to [Apache][APACHE]. This allowed us to have [Apache][APACHE] itself serve up static files (like images, css files, and javascript files), leaving the dynamic pages to the [Python][PYTHON] code.
+#define ORCATEC_JOB_PRJ_BULLETS_PASTER * Debugged threading/locking/memory usage issues with [Paster][PASTER].\
+* Recompiled and repackaged [Python 2.6.8][PYTHON], [Apache][APACHE], and [mod_wsgi][MODWSGI] for use with [Ubuntu 10.04][UBUNTU].\
+* Developed automatic [Apache][APACHE] configuration for use within our local stack.
+
+
+#defeval ORCATEC_JOB_PRJ_PASTER JOB_PROJECT(ORCATEC_JOB_PRJ_NAME_PASTER, ORCATEC_JOB_PRJ_PERIOD_PASTER, ORCATEC_JOB_PRJ_COMPANY_PASTER, ORCATEC_JOB_PRJ_TOOLS_PASTER, ORCATEC_JOB_PRJ_PLATFORM_PASTER, ORCATEC_JOB_PRJ_SUMMARY_PASTER, ORCATEC_JOB_PRJ_BULLETS_)
+#endif
