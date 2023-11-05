@@ -32,7 +32,7 @@ RUN echo "" >> /tmp/markdown/products.md && \
 WORKDIR /tmp/markdown
 RUN \
     gpp -o resume-all.md resume-gpp.md && \
-    gpp -o resume-dev.md resume-dev-gpp.md && \
+    gpp -o resume-devops.md resume-devops-gpp.md && \
     gpp -o resume-bigdata.md resume-bigdata-gpp.md && \
     gpp -o resume-mgr.md resume-mgr-gpp.md
 
@@ -41,7 +41,6 @@ RUN \
 ##########
 
 ARG PDOPTS="-s --columns=120 --filter /tmp/markdown/newpage-filter.hs"
-ARG PDTABLES=""
 
 RUN mkdir -p /tmp/markdown
 COPY ./html /tmp/html
@@ -49,13 +48,17 @@ COPY ./resume-style.html /usr/share/pandoc/data/templates/resume-style.html
 COPY ./newpage-filter.hs /tmp/markdown
 
 WORKDIR /tmp/markdown
-RUN pandoc ${PDOPTS} -o /tmp/html/index.html -t html${PDTABLES} --template=resume-style.html resume-all.md
+RUN pandoc ${PDOPTS} -o /tmp/html/index.html -t html --template=resume-style.html resume-all.md
 
-RUN pandoc ${PDOPTS} -o /tmp/html/products.html -t html${PDTABLES} --template=resume-style.html products.md
+RUN pandoc ${PDOPTS} -o /tmp/html/products.html -t html --template=resume-style.html products.md
 
-RUN pandoc ${PDOPTS} -o /tmp/html/mjp-resume-dev.odt -t odt${PDTABLES} --template resume-style.odt resume-dev.md && \
-    pandoc ${PDOPTS} -o /tmp/html/mjp-resume-bigdata.odt -t odt${PDTABLES} --template resume-style.odt resume-bigdata.md && \
-    pandoc ${PDOPTS} -o /tmp/html/mjp-resume-mgr.odt -t odt${PDTABLES} --template resume-style.odt resume-mgr.md
+##########
+# libreoffice: create odt formats
+##########
+
+RUN pandoc ${PDOPTS} -o /tmp/html/mjp-resume-devops.odt -t odt --template resume-style.odt resume-devops.md && \
+    pandoc ${PDOPTS} -o /tmp/html/mjp-resume-bigdata.odt -t odt --template resume-style.odt resume-bigdata.md && \
+    pandoc ${PDOPTS} -o /tmp/html/mjp-resume-mgr.odt -t odt --template resume-style.odt resume-mgr.md
 
 
 ##########
@@ -65,12 +68,16 @@ RUN pandoc ${PDOPTS} -o /tmp/html/mjp-resume-dev.odt -t odt${PDTABLES} --templat
 RUN mkdir /tmp/mjpodt && \
     cp /tmp/html/*.odt /tmp/mjpodt
 WORKDIR /tmp/mjpodt
-RUN libreoffice "-env:UserInstallation=file:///tmp/LibO_Conversion" --headless --invisible --convert-to pdf /tmp/mjpodt/mjp-resume-dev.odt --outdir /tmp/mjpodt && \
+RUN libreoffice "-env:UserInstallation=file:///tmp/LibO_Conversion" --headless --invisible --convert-to pdf /tmp/mjpodt/mjp-resume-devops.odt --outdir /tmp/mjpodt && \
     libreoffice "-env:UserInstallation=file:///tmp/LibO_Conversion" --headless --invisible --convert-to pdf /tmp/mjpodt/mjp-resume-bigdata.odt --outdir /tmp/mjpodt && \
     libreoffice "-env:UserInstallation=file:///tmp/LibO_Conversion" --headless --invisible --convert-to pdf /tmp/mjpodt/mjp-resume-mgr.odt --outdir /tmp/mjpodt
 
 
-RUN libreoffice "-env:UserInstallation=file:///tmp/LibO_Conversion" --headless --invisible --convert-to docx /tmp/mjpodt/mjp-resume-dev.odt --outdir /tmp/mjpodt && \
+##########
+# libreoffice: create docx formats
+##########
+
+RUN libreoffice "-env:UserInstallation=file:///tmp/LibO_Conversion" --headless --invisible --convert-to docx /tmp/mjpodt/mjp-resume-devops.odt --outdir /tmp/mjpodt && \
     libreoffice "-env:UserInstallation=file:///tmp/LibO_Conversion" --headless --invisible --convert-to docx /tmp/mjpodt/mjp-resume-bigdata.odt --outdir /tmp/mjpodt && \
     libreoffice "-env:UserInstallation=file:///tmp/LibO_Conversion" --headless --invisible --convert-to docx /tmp/mjpodt/mjp-resume-mgr.odt --outdir /tmp/mjpodt
 

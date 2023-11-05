@@ -6,15 +6,15 @@
 
 #include <segments/pulsepoint-job-header.md>
 
-#include <segments/pulsepoint-job-dev.md>
+#include <segments/pulsepoint-job-devops.md>
 
 #include <segments/weight-watchers-job-header.md>
 
-#include <segments/weight-watchers-job-dev.md>
+#include <segments/weight-watchers-job-devops.md>
 
 #include <segments/orcatec-job-header.md>
 
-#include <segments/orcatec-job-dev.md>
+#include <segments/orcatec-job-devops.md>
 
 <<<
 
