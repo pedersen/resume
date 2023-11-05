@@ -1,7 +1,7 @@
--------------------------
- Michael J. Pedersen 
- 42 Henry St 
- Oxford, NJ 07863 
- <datacyclist@gmail.com>
- (908) 283-0318
+#define CONTACT_INFO -------------------------\
+ Michael J. Pedersen \
+ 42 Henry St \
+ Oxford, NJ 07863 \
+ <datacyclist@gmail.com>\
+ (908) 283-0318\
 -------------------------

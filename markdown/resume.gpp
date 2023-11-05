@@ -1,0 +1,156 @@
+#include <segments/summaries.gpp>
+#include <segments/pulsepoint-job.gpp>
+#include <segments/weight-watchers-job.gpp>
+#include <segments/orcatec-job.gpp>
+#include <segments/choopa-job.gpp>
+#include <segments/6ave-job.gpp>
+#include <segments/datapipe-job.gpp>
+#include <segments/divsys-job.gpp>
+#include <segments/ciber-job.gpp>
+#include <segments/rhi-job.gpp>
+#include <segments/sykes-job.gpp>
+#include <segments/fabian-job.gpp>
+#include <segments/maxtech-job.gpp>
+#include <segments/personal-job.gpp>
+#include <segments/web-header.md>
+
+SUMMARY_HEADER
+SUMMARY_WEB
+
+# Job History
+
+PP_JOB_HEADER
+
+PP_JOB_SUMMARY
+
+PP_JOB_BULLETS_ALL
+
+WW_JOB_HEADER
+
+WW_JOB_SUMMARY
+
+WW_JOB_BULLETS_ALL
+
+ORCATEC_JOB_HEADER
+
+ORCATEC_JOB_SUMMARY
+
+ORCATEC_JOB_BULLETS_ALL
+
+CHOOPA_JOB_HEADER
+
+CHOOPA_JOB_SUMMARY
+
+CHOOPA_JOB_BULLETS_ALL
+
+6AVE_JOB_HEADER
+
+6AVE_JOB_SUMMARY
+
+6AVE_JOB_BULLETS_ALL
+
+DATAPIPE_JOB_HEADER
+
+DATAPIPE_JOB_SUMMARY
+
+DATAPIPE_JOB_BULLETS_ALL
+
+DIVSYS_JOB_HEADER
+
+DIVSYS_JOB_SUMMARY
+
+DIVSYS_JOB_BULLETS_ALL
+
+CIBER_JOB_HEADER
+
+CIBER_JOB_SUMMARY
+
+CIBER_JOB_BULLETS_ALL
+
+RHI_JOB_HEADER
+
+RHI_JOB_SUMMARY
+
+RHI_JOB_BULLETS_ALL
+
+SYKES_JOB_HEADER
+
+SYKES_JOB_SUMMARY
+
+SYKES_JOB_BULLETS_ALL
+
+FABIAN_JOB_HEADER
+
+FABIAN_JOB_SUMMARY
+
+FABIAN_JOB_BULLETS_ALL
+
+MAXTECH_JOB_HEADER
+
+MAXTECH_JOB_SUMMARY
+
+MAXTECH_JOB_BULLETS_ALL
+
+PERSONAL_JOB_HEADER
+
+PERSONAL_JOB_SUMMARY
+
+PERSONAL_JOB_BULLETS_ALL
+
+<<<
+
+# Relevant Technical Skills
+
+#include <segments/skills-programming.md>
+
+#include <segments/skills-database.md>
+
+#include <segments/skills-big-data.md>
+
+#include <segments/skills-programming-and-scripting-languages.md>
+
+#include <segments/skills-scm.md>
+
+#include <segments/skills-database-servers.md>
+
+#include <segments/skills-operating-systems-administered.md>
+
+#include <segments/skills-markup-languages.md>
+
+#include <segments/skills-applications.md>
+
+#include <segments/skills-networking-and-security.md>
+
+#include <segments/skills-education.md>
+
+<<<
+
+# Project History
+
+PP_JOB_PRJ_NEW_DC
+
+PP_JOB_PRJ_PY3
+
+PP_JOB_PRJ_DATAFLOW_EXPLORER
+
+ORCATEC_JOB_PRJ_ADV_SEARCH_TOOL
+
+ORCATEC_JOB_PRJ_PASTER
+
+DATAPIPE_JOB_PRJ_STORAGEWEB
+
+DATAPIPE_JOB_PRJ_UNIXOPS
+
+6AVE_JOB_PRJ_SAP
+
+6AVE_JOB_PRJ_PYTYLER
+
+6AVE_JOB_PRJ_VMWARE
+
+DIVSYS_JOB_PRJ_SBN
+
+DIVSYS_JOB_PRJ_SQL_LEDGER
+
+CIBER_JOB_PRJ_KPCIS
+
+#include <segments/links.md>

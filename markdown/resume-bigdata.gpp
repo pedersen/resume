@@ -1,13 +1,17 @@
+#include <segments/summaries.gpp>
+#include <segments/pulsepoint-job.gpp>
 #include <segments/contact-info.md>
 
-#include <segments/executive-summary-bigdata.md>
+CONTACT_INFO
+
+SUMMARY_HEADER_EXEC
+SUMMARY_DEVOPS_ENGINEER
 
 # Relevant Job History
 
-#include <segments/pulsepoint-job-header.md>
+PP_JOB_HEADER
 
-#include <segments/pulsepoint-job-bigdata.md>
-
+PP_JOB_BULLETS_BIG_DATA
 
 <<<
 
@@ -27,8 +31,8 @@
 
 # Project History
 
-#include <segments/pulsepoint-project-dc-migration.md>
+PP_JOB_PRJ_NEW_DC
 
-#include <segments/pulsepoint-project-python-2-to-3.md>
+PP_JOB_PRJ_PY3
 
 #include <segments/links.md>

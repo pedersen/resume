@@ -12,7 +12,7 @@ Strousdburg, Pa - 1998
 #define FABIAN_JOB_BULLET_05 * Performed system backups.
 #define FABIAN_JOB_BULLET_06 * Dealt with security issues through upgrades, and removal of suspicious software.
 #define FABIAN_JOB_BULLET_07 * Installed firewall.
-#define FABIAN_JOB_BULLET_08* Upgraded and recompiled kernel as needed.
+#define FABIAN_JOB_BULLET_08 * Upgraded and recompiled kernel as needed.
 #defeval FABIAN_JOB_BULLETS_ALL FABIAN_JOB_BULLET_01\
 FABIAN_JOB_BULLET_02\
 FABIAN_JOB_BULLET_03\

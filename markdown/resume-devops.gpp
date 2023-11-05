@@ -1,9 +1,13 @@
-#include <segments/contact-info.md>
-
 #include <segments/summaries.gpp>
 #include <segments/pulsepoint-job.gpp>
+#include <segments/weight-watchers-job.gpp>
+#include <segments/orcatec-job.gpp>
+#include <segments/contact-info.md>
+
+CONTACT_INFO
+
 SUMMARY_HEADER_EXEC
-SUMMARY_DATA_ENGINEER
+SUMMARY_DEVOPS_ENGINEER
 
 # Relevant Job History
 
@@ -11,13 +15,13 @@ PP_JOB_HEADER
 
 PP_JOB_BULLETS_DEVOPS
 
-#include <segments/weight-watchers-job-header.md>
+WW_JOB_HEADER
 
-#include <segments/weight-watchers-job-devops.md>
+WW_JOB_BULLETS_DEVOPS
 
-#include <segments/orcatec-job-header.md>
+ORCATEC_JOB_HEADER
 
-#include <segments/orcatec-job-devops.md>
+ORCATEC_JOB_BULLETS_DEVOPS
 
 <<<
 
@@ -41,6 +45,6 @@ PP_JOB_BULLETS_DEVOPS
 
 PP_JOB_PRJ_DATAFLOW_EXPLORER
 
-#include <segments/orcatec-project-advanced-search-tool.md>
+ORCATEC_JOB_PRJ_ADV_SEARCH_TOOL
 
 #include <segments/links.md>

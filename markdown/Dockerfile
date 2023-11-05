@@ -20,7 +20,7 @@ RUN \
 ENV TZ="America/New_York"
 
 RUN mkdir /tmp/markdown /tmp/markdown/segments
-COPY ./*.md ./*.odt /tmp/markdown/
+COPY ./*.md ./*.gpp ./*.odt /tmp/markdown/
 COPY ./segments/* /tmp/markdown/segments/
 
 RUN echo "" >> /tmp/markdown/products.md && \
@@ -30,11 +30,10 @@ RUN echo "" >> /tmp/markdown/products.md && \
 
 # build default html resume
 WORKDIR /tmp/markdown
-RUN \
-    gpp -o resume-all.md resume-gpp.md && \
-    gpp -o resume-devops.md resume-devops-gpp.md && \
-    gpp -o resume-bigdata.md resume-bigdata-gpp.md && \
-    gpp -o resume-mgr.md resume-mgr-gpp.md
+RUN gpp resume.gpp | sed -e '/./,$!d' > resume-all.md
+RUN gpp resume-devops.gpp | sed -e '/./,$!d' > resume-devops.md
+RUN gpp resume-bigdata.gpp | sed -e '/./,$!d' > resume-bigdata.md
+RUN gpp resume-mgr.gpp | sed -e '/./,$!d' > resume-mgr.md
 
 ##########
 # pandoc: create html and opendocument formats of inputs

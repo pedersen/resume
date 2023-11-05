@@ -1,0 +1,46 @@
+#include <segments/summaries.gpp>
+#include <segments/pulsepoint-job.gpp>
+#include <segments/weight-watchers-job.gpp>
+#include <segments/orcatec-job.gpp>
+#include <segments/contact-info.md>
+
+CONTACT_INFO
+
+SUMMARY_HEADER_EXEC
+SUMMARY_MANAGER
+
+# Job History
+
+PP_JOB_HEADER
+
+PP_JOB_BULLETS_MGR
+
+WW_JOB_HEADER
+
+WW_JOB_BULLETS_MGR
+
+ORCATEC_JOB_HEADER
+
+ORCATEC_JOB_BULLETS_MGR
+
+<<<
+
+# Relevant Technical Skills
+
+#include <segments/skills-programming.md>
+
+#include <segments/skills-database.md>
+
+#include <segments/skills-big-data.md>
+
+#include <segments/skills-education.md>
+
+<<<
+
+# Project History
+
+PP_JOB_PRJ_NEW_DC
+
+PP_JOB_PRJ_PY3
+
+#include <segments/links.md>

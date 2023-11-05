@@ -146,7 +146,7 @@ The Dataflow Explorer would walk the [Python][PYTHON] code that represented all 
 * Produced syntactically valid [Dot][GRAPHVIZ] files.\
 * Automatically published updated versions of the graph for myself and others to use.
 
-#defeval PP_JOB_PRJ_DATAFLOW_EXPLORER JOB_PROJECT(PP_JOB_PRJ_NAME_DF, PP_JOB_PRJ_PERIOD_DF, PP_JOB_PRJ_COMPANY_DF, PP_JOB_PRJ_TOOLS_DF, PP_JOB_PRJ_PLATFORM_DF, PP_JOB_PRJ_SUMMARY_DF, PP_JOB_PRJ_BULLETS_DF)
+#defeval PP_JOB_PRJ_DATAFLOW_EXPLORER JOB_PROJECT(PP_JOB_PRJ_NAME_DF,PP_JOB_PRJ_PERIOD_DF,PP_JOB_PRJ_COMPANY_DF,PP_JOB_PRJ_TOOLS_DF,PP_JOB_PRJ_PLATFORM_DF,PP_JOB_PRJ_SUMMARY_DF,PP_JOB_PRJ_BULLETS_DF)
 
 
 #define PP_JOB_PRJ_NAME_NEW_DC Migrate To New Data Center
@@ -164,7 +164,7 @@ The work remaining at this point comes down to verifying that the new versions o
 * Configured those ETL jobs to output copies of their data to the original data center.\
 * Removed those ETL jobs from the original data center, configuring the original to use the output from the new data center.
 
-#defeval PP_JOB_PRJ_NEW_DC JOB_PROJECT(PP_JOB_PRJ_NAME_NEW_DC, PP_JOB_PRJ_PERIOD_NEW_DC, PP_JOB_PRJ_COMPANY_NEW_DC, PP_JOB_PRJ_TOOLS_NEW_DC, PP_JOB_PRJ_PLATFORM_NEW_DC, PP_JOB_PRJ_SUMMARY_NEW_DC, PP_JOB_PRJ_BULLETS_NEW_DC)
+#defeval PP_JOB_PRJ_NEW_DC JOB_PROJECT(PP_JOB_PRJ_NAME_NEW_DC,PP_JOB_PRJ_PERIOD_NEW_DC,PP_JOB_PRJ_COMPANY_NEW_DC,PP_JOB_PRJ_TOOLS_NEW_DC,PP_JOB_PRJ_PLATFORM_NEW_DC,PP_JOB_PRJ_SUMMARY_NEW_DC,PP_JOB_PRJ_BULLETS_NEW_DC)
 
 
 #define PP_JOB_PRJ_NAME_PY3 Migrate From Python 2 to Python 3
@@ -179,5 +179,5 @@ The path we chose was to extract the code that was common to the pipeline, and t
 * Began regular release cycles for the library\
 * Ensured that developers outside of the library maintenance team could use the library to easily migrate ETL jobs.
 
-#defeval PP_JOB_PRJ_PY3 JOB_PROJECT(PP_JOB_PRJ_NAME_PY3, PP_JOB_PRJ_PERIOD_PY3, PP_JOB_PRJ_COMPANY_PY3, PP_JOB_PRJ_TOOLS_PY3, PP_JOB_PRJ_PLATFORM_PY3, PP_JOB_PRJ_SUMMARY_PY3, PP_JOB_PRJ_BULLETS_PY3)
+#defeval PP_JOB_PRJ_PY3 JOB_PROJECT(PP_JOB_PRJ_NAME_PY3,PP_JOB_PRJ_PERIOD_PY3,PP_JOB_PRJ_COMPANY_PY3,PP_JOB_PRJ_TOOLS_PY3,PP_JOB_PRJ_PLATFORM_PY3,PP_JOB_PRJ_SUMMARY_PY3,PP_JOB_PRJ_BULLETS_PY3)
 #endif
