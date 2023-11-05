@@ -48,7 +48,7 @@
       <style:header-style/>
       <style:footer>
 	<text:p text:style-name="Footer">For more history going back to 1995, please visit my website at <text:a xlink:href="https://www.icelus.org/">https://www.icelus.org/</text:a></text:p>
-        <text:p text:style-name="Footer">Michael J. Pedersen<text:tab/><text:a xlink:href="mailto:m.pedersen@icelus.org" xlink:type="simple">m.pedersen@icelus.org</text:a><text:tab/>908-283-0318</text:p>
+        <text:p text:style-name="Footer">Michael J. Pedersen<text:tab/><text:a xlink:href="mailto:datacyclist@gmail.com" xlink:type="simple">datacyclist@gmail.com</text:a><text:tab/>908-283-0318</text:p>
       </style:footer>
     </style:master-page>
   </office:master-styles>
