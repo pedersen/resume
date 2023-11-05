@@ -12,6 +12,7 @@
 #include <segments/fabian-job.gpp>
 #include <segments/maxtech-job.gpp>
 #include <segments/personal-job.gpp>
+#include <segments/skills.gpp>
 #include <segments/web-header.md>
 
 SUMMARY_HEADER
@@ -101,27 +102,27 @@ PERSONAL_JOB_BULLETS_ALL
 
 # Relevant Technical Skills
 
-#include <segments/skills-programming.md>
+SKILLS_PROGRAMMING_SKILLS
 
-#include <segments/skills-database.md>
+SKILLS_DATABASE_SKILLS
 
-#include <segments/skills-big-data.md>
+SKILLS_BIG_DATA
 
-#include <segments/skills-programming-and-scripting-languages.md>
+SKILLS_PROGRAMMING_LANGUAGES
 
-#include <segments/skills-scm.md>
+SKILLS_SCM_TOOLS
 
-#include <segments/skills-database-servers.md>
+SKILLS_DATABASE_SERVERS
 
-#include <segments/skills-operating-systems-administered.md>
+SKILLS_OPERATING_SYSTEMS_ADMINISTERED
 
-#include <segments/skills-markup-languages.md>
+SKILLS_MARKUP_LANGUAGES
 
-#include <segments/skills-applications.md>
+SKILLS_APPLICATIONS
 
-#include <segments/skills-networking-and-security.md>
+SKILLS_NETWORKING_AND_SECURITY
 
-#include <segments/skills-education.md>
+SKILLS_EDUCATION
 
 <<<
 

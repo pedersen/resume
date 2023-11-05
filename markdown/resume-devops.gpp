@@ -3,6 +3,7 @@
 #include <segments/weight-watchers-job.gpp>
 #include <segments/orcatec-job.gpp>
 #include <segments/contact-info.md>
+#include <segments/skills.gpp>
 
 CONTACT_INFO
 
@@ -27,17 +28,17 @@ ORCATEC_JOB_BULLETS_DEVOPS
 
 # Relevant Technical Skills
 
-#include <segments/skills-programming-and-scripting-languages.md>
+SKILLS_PROGRAMMING_LANGUAGES
 
-#include <segments/skills-scm.md>
+SKILLS_SCM_TOOLS
 
-#include <segments/skills-database-servers.md>
+SKILLS_DATABASE_SERVERS
 
-#include <segments/skills-operating-systems-administered.md>
+SKILLS_OPERATING_SYSTEMS_ADMINISTERED
 
-#include <segments/skills-markup-languages.md>
+SKILLS_MARKUP_LANGUAGES
 
-#include <segments/skills-education.md>
+SKILLS_EDUCATION
 
 <<<
 

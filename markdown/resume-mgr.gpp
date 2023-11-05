@@ -2,6 +2,7 @@
 #include <segments/pulsepoint-job.gpp>
 #include <segments/weight-watchers-job.gpp>
 #include <segments/orcatec-job.gpp>
+#include <segments/skills.gpp>
 #include <segments/contact-info.md>
 
 CONTACT_INFO
@@ -27,13 +28,13 @@ ORCATEC_JOB_BULLETS_MGR
 
 # Relevant Technical Skills
 
-#include <segments/skills-programming.md>
+SKILLS_PROGRAMMING_SKILLS
 
-#include <segments/skills-database.md>
+SKILLS_DATABASE_SKILLS
 
-#include <segments/skills-big-data.md>
+SKILLS_BIG_DATA
 
-#include <segments/skills-education.md>
+SKILLS_EDUCATION
 
 <<<
 
