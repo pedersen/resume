@@ -8,7 +8,7 @@ New York City, NY (Telecommute) - 2015-Current
 \
 My role evolved over time from dealing with individual data jobs to overseeing the entire ETL pipeline to leading the entire department.
 
-#define PP_JOB_BULLET_01 * Established data streaming that is now up to 40T of data/day.
+#define PP_JOB_BULLET_01 * Architected data streaming that manages 40T of data/day.
 #define PP_JOB_BULLET_02 * Established new data centers in Europe and in Virginia.
 #define PP_JOB_BULLET_03 * Performance tuned [Kafka][KAFKA].
 #define PP_JOB_BULLET_04 * Upgraded [Kafka][KAFKA] with zero downtime for users of [Kafka][KAFKA].
@@ -30,8 +30,8 @@ My role evolved over time from dealing with individual data jobs to overseeing t
 #define PP_JOB_BULLET_20 * Conducted interviews for my team and for teams that work closely with my team.
 #define PP_JOB_BULLET_21 * Automated distribution of incident reports to all affected parties.
 #define PP_JOB_BULLET_22 * Changed hardware profiles for [Hadoop][HADOOP] to remove storage and compute colocation.
-#define PP_JOB_BULLET_23 * Split the monolithic repository that housed all ETL and library code.
-#define PP_JOB_BULLET_24 * Migrated ETL pipeline from Python 2 to Python 3.
+#define PP_JOB_BULLET_23 * Guided the team through splitting our ETL monolithic repository.
+#define PP_JOB_BULLET_24 * Organized the migration of the ETL pipeline from Python 2 to Python 3.
 #define PP_JOB_BULLET_25 * Acted as scrum master for the team.
 #define PP_JOB_BULLET_26 * Onboarded new team members, helping them to fully integrate into the team.
 #define PP_JOB_BULLET_27 * Held weekly 1 on 1 meetings with team members.
@@ -42,58 +42,69 @@ My role evolved over time from dealing with individual data jobs to overseeing t
 #define PP_JOB_BULLET_32 * Switched build server from [TeamCity][TEAMCITY] to [Jenkins][JENKINS], recreating all build jobs.
 #define PP_JOB_BULLET_33 * Implemented data duplication between two [Hadoop][HADOOP] clusters.
 #define PP_JOB_BULLET_34 * Tested [Cassandra][CASSANDRA] as a potential reporting database.
-#define PP_JOB_BULLET_35 * Upgraded [Hadoop][HADOOP] clusters with as little downtime as possible.
+#define PP_JOB_BULLET_35 * Upgraded [Hadoop][HADOOP] clusters with minimal downtime.
 
-#defeval PP_JOB_BULLETS_BIG_DATA PP_JOB_BULLET_14\
-PP_JOB_BULLET_01\
+#defeval PP_JOB_BULLETS_BIG_DATA PP_JOB_BULLET_01\
 PP_JOB_BULLET_02\
-PP_JOB_BULLET_18\
-PP_JOB_BULLET_19\
+PP_JOB_BULLET_14\
 PP_JOB_BULLET_23\
-PP_JOB_BULLET_22\
-PP_JOB_BULLET_30\
-PP_JOB_BULLET_31\
-PP_JOB_BULLET_33\
-PP_JOB_BULLET_35\
-PP_JOB_BULLET_04\
-PP_JOB_BULLET_03\
-PP_JOB_BULLET_05\
-PP_JOB_BULLET_06\
-PP_JOB_BULLET_07\
-PP_JOB_BULLET_08\
-PP_JOB_BULLET_09\
-PP_JOB_BULLET_10\
+PP_JOB_BULLET_24\
 PP_JOB_BULLET_11\
+PP_JOB_BULLET_18\
+PP_JOB_BULLET_09\
+PP_JOB_BULLET_07\
+PP_JOB_BULLET_10\
 PP_JOB_BULLET_12\
 PP_JOB_BULLET_13\
-PP_JOB_BULLET_29
+PP_JOB_BULLET_22\
+PP_JOB_BULLET_33\
+PP_JOB_BULLET_35
 
 #defeval PP_JOB_BULLETS_DEVOPS PP_JOB_BULLET_01\
 PP_JOB_BULLET_02\
-PP_JOB_BULLET_03\
+PP_JOB_BULLET_14\
 PP_JOB_BULLET_04\
-PP_JOB_BULLET_05\
 PP_JOB_BULLET_06\
+PP_JOB_BULLET_03\
+PP_JOB_BULLET_05\
+PP_JOB_BULLET_18\
+PP_JOB_BULLET_11\
+PP_JOB_BULLET_31\
+PP_JOB_BULLET_07\
+PP_JOB_BULLET_10\
+PP_JOB_BULLET_12\
+PP_JOB_BULLET_32\
+PP_JOB_BULLET_33\
+PP_JOB_BULLET_35\
+PP_JOB_BULLET_28
+
+#defeval PP_JOB_BULLETS_DEV PP_JOB_BULLET_01\
+PP_JOB_BULLET_02\
 PP_JOB_BULLET_07\
 PP_JOB_BULLET_08\
 PP_JOB_BULLET_09\
-PP_JOB_BULLET_10\
-PP_JOB_BULLET_11\
-PP_JOB_BULLET_12\
-PP_JOB_BULLET_13
+PP_JOB_BULLET_14\
+PP_JOB_BULLET_23\
+PP_JOB_BULLET_24\
+PP_JOB_BULLET_28\
+PP_JOB_BULLET_29\
+PP_JOB_BULLET_33\
+PP_JOB_BULLET_34
 
-#defeval PP_JOB_BULLETS_MGR PP_JOB_BULLET_14\
+#defeval PP_JOB_BULLETS_MGR PP_JOB_BULLET_01\
+PP_JOB_BULLET_02\
+PP_JOB_BULLET_14\
 PP_JOB_BULLET_15\
+PP_JOB_BULLET_23\
+PP_JOB_BULLET_24\
 PP_JOB_BULLET_16\
 PP_JOB_BULLET_17\
 PP_JOB_BULLET_18\
+PP_JOB_BULLET_25\
 PP_JOB_BULLET_19\
 PP_JOB_BULLET_20\
 PP_JOB_BULLET_21\
 PP_JOB_BULLET_22\
-PP_JOB_BULLET_23\
-PP_JOB_BULLET_24\
-PP_JOB_BULLET_25\
 PP_JOB_BULLET_26\
 PP_JOB_BULLET_27\
 PP_JOB_BULLET_28

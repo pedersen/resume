@@ -11,10 +11,17 @@ My role was focused on providing internal support within the company to enable o
 #define WW_JOB_BULLET_02 * Configured [Vormetric][VORMETRIC] products to ensure [HIPAA][HIPAA] compliance for customer data.
 #define WW_JOB_BULLET_03 * Worked to transfer from [Rackspace Cloud][RSCLOUD] to [Openstack][OPENSTACK] based private cloud.
 
-#defeval WW_JOB_BULLETS_MGR WW_JOB_BULLET_03
-#defeval WW_JOB_BULLETS_DEVOPS WW_JOB_BULLET_01\
-WW_JOB_BULLET_02
 #defeval WW_JOB_BULLETS_ALL WW_JOB_BULLET_01\
 WW_JOB_BULLET_02\
 WW_JOB_BULLET_03
+
+#defeval WW_JOB_BULLETS_DEV WW_JOB_BULLET_01\
+WW_JOB_BULLET03
+
+#defeval WW_JOB_BULLETS_DEVOPS WW_JOB_BULLET_01\
+WW_JOB_BULLET_02\
+WW_JOB_BULLET_03
+
+#defeval WW_JOB_BULLETS_MGR WW_JOB_BULLET_03
+
 #endif
