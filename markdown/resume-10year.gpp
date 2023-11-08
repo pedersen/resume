@@ -5,7 +5,40 @@
 #include <segments/skills.gpp>
 
 SUMMARY_HEADER
+
+SUMMARY_HEADER_EXEC
+
+----------
+
+## Web Summary
+
 SUMMARY_WEB
+
+----------
+
+## Data Engineer Summary
+
+SUMMARY_DATA_ENGINEER
+
+----------
+
+## DevOps Engineer Summary
+
+SUMMARY_DEVOPS_ENGINEER
+
+----------
+
+## Manager Summary
+
+SUMMARY_MANAGER
+
+----------
+
+## Software Engineer Summary
+
+SUMMARY_DEV
+
+----------
 
 # Job History
 

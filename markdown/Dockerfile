@@ -34,6 +34,7 @@ RUN gpp resume.gpp | sed -e '/./,$!d' > resume-all.md
 RUN gpp resume-devops.gpp | sed -e '/./,$!d' > resume-devops.md
 RUN gpp resume-bigdata.gpp | sed -e '/./,$!d' > resume-bigdata.md
 RUN gpp resume-mgr.gpp | sed -e '/./,$!d' > resume-mgr.md
+RUN gpp resume-dev.gpp | sed -e '/./,$!d' > resume-dev.md
 RUN gpp resume-10year.gpp | sed -e '/./,$!d' > resume-10year.md
 
 ##########
@@ -58,7 +59,8 @@ RUN pandoc ${PDOPTS} -o /tmp/html/products.html -t html --template=resume-style.
 
 RUN pandoc ${PDOPTS} -o /tmp/html/mjp-resume-devops.odt -t odt --template resume-style.odt resume-devops.md && \
     pandoc ${PDOPTS} -o /tmp/html/mjp-resume-bigdata.odt -t odt --template resume-style.odt resume-bigdata.md && \
-    pandoc ${PDOPTS} -o /tmp/html/mjp-resume-mgr.odt -t odt --template resume-style.odt resume-mgr.md
+    pandoc ${PDOPTS} -o /tmp/html/mjp-resume-mgr.odt -t odt --template resume-style.odt resume-mgr.md && \
+    pandoc ${PDOPTS} -o /tmp/html/mjp-resume-dev.odt -t odt --template resume-style.odt resume-dev.md
 RUN pandoc ${PDOPTS} -o /tmp/html/mjp-resume-10year.odt -t odt --template resume-style.odt resume-10year.md
 
 
@@ -71,7 +73,8 @@ RUN mkdir /tmp/mjpodt && \
 WORKDIR /tmp/mjpodt
 RUN libreoffice "-env:UserInstallation=file:///tmp/LibO_Conversion" --headless --invisible --convert-to pdf /tmp/mjpodt/mjp-resume-devops.odt --outdir /tmp/mjpodt && \
     libreoffice "-env:UserInstallation=file:///tmp/LibO_Conversion" --headless --invisible --convert-to pdf /tmp/mjpodt/mjp-resume-bigdata.odt --outdir /tmp/mjpodt && \
-    libreoffice "-env:UserInstallation=file:///tmp/LibO_Conversion" --headless --invisible --convert-to pdf /tmp/mjpodt/mjp-resume-mgr.odt --outdir /tmp/mjpodt
+    libreoffice "-env:UserInstallation=file:///tmp/LibO_Conversion" --headless --invisible --convert-to pdf /tmp/mjpodt/mjp-resume-mgr.odt --outdir /tmp/mjpodt && \
+    libreoffice "-env:UserInstallation=file:///tmp/LibO_Conversion" --headless --invisible --convert-to pdf /tmp/mjpodt/mjp-resume-dev.odt --outdir /tmp/mjpodt
 
 
 ##########
@@ -80,7 +83,8 @@ RUN libreoffice "-env:UserInstallation=file:///tmp/LibO_Conversion" --headless -
 
 RUN libreoffice "-env:UserInstallation=file:///tmp/LibO_Conversion" --headless --invisible --convert-to docx /tmp/mjpodt/mjp-resume-devops.odt --outdir /tmp/mjpodt && \
     libreoffice "-env:UserInstallation=file:///tmp/LibO_Conversion" --headless --invisible --convert-to docx /tmp/mjpodt/mjp-resume-bigdata.odt --outdir /tmp/mjpodt && \
-    libreoffice "-env:UserInstallation=file:///tmp/LibO_Conversion" --headless --invisible --convert-to docx /tmp/mjpodt/mjp-resume-mgr.odt --outdir /tmp/mjpodt
+    libreoffice "-env:UserInstallation=file:///tmp/LibO_Conversion" --headless --invisible --convert-to docx /tmp/mjpodt/mjp-resume-mgr.odt --outdir /tmp/mjpodt  && \
+    libreoffice "-env:UserInstallation=file:///tmp/LibO_Conversion" --headless --invisible --convert-to docx /tmp/mjpodt/mjp-resume-dev.odt --outdir /tmp/mjpodt
 
 RUN libreoffice "-env:UserInstallation=file:///tmp/LibO_Conversion" --headless --invisible --convert-to pdf /tmp/mjpodt/mjp-resume-10year.odt --outdir /tmp/mjpodt
 

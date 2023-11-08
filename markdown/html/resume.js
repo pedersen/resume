@@ -134,5 +134,8 @@ $(document).ready(function() {
     } else {
 	collapseAll();
 	$('#searchbox p input[type=reset]').click(collapseAll);
+	$('#downloadable-menu').children().each(function(idx) {
+	    showNode($(this));
+	});
     }
 })
