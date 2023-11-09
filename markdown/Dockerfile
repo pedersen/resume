@@ -54,6 +54,12 @@ RUN pandoc ${PDOPTS} -o /tmp/html/index.html -t html --template=resume-style.htm
 RUN pandoc ${PDOPTS} -o /tmp/html/products.html -t html --template=resume-style.html products.md
 
 ##########
+# generate proofing style for 10 year resume
+##########
+RUN cp resume-style.odt resume-style-10year.odt && \
+    sed -i -e 's/fo:font-size="..pt"/fo:font-size="18pt"/g' resume-style-10year.odt
+    
+##########
 # libreoffice: create odt formats
 ##########
 
@@ -61,7 +67,7 @@ RUN pandoc ${PDOPTS} -o /tmp/html/mjp-resume-devops.odt -t odt --template resume
     pandoc ${PDOPTS} -o /tmp/html/mjp-resume-bigdata.odt -t odt --template resume-style.odt resume-bigdata.md && \
     pandoc ${PDOPTS} -o /tmp/html/mjp-resume-mgr.odt -t odt --template resume-style.odt resume-mgr.md && \
     pandoc ${PDOPTS} -o /tmp/html/mjp-resume-dev.odt -t odt --template resume-style.odt resume-dev.md
-RUN pandoc ${PDOPTS} -o /tmp/html/mjp-resume-10year.odt -t odt --template resume-style.odt resume-10year.md
+RUN pandoc ${PDOPTS} -o /tmp/html/mjp-resume-10year.odt -t odt --template resume-style-10year.odt resume-10year.md
 
 
 ##########
