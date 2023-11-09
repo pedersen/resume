@@ -1,5 +1,6 @@
 #include <segments/summaries.gpp>
 #include <segments/pulsepoint-job.gpp>
+#include <segments/orcatec-job.gpp>
 #include <segments/contact-info.md>
 #include <segments/skills.gpp>
 
@@ -13,6 +14,10 @@ SUMMARY_DATA_ENGINEER
 PP_JOB_HEADER
 
 PP_JOB_BULLETS_BIG_DATA
+
+ORCATEC_JOB_HEADER
+
+ORCATEC_JOB_BULLETS_BIG_DATA
 
 <<<
 
