@@ -1,10 +1,3 @@
-* Project: Build SJC Data Hub
-* Project: Conversion to Parquet Data Format
-* Project: Use Cassandra for Customer Facing Reporting
-* Project: Sqoop Export to that bcp export
-* Project: Decommissioning Vertica
-* Project: Split up Data Management
-* Project: Split up Mono-Repo
 * Fix up all Executive Summaries
 * Fix up all skills matrices:
   * big data
@@ -24,3 +17,7 @@ dev
 everything else
 
 ---------------------------------------
+LinkedIn Updates
+* Update skills
+* Update Pulsepoint description
+* Update Pulsepoint projects

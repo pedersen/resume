@@ -9,6 +9,7 @@
 [BASH]: http://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html
 [CASSANDRA]: https://cassandra.apache.org/_/index.html
 [CCMAIL]: https://en.wikipedia.org/wiki/Cc:Mail
+[CDH]: https://www.cloudera.com/products/open-source/apache-hadoop/key-cdh-components.html
 [CENTOS]: https://www.centos.org/
 [CHECKPOINT]: https://www.checkpoint.com/
 [CLICKHOUSE]: https://clickhouse.com/
@@ -20,8 +21,10 @@
 [ELASTIC]: https://www.elastic.co/elasticsearch/
 [FAX]: https://www.hylafax.org/
 [FREEBSD]: https://www.freebsd.org/
+[FREETDS]: https://www.freetds.org/
 [GHOST]: https://en.wikipedia.org/wiki/Ghost_(software)
 [GIT]: https://www.git-scm.com/
+[GITHUB]: https://github.com/
 [GRAFANA]: https://grafana.com/
 [GRAPHVIZ]: https://graphviz.org/
 [HADOOP]: https://hadoop.apache.org/
@@ -76,6 +79,7 @@
 [SOLARIS]: https://www.oracle.com/solaris/solaris11/
 [SQLALCHEMY]: https://www.sqlalchemy.org/
 [SQLLEDGER]: http://www.sql-ledger.com/
+[SQOOP]: https://sqoop.apache.org/
 [SSH]: http://www.openssh.com/
 [SUSE]: https://www.suse.com/
 [SVN]: https://subversion.apache.org/

@@ -202,4 +202,86 @@ The path we chose was to extract the code that was common to the pipeline, and t
 * Ensured that developers outside of the library maintenance team could use the library to easily migrate ETL jobs.
 
 #defeval PP_JOB_PRJ_PY3 JOB_PROJECT(PP_JOB_PRJ_NAME_PY3,PP_JOB_PRJ_PERIOD_PY3,PP_JOB_PRJ_COMPANY_PY3,PP_JOB_PRJ_TOOLS_PY3,PP_JOB_PRJ_PLATFORM_PY3,PP_JOB_PRJ_SUMMARY_PY3,PP_JOB_PRJ_BULLETS_PY3)
+
+#define PP_JOB_PRJ_NAME_CASSANDRA Cassandra for User Reporting
+#define PP_JOB_PRJ_PERIOD_CASSANDRA 2015
+#define PP_JOB_PRJ_COMPANY_CASSANDRA Pulsepoint
+#define PP_JOB_PRJ_TOOLS_CASSANDRA [Cassandra][CASSANDRA]
+#define PP_JOB_PRJ_PLATFORM_CASSANDRA [CentOS Linux][CENTOS]
+#define PP_JOB_PRJ_SUMMARY_CASSANDRA Pulsepoint has a fairly significant [Microsoft SQL Server][MSSQL] installation, and we were asked if we could use [Cassandra][CASSANDRA] as a replacement for it. We set up a small cluster, and began trying to run various reports against it.\
+\
+The actual performance was impressive, but we ran into a significant roadblock: Cassandra is, in significant ways, a disk based key/value store. In order to use this as a reporting database, and avoid triggering table scans for the user reporting, we would have had to load up many copies of the same data into different tables with different primary keys.\
+\
+In the end, this was deemed non-feasible for the number of combinations we would have had to provide, along with the amount of maintenance as new reports could be brought online.
+
+#define PP_JOB_PRJ_BULLETS_CASSANDRA * Deployed a [Cassandra][CASSANDRA] cluster.\
+* Produced data sets into that cluster.\
+* Confirmed queries ran, and ran well.\
+* Ultimately recommended against because of the issues with table scans and primary keys.
+
+#defeval PP_JOB_PRJ_CASSANDRA JOB_PROJECT(PP_JOB_PRJ_NAME_CASSANDRA, PP_JOB_PRJ_PERIOD_CASSANDRA, PP_JOB_PRJ_COMPANY_CASSANDRA, PP_JOB_PRJ_TOOLS_CASSANDRA, PP_JOB_PRJ_PLATFORM_CASSANDRA, PP_JOB_PRJ_SUMMARY_CASSANDRA, PP_JOB_PRJ_BULLETS_CASSANDRA)
+
+#define PP_JOB_PRJ_NAME_DATA_HUB California Hadoop Cluster
+#define PP_JOB_PRJ_PERIOD_DATA_HUB 2015
+#define PP_JOB_PRJ_COMPANY_DATA_HUB Pulsepoint
+#define PP_JOB_PRJ_TOOLS_DATA_HUB [Hadoop][HADOOP]
+#define PP_JOB_PRJ_PLATFORM_DATA_HUB [CentOS Linux][CENTOS]
+#define PP_JOB_PRJ_SUMMARY_DATA_HUB Pulsepoint needed to establish a disaster recovery site, and had chosen an existing data center to do so. In the process, establishing a [Hadoop][HADOOP] cluster was required for business continuity. My task was to get everything configured to the point that the same data jobs running in the primary cluster ran in the backup cluster and provided equivalent data, even though everything was running independently.
+#define PP_JOB_PRJ_BULLETS_DATA_HUB * Installed [Cloudera Distribution of Hadoop][CDH] across the cluster.\
+* Ensured that [HDFS][HADOOP], [Hive][HIVE] and [Impala][IMPALA] were functioning properly.\
+* Ensured that the same data jobs running in the primary cluster were running in the secondary cluster.\
+* Ensured that equivalent output was happening in both data centers.
+
+#defeval PP_JOB_PRJ_DATA_HUB JOB_PROJECT(PP_JOB_PRJ_NAME_DATA_HUB, PP_JOB_PRJ_PERIOD_DATA_HUB, PP_JOB_PRJ_COMPANY_DATA_HUB, PP_JOB_PRJ_TOOLS_DATA_HUB, PP_JOB_PRJ_PLATFORM_DATA_HUB, PP_JOB_PRJ_SUMMARY_DATA_HUB, PP_JOB_PRJ_BULLETS_DATA_HUB)
+
+#define PP_JOB_PRJ_NAME_BCP [Sqoop][SQOOP] to FreeBCP([FreeTDS][FREETDS]) Conversion
+#define PP_JOB_PRJ_PERIOD_BCP 2016
+#define PP_JOB_PRJ_COMPANY_BCP Pulsepoint
+#define PP_JOB_PRJ_TOOLS_BCP [Sqoop][SQOOP], [FreeTDS][FREETDS]
+#define PP_JOB_PRJ_PLATFORM_BCP [Hadoop][HADOOP], [Microsoft SQL Server][MSSQL]
+#define PP_JOB_PRJ_SUMMARY_BCP [Apache Sqoop][SQOOP] has long been deprecated, with its eventual complete retirement in June 2021. As part of Pulsepoint's platform, we needed a replacement for [Sqoop][SQOOP] before it was fully retired. We settled on FreeBCP, which is part of the [FreeTDS][FREETDS] project. Using this tool, we were able to migrate our processes for transferring data from [Hadoop][HADOOP] to [MS SQL Server][MSSQL].
+#define PP_JOB_PRJ_BULLETS_BCP * Developed migration strategy to transition from [Sqoop][SQOOP] to FreeBCP.\
+* Tested FreeBCP as a substitue for [Sqoop][SQOOP].\
+* Updated our ETL pipelines to use FreeBCP in place of [Sqoop][SQOOP].
+
+#defeval PP_JOB_PRJ_BCP JOB_PROJECT(PP_JOB_PRJ_NAME_BCP, PP_JOB_PRJ_PERIOD_BCP, PP_JOB_PRJ_COMPANY_BCP, PP_JOB_PRJ_TOOLS_BCP, PP_JOB_PRJ_PLATFORM_BCP, PP_JOB_PRJ_SUMMARY_BCP, PP_JOB_PRJ_BULLETS_BCP)
+
+#define PP_JOB_PRJ_NAME_VERTICA [Vertica][VERTICA] Decommissioning
+#define PP_JOB_PRJ_PERIOD_VERTICA 2018
+#define PP_JOB_PRJ_COMPANY_VERTICA Pulsepoint
+#define PP_JOB_PRJ_TOOLS_VERTICA [Vertica][VERTICA], [Trino][TRINO]
+#define PP_JOB_PRJ_PLATFORM_VERTICA [CentOS Linux][CENTOS]
+#define PP_JOB_PRJ_SUMMARY_VERTICA Pulsepoint had used [Vertica][VERTICA], but we were outgrowing it in 2017. In 2018, when we came up for the most recent support renewal, we had fully outgrown it and needed to replace it with something else. After trying out several other options (including [Clickhouse][CLICKHOUSE], [Trino][TRINO], [MariaDB][MARIOADB], and others), we settled on Trino as the option that provided us with the best capabilities while being nearest to the performance that [Vertica][VERTICA] provided.
+#define PP_JOB_PRJ_BULLETS_VERTICA * Performance tested existing [Vertica][VERTICA] queries.\
+* Stood up several competitors and compared their performance using the same queries.\
+* Compared maintenance of these environments to Vertica.\
+* Finally chose [Trino][TRINO], implemented it, and fully decommissioned [Vertica][VERTICA].
+
+#defeval PP_JOB_PRJ_VERTICA JOB_PROJECT(PP_JOB_PRJ_NAME_VERTICA, PP_JOB_PRJ_PERIOD_VERTICA, PP_JOB_PRJ_COMPANY_VERTICA, PP_JOB_PRJ_TOOLS_VERTICA, PP_JOB_PRJ_PLATFORM_VERTICA, PP_JOB_PRJ_SUMMARY_VERTICA, PP_JOB_PRJ_BULLETS_VERTICA)
+
+#define PP_JOB_PRJ_NAME_DM_SPLIT Data Management Team Split
+#define PP_JOB_PRJ_PERIOD_DM_SPLIT 2021
+#define PP_JOB_PRJ_COMPANY_DM_SPLIT Pulsepoint
+#define PP_JOB_PRJ_TOOLS_DM_SPLIT [Git][GIT]
+#define PP_JOB_PRJ_PLATFORM_DM_SPLIT [Jira][JIRA], [GitHub][GITHUB]
+#define PP_JOB_PRJ_SUMMARY_DM_SPLIT As part of the growth of Pulsepoint, the Data Management team reached a point wherein the team was no longer able to do everything that was required: New data products were needed, and the data platform itself needed both maintenance and new features as well. I made the decision to split the team in two, creating a Data Platform team and a Data Product Development team. Each team would be focused on exactly one role, instead of trying to split the focus between two distinct functions.
+#define PP_JOB_PRJ_BULLETS_DM_SPLIT * Divided the team into two distinct functional teams.\
+* Divided the code between the two teams to reflect their individual functions.\
+* Divided the [Jira][JIRA] board between the two teams.\
+* Established new teams on [GitHub][GITHUB], with each team getting only the portion of the code belonging to them.
+
+#defeval PP_JOB_PRJ_DM_SPLIT JOB_PROJECT(PP_JOB_PRJ_NAME_DM_SPLIT, PP_JOB_PRJ_PERIOD_DM_SPLIT, PP_JOB_PRJ_COMPANY_DM_SPLIT, PP_JOB_PRJ_TOOLS_DM_SPLIT, PP_JOB_PRJ_PLATFORM_DM_SPLIT, PP_JOB_PRJ_SUMMARY_DM_SPLIT, PP_JOB_PRJ_BULLETS_DM_SPLIT)
+
+#define PP_JOB_PRJ_NAME_REPO_SPLIT Data Management Code Split
+#define PP_JOB_PRJ_PERIOD_REPO_SPLIT 2021
+#define PP_JOB_PRJ_COMPANY_REPO_SPLIT Pulsepoint
+#define PP_JOB_PRJ_TOOLS_REPO_SPLIT [Git][GIT]
+#define PP_JOB_PRJ_PLATFORM_REPO_SPLIT [GitHub][GITHUB]
+#define PP_JOB_PRJ_SUMMARY_REPO_SPLIT Pulsepoint needed to split the Data Management team into a Data Platform team and a Data Product Development team. This also meant splitting the code, since the entirety of the ETL pipeline was in one monolithic repository. The team had to develop a means of crossing repository boundaries to establish the pipeline steps (e.g.: Job A in repository 1 is dependent on Job B in repository 2). We also had to come to agreements on how to determine which team got which pieces of code.
+#define PP_JOB_PRJ_BULLETS_REPO_SPLIT * Developed cross-repository dependency system for ETL jobs.\
+* Agreed on terms to decide which team got which piece of code from the original repository.\
+* Created new repositories to get that code.\
+* Created new teams on [GitHub][GITHUB] to assign ownership over the newly divided code.
+
+#defeval PP_JOB_PRJ_REPO_SPLIT JOB_PROJECT(PP_JOB_PRJ_NAME_REPO_SPLIT, PP_JOB_PRJ_PERIOD_REPO_SPLIT, PP_JOB_PRJ_COMPANY_REPO_SPLIT, PP_JOB_PRJ_TOOLS_REPO_SPLIT, PP_JOB_PRJ_PLATFORM_REPO_SPLIT, PP_JOB_PRJ_SUMMARY_REPO_SPLIT, PP_JOB_PRJ_BULLETS_REPO_SPLIT)
 #endif
