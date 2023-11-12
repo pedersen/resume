@@ -1,7 +1,7 @@
 #ifndef PULSEPOINT_JOB_ALL
 #define PULSEPOINT_JOB_ALL 1
 #include <functions.gpp>
-#define PP_JOB_HEADER ## Pulsepoint - Data Engineer (2015-2017), Director of Infrastructure for Data (2017-current)\
+#define PP_JOB_HEADER ## Pulsepoint - Data Engineer (2015-2018), Director of Infrastructure for Data (2018-current)\
 \
 New York City, NY (Telecommute) - 2015-Current
 #define PP_JOB_SUMMARY Pulsepoint is an internet healthcare marketing company with a focus on activating health care providers. Pulsepoint was acquired by WebMD in June 2021.\

@@ -11,9 +11,3 @@ big data
 devops
 dev
 everything else
-
----------------------------------------
-LinkedIn Updates
-* Update skills
-* Update Pulsepoint description
-* Update Pulsepoint projects
