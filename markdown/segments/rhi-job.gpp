@@ -3,7 +3,7 @@
 #include <functions.gpp>
 #define RHI_JOB_HEADER ## Robert Half International - Technical Support\
 \
-Boulder, Co - 1999
+Boulder, Co - Jan 1999 - Feb 1999
 #define RHI_JOB_SUMMARY Robert Half International's client, StorageTek, provided large enterprises with long term backup solutions (typically involving dozens of tape drives, thousands of tape cartridges, and robotic tape libraries to manage all of it).
 #define RHI_JOB_BULLETS_01 * Assisted customers of StorageTek in resolution of problems with both hardware and software products.
 #defeval RHI_JOB_BULLETS_ALL RHI_JOB_BULLETS_01

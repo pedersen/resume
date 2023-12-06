@@ -1,7 +1,6 @@
-#define CONTACT_INFO -------------------------\
- Michael J. Pedersen \
- 42 Henry St \
- Oxford, NJ 07863 \
- <datacyclist@gmail.com>\
- (908) 283-0318\
--------------------------
+#define CONTACT_INFO **Michael** **J.** **Pedersen** :\
+[(908) 283-0318](tel:908-283-0318) :\
+[datacyclist@gmail.com](mailto:datacyclist@gmail.com) :\
+[My Site](https://www.icelus.org/) :\
+[LinkedIn](https://www.linkedin.com/in/michaeljpedersen) 
+

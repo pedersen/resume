@@ -3,7 +3,7 @@
 #include <functions.gpp>
 #define SYKES_JOB_HEADER ## Sykes Enterprises - Systems Technologist\
 \
-Denver, Co - 1998
+Denver, Co - Aug 1998 - Dec 1998
 #define SYKES_JOB_SUMMARY Working for Sykes Enterprises, I was contracted out to Sun's internal Resolution Center. I worked with Sun employees around the world to resolve their issues with the workstations and servers they relied on daily.
 #define SYKES_JOB_BULLET_01 * Performed remote operating system installations and upgrades.
 #define SYKES_JOB_BULLET_02 * Resolved customer issues with [Solaris][SOLARIS] 2.5.1 and [Solaris][SOLARIS] 2.6.

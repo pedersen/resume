@@ -25,18 +25,19 @@
     </style:style>    
   </office:styles>
   
-  <office:automatic-styles>
-    <style:style style:family="paragraph" style:name="MP1" style:parent-style-name="Footer">
+  <office:automatic-styles>    
+    <style:style style:family="paragraph" style:name="MP1" style:parent-style-name="Header">
       <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+    </style:style>
+    <style:style style:name="MT1" style:family="text">
+      <style:text-properties fo:font-size="12pt" fo:font-weight="bold" style:font-size-asian="12pt" style:font-weight-asian="bold" style:font-size-complex="12pt" style:font-weight-complex="bold"/>
     </style:style>
     <style:page-layout style:name="Mpm1">
       <style:page-layout-properties fo:margin-bottom="1in" fo:margin-left="1in" fo:margin-right="1in" fo:margin-top="1in" fo:page-height="11in" fo:page-width="8.5in" style:footnote-max-height="0in" style:num-format="1" style:print-orientation="portrait" style:writing-mode="lr-tb">
         <style:footnote-sep style:adjustment="left" style:color="#000000" style:distance-after-sep="0.0398in" style:distance-before-sep="0.0398in" style:line-style="none" style:rel-width="25%" style:width="0.0071in"/>
       </style:page-layout-properties>
       <style:header-style/>
-      <style:footer-style>
-        <style:header-footer-properties fo:margin-left="0in" fo:margin-right="0in" fo:margin-top="0.2in" fo:min-height="0.4in" style:dynamic-spacing="false"/>
-      </style:footer-style>
+      <style:footer-style/>
     </style:page-layout>
   </office:automatic-styles>
   
@@ -46,10 +47,10 @@
         <style:footnote-sep style:adjustment="left" style:color="#000000" style:distance-after-sep="0.0398in" style:distance-before-sep="0.0398in" style:line-style="solid" style:rel-width="25%" style:width="0.0071in"/>
       </style:page-layout-properties>
       <style:header-style/>
-      <style:footer>
-	<text:p text:style-name="Footer">For more history going back to 1995, please visit my website at <text:a xlink:href="https://www.icelus.org/">https://www.icelus.org/</text:a></text:p>
-        <text:p text:style-name="Footer">Michael J. Pedersen<text:tab/><text:a xlink:href="mailto:datacyclist@gmail.com" xlink:type="simple">datacyclist@gmail.com</text:a><text:tab/>908-283-0318</text:p>
-      </style:footer>
+      <style:header>
+        <text:p text:style-name="MP1"><text:span text:style-name="MT1">Michael J. Pedersen</text:span> : <text:a xlink:type="simple" xlink:href="tel:908-283-0318" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">(908) 283-0318</text:a> : <text:a xlink:type="simple" xlink:href="mailto:datacyclist@gmail.com" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">datacyclist@gmail.com</text:a> : <text:a xlink:type="simple" xlink:href="https://icelus.org/" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">My Site</text:a> : <text:a xlink:type="simple" xlink:href="https://www.linkedin.com/in/michaeljpedersen" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">LinkedIn</text:a></text:p>
+      </style:header>
+      <style:footer/>
     </style:master-page>
   </office:master-styles>
   $automatic-styles$

@@ -5,8 +5,6 @@
 #include <segments/contact-info.md>
 #include <segments/skills.gpp>
 
-CONTACT_INFO
-
 SUMMARY_HEADER_EXEC
 SUMMARY_DEV
 
@@ -33,13 +31,5 @@ SKILLS_DATABASE_SKILLS
 SKILLS_SCM_TOOLS
 
 SKILLS_EDUCATION
-
-<<<
-
-# Project History
-
-PP_JOB_PRJ_BCP
-
-PP_JOB_PRJ_PY3
 
 #include <segments/links.md>

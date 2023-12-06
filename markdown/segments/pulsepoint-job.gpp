@@ -1,9 +1,9 @@
 #ifndef PULSEPOINT_JOB_ALL
 #define PULSEPOINT_JOB_ALL 1
 #include <functions.gpp>
-#define PP_JOB_HEADER ## Pulsepoint - Data Engineer (2015-2018), Director of Infrastructure for Data (2018-current)\
+#define PP_JOB_HEADER ## Pulsepoint - Data Engineer (2015-2018), Director of Infrastructure for Data (2018-2023)\
 \
-New York City, NY (Telecommute) - 2015-Current
+New York City, NY & Newark, NJ (Telecommute) - Mar 2015 - Nov 2023
 #define PP_JOB_SUMMARY Pulsepoint is an internet healthcare marketing company with a focus on activating health care providers. Pulsepoint was acquired by WebMD in June 2021.\
 \
 My role evolved over time from dealing with individual data jobs to overseeing the entire ETL pipeline to leading the entire department.
@@ -46,6 +46,7 @@ My role evolved over time from dealing with individual data jobs to overseeing t
 #define PP_JOB_BULLET_36 * Passed annual HIPAA training for data protection.
 #define PP_JOB_BULLET_37 * Developed new stories (including estimates) for our Jira board.
 #define PP_JOB_BULLET_38 * Prioritized tickets for our Jira board.
+#define PP_JOB_BULLET_39 * Converted [Sqoop][SQOOP] jobs to use [FreeBCP][FreeTDS] instead.
 
 #defeval PP_JOB_BULLETS_BIG_DATA PP_JOB_BULLET_01\
 PP_JOB_BULLET_02\
@@ -65,7 +66,8 @@ PP_JOB_BULLET_35\
 PP_JOB_BULLET_36\
 PP_JOB_BULLET_34\
 PP_JOB_BULLET_31\
-PP_JOB_BULLET_19
+PP_JOB_BULLET_19\
+PP_JOB_BULLET_39
 
 #defeval PP_JOB_BULLETS_DEVOPS PP_JOB_BULLET_01\
 PP_JOB_BULLET_02\
@@ -94,7 +96,8 @@ PP_JOB_BULLET_23\
 PP_JOB_BULLET_24\
 PP_JOB_BULLET_29\
 PP_JOB_BULLET_33\
-PP_JOB_BULLET_28
+PP_JOB_BULLET_28\
+PP_JOB_BULLET_39
 
 #defeval PP_JOB_BULLETS_MGR PP_JOB_BULLET_01\
 PP_JOB_BULLET_02\
@@ -154,7 +157,8 @@ PP_JOB_BULLET_13\
 PP_JOB_BULLET_08\
 PP_JOB_BULLET_29\
 PP_JOB_BULLET_30\
-PP_JOB_BULLET_34
+PP_JOB_BULLET_34\
+PP_JOB_BULLET_39
 
 #define PP_JOB_PRJ_NAME_DF     Dataflow Explorer
 #define PP_JOB_PRJ_PERIOD_DF   2015

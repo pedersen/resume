@@ -3,7 +3,7 @@
 #include <functions.gpp>
 #define 6AVE_JOB_HEADER ## 6th Avenue Electronics - Systems Administrator, DevOps Engineer\
 \
-Springfield, NJ - 2005-2008, 2011
+Springfield, NJ - Aug 2005 - Apr 2008, Feb 2011 - Dec 2011
 #define 6AVE_JOB_SUMMARY In 2007, 6th Avenue began switching from their then-current POS system (named [Tyler][TYLER]) to [SAP][SAP]. At the end of 2010, [SAP][SAP] was declared unworkable, and the effort was begun to switch back to [Tyler][TYLER].\
 \
 The environment at 6th Avenue covered a wide range of platforms spread out over 120 servers (both physical and virtual). We had [VMware][VMWARE] ESX, [Windows][WINDOWS] Server 2003, [Windows][WINDOWS] Server 2008, [CentOS][CENTOS] Linux, [Suse][SUSE] Linux, and [Debian][DEBIAN] GNU/Linux. In 2011, I was brought back to transition the point of sale system and become the IT Manager. At the time the point of sale transition was completed, we had a team of 6 people managing the servers and about 300 desktops.

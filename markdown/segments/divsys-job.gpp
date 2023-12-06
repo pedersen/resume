@@ -3,7 +3,7 @@
 #include <functions.gpp>
 #define DIVSYS_JOB_HEADER ## Diversified Systems - Systems Administrator / Developer\
 \
-Hackettstown, NJ - 2002-2005
+Hackettstown, NJ - Sep 2002 - Jul 2005
 #define DIVSYS_JOB_SUMMARY Diversified Systems is a small company that focuses on low voltage wiring and subcontracting. While there, I wore many hats, and did work on every system. The total number of servers for this company was less than 10, and the entire IT department consisted of myself.
 #define DIVSYS_JOB_BULLETS_01 * Developed GUI to [new software system][SBN] using [PHP][PHP], [Apache][APACHE], and [Mozilla][MOZILLA].
 #define DIVSYS_JOB_BULLETS_02 * Automated sending faxes to techs, saving five hours/day (in a 10 person office).

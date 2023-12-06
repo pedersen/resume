@@ -3,7 +3,7 @@
 #include <functions.gpp>
 #define FABIAN_JOB_HEADER ## Fabian Corporation - System Administrator\
 \
-Strousdburg, Pa - 1998
+Strousdburg, Pa - Feb 1998 - May 1998
 #define FABIAN_JOB_SUMMARY Fabian Corporation was a small virtual hosting provider for web sites during the fledgling web days, even before the dot-com era. A typical customer made a static web site and uploaded it via ftp to show to any web site visitors.
 #define FABIAN_JOB_BULLET_01 * Added new domains to Linux servers for web site hosting.
 #define FABIAN_JOB_BULLET_02 * Added new user logins to servers.

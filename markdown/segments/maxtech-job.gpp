@@ -3,7 +3,7 @@
 #include <functions.gpp>
 #define MAXTECH_JOB_HEADER ## MaxTech Corporation - Developer / System Administrator\
 \
-Rockaway, NJ - 1995-1997
+Rockaway, NJ - Mar 1995 - Dec 1997
 #define MAXTECH_JOB_SUMMARY I was hired at MaxTech as a customer service representative. Over the time I worked there, I earned the opportunity to participate in system administration and the development of a new call tracking system to be used by the customer service team.
 #define MAXTECH_JOB_BULLET_01 * Assisted customers daily with issues installing, configuring, and using their MaxTech modems.
 #define MAXTECH_JOB_BULLET_02 * Discovered bug in the newly released modem drivers for [Windows][WINDOWS] 95 and the MaxTech 28.8kbps modems.

@@ -3,7 +3,7 @@
 #include <functions.gpp>
 #define CIBER_JOB_HEADER ## Ciber, Inc. / Decision Consultants - Member of Technical Staff\
 \
-Greenwood Village, Co - 1999-2002
+Greenwood Village, Co - Mar 1999 - Sep 2002
 #define CIBER_JOB_SUMMARY Decision Consultants (DCI) was acquired by Ciber, Inc., in 2002. While working for DCI, I was contracted out to Coors, IBM, and a .com named "X-Care" (no longer in business). The points below come from all of those places.
 #define CIBER_JOB_BULLET_01 * Ran, and later automated, nightly code compilations for patient records program. This effort saved approximately 1000 developer hours per week. Before this effort, corrupted nightly compilations stopped the whole team until resolved (usually an entire day would be lost). After this effort, no corrupted compilations occurred for over six months.
 #define CIBER_JOB_BULLET_02 * Revamped and improved scripts used by developers for retrieving the nightly code compilations and to perform their own personal compiles, providing new features as requested.
@@ -53,6 +53,6 @@ CIBER_JOB_BULLET_18
 * Developed and improved approximately 450 compilation scripts and Makefiles on [AIX][AIX] and [Windows][WINDOWS] NT/2000, fixing dependency issues and allowing reliable use of nightly code compilations.\
 * Evaluated, tested, integrated, and deployed new compilation tools.
 
-#defeval CIBER_JOB_PRJ_KPCIS JOB_PROJECT(CIBER_JOB_PRJ_NAME_KPCIS KP-CIS,CIBER_JOB_PRJ_PERIOD_KPCIS,CIBER_JOB_PRJ_COMPANY_KPCIS,CIBER_JOB_PRJ_TOOLS_KPCIS,CIBER_JOB_PRJ_PLATFORM_KPCIS,CIBER_JOB_PRJ_SUMMARY_KPCIS,CIBER_JOB_PRJ_BULLETS_KPCIS)
+#defeval CIBER_JOB_PRJ_KPCIS JOB_PROJECT(CIBER_JOB_PRJ_NAME_KPCIS,CIBER_JOB_PRJ_PERIOD_KPCIS,CIBER_JOB_PRJ_COMPANY_KPCIS,CIBER_JOB_PRJ_TOOLS_KPCIS,CIBER_JOB_PRJ_PLATFORM_KPCIS,CIBER_JOB_PRJ_SUMMARY_KPCIS,CIBER_JOB_PRJ_BULLETS_KPCIS)
 
 #endif

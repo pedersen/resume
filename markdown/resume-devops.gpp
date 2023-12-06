@@ -4,8 +4,6 @@
 #include <segments/contact-info.md>
 #include <segments/skills.gpp>
 
-CONTACT_INFO
-
 SUMMARY_HEADER_EXEC
 SUMMARY_DEVOPS_ENGINEER
 
@@ -34,13 +32,5 @@ SKILLS_OPERATING_SYSTEMS_ADMINISTERED
 SKILLS_MARKUP_LANGUAGES
 
 SKILLS_EDUCATION
-
-<<<
-
-# Project History
-
-PP_JOB_PRJ_DATAFLOW_EXPLORER
-
-PP_JOB_PRJ_DATA_HUB
 
 #include <segments/links.md>

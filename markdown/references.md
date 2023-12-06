@@ -1,5 +1,15 @@
 # References for Michael J. Pedersen
 
+Anna Nesterova
+
+ : Coworker at Pulsepoint  
+   seensier@gmail.com, +380-50-088-75-53
+
+April Ziminsky
+
+ : Friend  
+   484-742-0209
+
 Arnaud Viviers
 
  :  President, OrcaTec, LLC  
@@ -15,6 +25,11 @@ Dan Drown
 
  :  Manager at Datapipe, Inc.  
     misterbawb@gmail.com
+
+Ezra Suveyke
+
+ : CTO at Pulsepoint__
+   esuveyke@pulsepoint.com. 646-554-4848
 
 Greg Mirsky
 
@@ -41,6 +56,16 @@ Kristin Waychoff
  :  Manager at 6th Ave Electronics  
     kristin.waychoff@gmail.com, 908-377-7601
 
+Michael Barillier
+
+ : Coworker at Pulsepoint__
+   mbarillier@gmail.com, 203-444-7549
+
+Naoto Hariu
+
+ : Coworker from WebMD  
+   nhariu@gmail.com, 516-532-6167
+
 Nick Loadholtes
 
  :  Coworker at OrcaTec, LLC  
@@ -61,3 +86,12 @@ Quin Gregor
  :  Part owner of OrcaTec, LLC  
     quin@sandrose.net, 770-722-6514
 
+Timur Abakumov
+
+ : Coworker at Pulsepoint__
+   tabakumov@pulsepoint.com, 646-678-9449
+
+Vlad Vorvulev
+
+ : Coworker at Pulsepoint  
+   tinymhunter@gmail.com, +380-99-652-6745

@@ -5,8 +5,6 @@
 #include <segments/skills.gpp>
 #include <segments/contact-info.md>
 
-CONTACT_INFO
-
 SUMMARY_HEADER_EXEC
 SUMMARY_MANAGER
 
@@ -31,13 +29,5 @@ SKILLS_DATABASE_SKILLS
 SKILLS_BIG_DATA
 
 SKILLS_EDUCATION
-
-<<<
-
-# Project History
-
-PP_JOB_PRJ_DM_SPLIT
-
-PP_JOB_PRJ_REPO_SPLIT
 
 #include <segments/links.md>

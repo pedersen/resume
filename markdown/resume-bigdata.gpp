@@ -4,8 +4,6 @@
 #include <segments/contact-info.md>
 #include <segments/skills.gpp>
 
-CONTACT_INFO
-
 SUMMARY_HEADER_EXEC
 SUMMARY_DATA_ENGINEER
 
@@ -32,13 +30,5 @@ SKILLS_DATABASE_SKILLS
 SKILLS_SCM_TOOLS
 
 SKILLS_EDUCATION
-
-<<<
-
-# Project History
-
-PP_JOB_PRJ_NEW_DC
-
-PP_JOB_PRJ_VERTICA
 
 #include <segments/links.md>
