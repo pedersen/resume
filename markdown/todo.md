@@ -1,7 +1,7 @@
 * checkmyreferences.com - as soon as possible
 
-* Should I keep my skills? turn into smaller table at top of resume
-* Adjust skills into smaller table, move to top
+* Should I keep my skills? turn into smaller table at top of resume - done
+* Adjust skills into smaller table, move to top - done
 * increase size of my name at top of page - done
 * Should I keep my projects? turn into accomplishment bullets and remove - done
 * Remove address, only include number and email and linkedin - done

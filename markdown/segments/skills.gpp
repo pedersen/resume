@@ -2,171 +2,86 @@
 #define SKILLS_ALL 1
 #include <functions.gpp>
 
-#mode push
-#mode standard cpp
-//                       ----------------------------------------------------------------------------- ------------ ------------ --------------------
-#mode pop
-#define SKILL_ALLUXIO    [Alluxio][ALLUXIO]                                                              3 years     2023         Good
-#define SKILL_BASH       [Bash][BASH]                                                                   10 years     2014         Good
-#define SKILL_C_CPP      C/C++                                                                          12 years     2009         Good
-#define SKILL_CHECKPNT   [Checkpoint VPN][CHECKPOINT]                                                    2 years     2007         Fair
-#define SKILL_CISCO      Cisco                                                                           3 years     2011         Fair
-#define SKILL_CSS        CSS                                                                             2 years     2023         Fair
-#define SKILL_FIREWALL   Firewall Design                                                                 5 years     2011         Good
-#define SKILL_GIT        [Git][GIT]                                                                     11 years     2023         Good
-#define SKILL_HDFS       [HDFS][HADOOP]                                                                  9 years     2023         Very Good
-#define SKILL_HIVE       [Hive][HIVE]                                                                    9 years     2023         Good
-#define SKILL_HTML       HTML                                                                            5 years     2023         Very Good
-#define SKILL_IMPALA     [Impala][IMPALA]                                                                9 years     2023         Fair
-#define SKILL_JAVA       [Java][JAVA]                                                                    2 years     2021         Fair
-#define SKILL_JAVASCRIPT Javascript                                                                      3 years     2021         Good
-#define SKILL_KAFKA      [Kafka][KAFKA]                                                                  9 years     2023         Very Good
-#define SKILL_K8S        [Kubernetes][KUBERNETES]                                                        4 years     2023         Good
-#define SKILL_LINUX      Linux ([Debian][DEBIAN], [RedHat][REDHAT], [Suse][SUSE], [Ubuntu][UBUNTU])     21 years     2023         Excellent
-#define SKILL_MARKDOWN   Markdown                                                                        3 years     2023         Good
-#define SKILL_MERCURIAL  [Mercurial][HG]                                                                 4 years     2014         Fair
-#define SKILL_MSSQL      [Microsoft SQL Server][MSSQL]                                                   3 years     2023         Fair
-#define SKILL_MYSQL      [MySQL][MYSQL]                                                                  3 years     2021         Fair
-#define SKILL_NAGIOS     [Nagios][NAGIOS]                                                                3 years     2012         Good
-#define SKILL_OODESIGN   Object-Oriented Design                                                         10 years     2023         Very Good
-#define SKILL_OOP        Object-Oriented Programming                                                    10 years     2023         Very Good
-#define SKILL_OPENSTACK  [OpenStack][OPENSTACK]                                                         <1 year      2012         Fair
-#define SKILL_PERL       [Perl][PERL]                                                                    6 years     2012         Fair
-#define SKILL_PGADMIN    [PostgreSQL][PG] Database Administration                                        1 year      2011         Fair
-#define SKILL_PHP        [PHP][PHP]                                                                      2 years     2012         Fair
-#define SKILL_POSTGRES   [PostgreSQL][PG]                                                                5 years     2011         Fair
-#define SKILL_PYTHON     [Python][PYTHON]                                                               15 years     2023         Excellent
-#define SKILL_RDBDESIGN  Relational Schema Design                                                       14 years     2023         Very Good
-#define SKILL_REFACTOR   Refactoring                                                                     6 years     2023         Very Good
-#define SKILL_SQL        Structured Query Language (SQL)                                                14 years     2023         Very Good
-#define SKILL_SUBVERSION [Subversion][SVN]                                                               2 years     2010         Fair
-#define SKILL_TCPIP      TCP/IP                                                                         10 years     2023         Good
-#define SKILL_TRINO      [Trino][TRINO]                                                                  3 years     2023         Good
-#define SKILL_UNIX       UNIX ([Solaris][SOLARIS], [AIX][AIX], [HP-UX][HPUX])                            5 years     2011         Very Good
-#define SKILL_VBOX       [VirtualBox][VIRTUALBOX]                                                        3 years     2014         Good
-#define SKILL_VMWARE     [VMware][VMWARE]                                                                6 years     2023         Fair
-#define SKILL_WHATSUP    [Ipswitch What's Up][WHATSUP]                                                   2 years     2008         Good
-#define SKILL_WINDOWS    Microsoft Windows (2008/7/Vista/2003/XP/NT/98/95)                              12 years     2011         Very Good
-#define SKILL_YARN       [YARN][HADOOP]                                                                  9 years     2023         Good
-#define SKILL_XML        XML                                                                             2 years     2023         Fair
-#define SKILL_ZENOSS     [Zenoss][ZENOSS]                                                               <1 year      2011         Fair
+#define SKILL_ALLUXIO    [Alluxio][ALLUXIO]
+#define SKILL_BASH       [Bash][BASH]
+#define SKILL_C_CPP      C/C++
+#define SKILL_CHECKPNT   [Checkpoint VPN][CHECKPOINT]
+#define SKILL_CISCO      Cisco
+#define SKILL_CSS        CSS
+#define SKILL_FIREWALL   Firewall Design
+#define SKILL_GIT        [Git][GIT]
+#define SKILL_HDFS       [HDFS][HADOOP]
+#define SKILL_HIVE       [Hive][HIVE]
+#define SKILL_HTML       HTML
+#define SKILL_IMPALA     [Impala][IMPALA]
+#define SKILL_JAVA       [Java][JAVA]
+#define SKILL_JAVASCRIPT Javascript
+#define SKILL_KAFKA      [Kafka][KAFKA]
+#define SKILL_K8S        [Kubernetes][KUBERNETES]
+#define SKILL_LINUX      Linux ([Debian][DEBIAN], [RedHat][REDHAT], [Suse][SUSE], [Ubuntu][UBUNTU])
+#define SKILL_MARKDOWN   Markdown
+#define SKILL_MERCURIAL  [Mercurial][HG]
+#define SKILL_MSSQL      [Microsoft SQL Server][MSSQL]
+#define SKILL_MYSQL      [MySQL][MYSQL]
+#define SKILL_NAGIOS     [Nagios][NAGIOS]
+#define SKILL_OODESIGN   Object-Oriented Design
+#define SKILL_OOP        Object-Oriented Programming
+#define SKILL_OPENSTACK  [OpenStack][OPENSTACK]
+#define SKILL_PERL       [Perl][PERL]
+#define SKILL_PGADMIN    [PostgreSQL][PG] Database Administration
+#define SKILL_PHP        [PHP][PHP]
+#define SKILL_POSTGRES   [PostgreSQL][PG]
+#define SKILL_PYTHON     [Python][PYTHON]
+#define SKILL_RDBDESIGN  Relational Schema Design
+#define SKILL_REFACTOR   Refactoring
+#define SKILL_SQL        Structured Query Language (SQL)
+#define SKILL_SUBVERSION [Subversion][SVN]
+#define SKILL_TCPIP      TCP/IP
+#define SKILL_TRINO      [Trino][TRINO]
+#define SKILL_UNIX       UNIX ([Solaris][SOLARIS], [AIX][AIX], [HP-UX][HPUX])
+#define SKILL_VBOX       [VirtualBox][VIRTUALBOX]
+#define SKILL_VMWARE     [VMware][VMWARE]
+#define SKILL_WHATSUP    [Ipswitch What's Up][WHATSUP]
+#define SKILL_WINDOWS    Microsoft Windows (10/2008/7/Vista/2003/XP/NT/98/95)
+#define SKILL_YARN       [YARN][HADOOP]
+#define SKILL_XML        XML
+#define SKILL_ZENOSS     [Zenoss][ZENOSS]
 
-#defeval SKILLS_APPLICATIONS SKILLS_HEADER(Applications)\
-SKILL_WHATSUP\
-\
-SKILL_NAGIOS\
-\
-SKILL_OPENSTACK\
-\
-SKILL_VBOX\
-\
-SKILL_VMWARE\
-\
-SKILL_ZENOSS\
-SKILLS_FOOTER
+#defeval SKILLS_APPLICATIONS SKILLS_HEADER(Applications) SKILL_WHATSUP, SKILL_NAGIOS, SKILL_OPENSTACK, SKILL_VBOX, SKILL_VMWARE, SKILL_ZENOSS
 
 #define BIGDATA Big Data
-#defeval SKILLS_BIG_DATA SKILLS_HEADER(BIGDATA)\
-SKILL_HDFS\
-\
-SKILL_HIVE\
-\
-SKILL_YARN\
-\
-SKILL_ALLUXIO\
-\
-SKILL_IMPALA\
-\
-SKILL_TRINO\
-\
-SKILL_KAFKA\
-\
-SKILL_K8S\
-SKILLS_FOOTER
+#defeval SKILLS_BIG_DATA SKILLS_HEADER(BIGDATA) SKILL_HDFS, SKILL_HIVE, SKILL_YARN, SKILL_ALLUXIO, SKILL_IMPALA, SKILL_TRINO, SKILL_KAFKA, SKILL_K8S
 
 #define DBSKILLS Database Skills
-#defeval SKILLS_DATABASE_SKILLS SKILLS_HEADER(DBSKILLS)\
-SKILL_PGADMIN\
-\
-SKILL_RDBDESIGN\
-\
-SKILL_SQL\
-SKILLS_FOOTER
+#defeval SKILLS_DATABASE_SKILLS SKILLS_HEADER(DBSKILLS) SKILL_PGADMIN, SKILL_RDBDESIGN, SKILL_SQL
 
 #define DBSERVERS Database Servers
-#defeval SKILLS_DATABASE_SERVERS SKILLS_HEADER(DBSERVERS)\
-SKILL_MYSQL\
-\
-SKILL_POSTGRES\
-\
-SKILL_MSSQL\
-SKILLS_FOOTER
+#defeval SKILLS_DATABASE_SERVERS SKILLS_HEADER(DBSERVERS) SKILL_MYSQL, SKILL_POSTGRES, SKILL_MSSQL
 
 #define MARKUP_LANGUAGES Markup Languages
-#defeval SKILLS_MARKUP_LANGUAGES SKILLS_HEADER(MARKUP_LANGUAGES)\
-SKILL_CSS\
-\
-SKILL_HTML\
-\
-SKILL_MARKDOWN\
-\
-SKILL_XML\
-SKILLS_FOOTER
+#defeval SKILLS_MARKUP_LANGUAGES SKILLS_HEADER(MARKUP_LANGUAGES) SKILL_CSS, SKILL_HTML, SKILL_MARKDOWN, SKILL_XML
 
 #define NETWORKING_AND_SECURITY Networking and Security
-#defeval SKILLS_NETWORKING_AND_SECURITY SKILLS_HEADER(NETWORKING_AND_SECURITY)\
-SKILL_CHECKPNT\
-\
-SKILL_CISCO\
-\
-SKILL_FIREWALL\
-\
-SKILL_TCPIP\
-SKILLS_FOOTER
+#defeval SKILLS_NETWORKING_AND_SECURITY SKILLS_HEADER(NETWORKING_AND_SECURITY) SKILL_CHECKPNT, SKILL_CISCO, SKILL_FIREWALL, SKILL_TCPIP
 
 #define OPERATING_SYSTEMS_ADMINISTERED Operating Systems Administered
-#defeval SKILLS_OPERATING_SYSTEMS_ADMINISTERED SKILLS_HEADER(OPERATING_SYSTEMS_ADMINISTERED)\
-SKILL_LINUX\
-\
-SKILL_WINDOWS\
-\
-SKILL_UNIX\
-SKILLS_FOOTER
+#defeval SKILLS_OPERATING_SYSTEMS_ADMINISTERED SKILLS_HEADER(OPERATING_SYSTEMS_ADMINISTERED) SKILL_LINUX, SKILL_WINDOWS, SKILL_UNIX
 
 #define PROGRAMMING_LANGUAGES Programming and Scripting Languages
-#defeval SKILLS_PROGRAMMING_LANGUAGES SKILLS_HEADER(PROGRAMMING_LANGUAGES)\
-SKILL_BASH\
-\
-SKILL_C_CPP\
-\
-SKILL_JAVA\
-\
-SKILL_JAVASCRIPT\
-\
-SKILL_PERL\
-\
-SKILL_PHP\
-\
-SKILL_PYTHON\
-SKILLS_FOOTER
+#defeval SKILLS_PROGRAMMING_LANGUAGES SKILLS_HEADER(PROGRAMMING_LANGUAGES) SKILL_BASH, SKILL_C_CPP, SKILL_JAVA, SKILL_JAVASCRIPT, SKILL_PERL, SKILL_PHP, SKILL_PYTHON
 
 #define PROGRAMMING_SKILLS Programming Skills
-#defeval SKILLS_PROGRAMMING_SKILLS SKILLS_HEADER(PROGRAMMING_SKILLS)\
-SKILL_OODESIGN\
-\
-SKILL_OOP\
-\
-SKILL_REFACTOR\
-SKILLS_FOOTER
+#defeval SKILLS_PROGRAMMING_SKILLS SKILLS_HEADER(PROGRAMMING_SKILLS) SKILL_OODESIGN, SKILL_OOP, SKILL_REFACTOR
 
 #define SCM_TOOLS Software Configuration Management Tools
-#defeval SKILLS_SCM_TOOLS SKILLS_HEADER(SCM_TOOLS)\
-SKILL_GIT\
-\
-SKILL_MERCURIAL\
-\
-SKILL_SUBVERSION\
-SKILLS_FOOTER
+#defeval SKILLS_SCM_TOOLS SKILLS_HEADER(SCM_TOOLS) SKILL_GIT, SKILL_MERCURIAL, SKILL_SUBVERSION
+
+#defeval SKILLS_STD SKILLS_BIG_DATA\
+SKILLS_DATABASE_SERVERS\
+SKILLS_DATABASE_SKILLS\
+SKILLS_PROGRAMMING_LANGUAGES\
+SKILLS_SCM_TOOLS
+
 
 #define SKILLS_EDUCATION ## Education\
 Bachelor of Science in Computer Science, 2000  \

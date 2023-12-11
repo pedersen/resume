@@ -39,6 +39,8 @@
       <style:header-style/>
       <style:footer-style/>
     </style:page-layout>
+    <style:style style:name="T1" style:family="text"><style:text-properties fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"/></style:style>
+    <style:header-style/>
   </office:automatic-styles>
   
   <office:master-styles>
@@ -48,7 +50,7 @@
       </style:page-layout-properties>
       <style:header-style/>
       <style:header>
-        <text:p text:style-name="MP1"><text:span text:style-name="MT1">Michael J. Pedersen</text:span> : <text:a xlink:type="simple" xlink:href="tel:908-283-0318" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">(908) 283-0318</text:a> : <text:a xlink:type="simple" xlink:href="mailto:datacyclist@gmail.com" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">datacyclist@gmail.com</text:a> : <text:a xlink:type="simple" xlink:href="https://icelus.org/" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">My Site</text:a> : <text:a xlink:type="simple" xlink:href="https://www.linkedin.com/in/michaeljpedersen" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">LinkedIn</text:a></text:p>
+        <text:p text:style-name="MP1"><text:span text:style-name="MT1">Michael J. Pedersen</text:span> : <text:a xlink:type="simple" xlink:href="tel:908-283-0318" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">(908) 283-0318</text:a> : <text:a xlink:type="simple" xlink:href="mailto:datacyclist@gmail.com" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">datacyclist@gmail.com</text:a> : <text:a xlink:type="simple" xlink:href="https://icelus.org/" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">My Site</text:a> : <text:a xlink:type="simple" xlink:href="https://www.linkedin.com/in/michaeljpedersen" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">LinkedIn</text:a></text:p><text:p text:style-name="MP1"/>
       </style:header>
       <style:footer/>
     </style:master-page>

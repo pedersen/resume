@@ -1,11 +1,16 @@
 #include <segments/summaries.gpp>
 #include <segments/pulsepoint-job.gpp>
 #include <segments/orcatec-job.gpp>
+#include <segments/weight-watchers-job.gpp>
 #include <segments/contact-info.md>
 #include <segments/skills.gpp>
 
 SUMMARY_HEADER_EXEC
 SUMMARY_DATA_ENGINEER
+
+# Relevant Technical Skills
+
+SKILLS_STD
 
 # Relevant Job History
 
@@ -13,21 +18,13 @@ PP_JOB_HEADER
 
 PP_JOB_BULLETS_BIG_DATA
 
+WW_JOB_HEADER
+
+WW_JOB_BULLETS_ALL
+
 ORCATEC_JOB_HEADER
 
 ORCATEC_JOB_BULLETS_BIG_DATA
-
-<<<
-
-# Relevant Technical Skills
-
-SKILLS_BIG_DATA
-
-SKILLS_PROGRAMMING_LANGUAGES
-
-SKILLS_DATABASE_SKILLS
-
-SKILLS_SCM_TOOLS
 
 SKILLS_EDUCATION
 
