@@ -1,5 +1,0 @@
-Bulleted Lists
-
-* list item
-
-And regular test
