@@ -4,6 +4,7 @@
 #include <segments/weight-watchers-job.gpp>
 #include <segments/contact-info.md>
 #include <segments/skills.gpp>
+#include <segments/choopa-job.gpp>
 
 SUMMARY_HEADER_EXEC
 SUMMARY_DATA_ENGINEER
@@ -16,7 +17,7 @@ SKILLS_STD
 
 PP_JOB_HEADER
 
-PP_JOB_BULLETS_BIG_DATA
+PP_JOB_BULLETS_TITLED_BIG_DATA
 
 WW_JOB_HEADER
 
@@ -26,6 +27,12 @@ ORCATEC_JOB_HEADER
 
 ORCATEC_JOB_BULLETS_BIG_DATA
 
+CHOOPA_JOB_HEADER
+
+CHOOPA_JOB_BULLETS_ALL
+
 SKILLS_EDUCATION
+
+SKILLS_CERTIFICATIONS
 
 #include <segments/links.md>

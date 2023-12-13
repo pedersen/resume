@@ -1,16 +1,20 @@
 * checkmyreferences.com - as soon as possible
 
-* Should I keep my skills? turn into smaller table at top of resume - done
-* Adjust skills into smaller table, move to top - done
-* increase size of my name at top of page - done
-* Should I keep my projects? turn into accomplishment bullets and remove - done
-* Remove address, only include number and email and linkedin - done
-* add months to job durations - done
-* remove footer, put site link into header with name/email/linkedin - done
-
-* Should I turn top row of first page into a page header? - done
-* What font sizes should be used again, and for which purposes?
+* Add items from other job descriptions to fill out - done
 * how to add certifications
-* employment service agency - headhunter for me
+  Make it look just like Education. See https://images.app.goo.gl/RVVbZfeSt3ecwYRBA and
+  https://www.google.com/search?q=how+do+i+add+cloud+certification+to+resume - done
+* fix the .doc thing showing as 10s for bullet points
+* fix font size for level 3 headings in output .docx/.odt/.pdf - done
 
-Call references to let them know.
+* employment service agency - headhunter for me
+* Call references to let them know.
+* TODO: Add more about data presentation and visualization into the resume
+* TODO: Add references. Ask Jay Gordon.
+* TODO: Add "find me on these sites"
+* TODO: Take out google adword for "python developer" and point it at my resume
+* TODO: update linked in with all new profile information. Also turn on privacy while updating
+* TODO: update references
+* TODO: update coverletter
+
+505 999-7580

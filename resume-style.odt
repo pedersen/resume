@@ -20,6 +20,11 @@
       <style:text-properties fo:font-size="11pt" fo:font-weight="bold" style:font-size-asian="115%" style:font-size-complex="115%" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
     </style:style>
 
+    <style:style style:class="text" style:default-outline-level="3" style:display-name="Heading 3" style:family="paragraph" style:name="Heading_20_3" style:next-style-name="Text_20_body" style:parent-style-name="Heading">
+      <style:paragraph-properties fo:margin-bottom="0.0835in" fo:margin-top="0.139in" style:contextual-spacing="false"/>
+      <style:text-properties fo:font-size="10pt" fo:font-weight="bold" style:font-size-asian="107%" style:font-size-complex="107%" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
+    </style:style>
+
     <style:style style:name="PageBreak" style:family="paragraph">
       <style:paragraph-properties fo:break-before="page"/>
     </style:style>    

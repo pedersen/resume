@@ -18,6 +18,7 @@
 [CYGWIN]: https://www.cygwin.com/
 [DEBIAN]: https://www.debian.org/
 [DELPHI]: https://en.wikipedia.org/wiki/Delphi_(programming_language)
+[DOCKER]: https://www.docker.com/
 [ELASTIC]: https://www.elastic.co/elasticsearch/
 [FAX]: https://www.hylafax.org/
 [FREEBSD]: https://www.freebsd.org/
@@ -33,6 +34,7 @@
 [HIPAA]: https://en.wikipedia.org/wiki/Health_Insurance_Portability_and_Accountability_Act
 [HPUX]: https://www.hpe.com/us/en/servers/hp-ux.html
 [IMPALA]: https://impala.apache.org/
+[INTELLIJ]: https://www.jetbrains.com/idea/
 [INTERBASE]: https://en.wikipedia.org/wiki/InterBase
 [ISILON]: https://en.wikipedia.org/wiki/Dell_EMC_Isilon
 [JAVA]: https://www.java.com/en/
@@ -76,6 +78,7 @@
 [SAMBA]: https://www.samba.org/
 [SAP]: https://www.sap.com/index.html
 [SBN]: https://www.business-software.com/product/sbn-complete/
+[SLACK]: https://slack.com/
 [SOLARIS]: https://www.oracle.com/solaris/solaris11/
 [SQLALCHEMY]: https://www.sqlalchemy.org/
 [SQLLEDGER]: http://www.sql-ledger.com/

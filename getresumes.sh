@@ -4,6 +4,7 @@ set -e
 
 usage() {
     echo "Usage: $0 -d -s" 2>&2
+    echo "  -o : switch to retrieving odt"
     echo "  -d : switch to retrieving docx"
     echo "  -s : switch to retrieving from localhost instead of prod"
     echo "  -h : display this help"
@@ -13,8 +14,11 @@ usage() {
 EXT="pdf"
 HOST="https://icelus.org"
 
-while getopts "dsh" o; do
+while getopts "dsho" o; do
     case "${o}" in
+	o)
+	    export EXT=odt
+	    ;;
 	d)
 	    export EXT=docx
 	    ;;
