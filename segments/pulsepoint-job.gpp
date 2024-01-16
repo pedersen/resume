@@ -11,17 +11,17 @@ My role evolved over time from dealing with individual data jobs to overseeing t
 #define PP_JOB_BULLET_01 * Architected data streaming that manages 40T of data/day.
 #define PP_JOB_BULLET_02 * Established new data centers in Europe and in Virginia.
 #define PP_JOB_BULLET_03 * Performance tuned [Kafka][KAFKA].
-#define PP_JOB_BULLET_04 * Upgraded [Kafka][KAFKA] with zero downtime for users of [Kafka][KAFKA].
+#define PP_JOB_BULLET_04 * Upgraded [Kafka][KAFKA] with zero downtime for producers and consumers.
 #define PP_JOB_BULLET_05 * Enabled integration with [Active Directory][ACTIVEDIRECTORY] for [Hadoop][HADOOP] systems.
 #define PP_JOB_BULLET_06 * Deployed and configured [Alluxio][ALLUXIO] for caching and data orchestration.
 #define PP_JOB_BULLET_07 * Troubleshooting of issues with [Hadoop][HADOOP], [Kafka][KAFKA], [SQL Server][MSSQL], and [Kubernetes][KUBERNETES].
 #define PP_JOB_BULLET_08 * Developed new ETL jobs to aggregate data from Pulsepoint's RTB exchange.
-#define PP_JOB_BULLET_09 * Ingested third party data to make it available internally.
+#define PP_JOB_BULLET_09 * Created ELT jobs to ingest third party data to make it available internally.
 #define PP_JOB_BULLET_10 * Production maintenance of data pipelines, including after hours support.
-#define PP_JOB_BULLET_11 * Built tool to graphically show the flow of data through the system.
+#define PP_JOB_BULLET_11 * Built tool to graphically show the ETL pipelines.
 #define PP_JOB_BULLET_12 * Tested new tools for suitability, including [MariaDB][MARIADB], [Clickhouse][CLICKHOUSE], and [Kudu][KUDU].
 #define PP_JOB_BULLET_13 * Installed and configured multiple [Hadoop][HADOOP] clusters.
-#define PP_JOB_BULLET_14 * Migrated data center, moving processing of data flows to new data center.
+#define PP_JOB_BULLET_14 * Migrated data center, moving processing of data pipelines to new data center.
 #define PP_JOB_BULLET_15 * Split data management team into data platform and data product development.
 #define PP_JOB_BULLET_16 * Insituted and formalized processes and procedures for the team.
 #define PP_JOB_BULLET_17 * Planned capacity to ensure we could handle incoming data throughout the year.
@@ -30,8 +30,8 @@ My role evolved over time from dealing with individual data jobs to overseeing t
 #define PP_JOB_BULLET_20 * Conducted interviews for my team and for teams that work closely with my team.
 #define PP_JOB_BULLET_21 * Automated distribution of incident reports to all affected parties.
 #define PP_JOB_BULLET_22 * Changed hardware profiles for [Hadoop][HADOOP] to remove storage and compute colocation.
-#define PP_JOB_BULLET_23 * Guided the team through splitting our ETL monolithic repository.
-#define PP_JOB_BULLET_24 * Organized the migration of the ETL pipeline from Python 2 to Python 3.
+#define PP_JOB_BULLET_23 * Guided the team through splitting our ETL pipelines into multiple repositories.
+#define PP_JOB_BULLET_24 * Organized the migration of ETL pipelines from Python 2 to Python 3.
 #define PP_JOB_BULLET_25 * Acted as scrum master for the team.
 #define PP_JOB_BULLET_26 * Onboarded new team members, helping them to fully integrate into the team.
 #define PP_JOB_BULLET_27 * Held weekly 1 on 1 meetings with team members.
@@ -54,6 +54,7 @@ My role evolved over time from dealing with individual data jobs to overseeing t
 #define PP_JOB_BULLET_44 * Performed root cause analysis on ETL and cluster level failures.
 #define PP_JOB_BULLET_45 * Developed roadmap for the Data Platform team.
 #define PP_JOB_BULLET_46 * Managed data backfill issues whenever they arose.
+#define PP_JOB_BULLET_47 * Lead maintainer for ETL pipelines, encompassing over 250 transformations.
 
 #defeval PP_JOB_BULLETS_BIG_DATA PP_JOB_BULLET_01\
 PP_JOB_BULLET_02\
@@ -169,6 +170,7 @@ PP_JOB_BULLET_39
 
 #define PP_JOB_BULLETS_TITLED_ALL ### _Director of Infrastructure for Data_, May 2018 - Nov 2023\
 PP_JOB_BULLET_01\
+PP_JOB_BULLET_47\
 PP_JOB_BULLET_02\
 PP_JOB_BULLET_14\
 PP_JOB_BULLET_15\
@@ -220,6 +222,7 @@ PP_JOB_BULLET_46
 
 #define PP_JOB_BULLETS_TITLED_MGR ### _Director of Infrastructure for Data_, May 2018 - Nov 2023\
 PP_JOB_BULLET_01\
+PP_JOB_BULLET_47\
 PP_JOB_BULLET_02\
 PP_JOB_BULLET_14\
 PP_JOB_BULLET_15\
@@ -247,6 +250,7 @@ PP_JOB_BULLET_28
 
 #define PP_JOB_BULLETS_TITLED_DEV ### _Director of Infrastructure for Data_, May 2018 - Nov 2023\
 PP_JOB_BULLET_01\
+PP_JOB_BULLET_47\
 PP_JOB_BULLET_02\
 PP_JOB_BULLET_14\
 PP_JOB_BULLET_23\
@@ -291,6 +295,7 @@ PP_JOB_BULLET_44
 
 #define PP_JOB_BULLETS_TITLED_BIG_DATA ### _Director of Infrastructure for Data_, May 2018 - Nov 2023\
 PP_JOB_BULLET_01\
+PP_JOB_BULLET_47\
 PP_JOB_BULLET_02\
 PP_JOB_BULLET_14\
 PP_JOB_BULLET_23\

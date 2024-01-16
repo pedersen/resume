@@ -87,18 +87,13 @@ SKILLS_DATABASE_SERVERS\
 SKILLS_DATABASE_SKILLS\
 SKILLS_PROGRAMMING_LANGUAGES\
 SKILLS_PROGRAMMING_SKILLS\
-SKILLS_SCM_TOOLS\
-SKILLS_APPLICATIONS\
-SKILLS_MARKUP_LANGUAGES\
-SKILLS_NETWORKING_AND_SECURITY\
-SKILLS_OPERATING_SYSTEMS_ADMINISTERED
-
+SKILLS_SCM_TOOLS
 
 #define SKILLS_EDUCATION ## Education\
 Bachelor of Science in Computer Science, 2000  \
 East Stroudsburg University, East Stroudsburg, Pennsylvania
 
 #define SKILLS_CERTIFICATIONS ## Professional Certificates\
-Google Cloud Certified Professional Data Engineer (ETA: Jan 2024)  \
+[Google Cloud Certified Professional Data Engineer][GCCPDE] (Jan 2024)  \
 _Online Course - Google_
 #endif

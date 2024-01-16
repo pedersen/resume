@@ -34,9 +34,9 @@ while getopts "dsho" o; do
 	esac
 done
 
-wget -O ~/Documents/resume/bigdata-resume.${EXT} ${HOST}/mjp-resume-bigdata.${EXT}
+wget -O ~/Documents/resume/mjp-resume-10year.${EXT} ${HOST}/mjp-resume-10year.${EXT}
+wget -O ~/Documents/resume/mjp-resume-all.${EXT} ${HOST}/mjp-resume-all.${EXT}
 wget -O ~/Documents/resume/devops-resume.${EXT} ${HOST}/mjp-resume-devops.${EXT}
 wget -O ~/Documents/resume/dev-resume.${EXT} ${HOST}/mjp-resume-dev.${EXT}
 wget -O ~/Documents/resume/mgr-resume.${EXT} ${HOST}/mjp-resume-mgr.${EXT}
-wget -O ~/Documents/resume/mjp-resume-10year.${EXT} ${HOST}/mjp-resume-10year.${EXT}
-wget -O ~/Documents/resume/mjp-resume-all.${EXT} ${HOST}/mjp-resume-all.${EXT}
+wget -O ~/Documents/resume/bigdata-resume.${EXT} ${HOST}/mjp-resume-bigdata.${EXT}

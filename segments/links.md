@@ -23,6 +23,7 @@
 [FAX]: https://www.hylafax.org/
 [FREEBSD]: https://www.freebsd.org/
 [FREETDS]: https://www.freetds.org/
+[GCCPDE]: https://google.accredible.com/f23e66d8-a082-4019-99d1-91bb24210d84
 [GHOST]: https://en.wikipedia.org/wiki/Ghost_(software)
 [GIT]: https://www.git-scm.com/
 [GITHUB]: https://github.com/
