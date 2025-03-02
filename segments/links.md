@@ -7,6 +7,7 @@
 [AUTOIT]: https://www.autoitscript.com/site/autoit/
 [BACULA]: https://www.bacula.org/
 [BASH]: http://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html
+[BIGQUERYRETENTION]: https://cloud.google.com/bigquery/docs/managing-partitioned-tables#partition-expiration
 [CASSANDRA]: https://cassandra.apache.org/_/index.html
 [CCMAIL]: https://en.wikipedia.org/wiki/Cc:Mail
 [CDH]: https://www.cloudera.com/products/open-source/apache-hadoop/key-cdh-components.html
@@ -16,6 +17,7 @@
 [COMMVAULT]: https://www.commvault.com/
 [CVS]: http://www.nongnu.org/cvs/
 [CYGWIN]: https://www.cygwin.com/
+[DAGSTER]: https://dagster.io/
 [DEBIAN]: https://www.debian.org/
 [DELPHI]: https://en.wikipedia.org/wiki/Delphi_(programming_language)
 [DOCKER]: https://www.docker.com/
@@ -23,10 +25,14 @@
 [FAX]: https://www.hylafax.org/
 [FREEBSD]: https://www.freebsd.org/
 [FREETDS]: https://www.freetds.org/
-[GCCPDE]: https://google.accredible.com/f23e66d8-a082-4019-99d1-91bb24210d84
+[GBQ]: https://cloud.google.com/bigquery
+[GCCPDE]: https://www.credly.com/badges/6c91d726-a924-4b8d-994b-80e49e002428/public_url
 [GHOST]: https://en.wikipedia.org/wiki/Ghost_(software)
 [GIT]: https://www.git-scm.com/
 [GITHUB]: https://github.com/
+[GITHUBACTIONS]: https://github.com/features/actions
+[GCP]: https://cloud.google.com/
+[GKE]: https://cloud.google.com/kubernetes-engine
 [GRAFANA]: https://grafana.com/
 [GRAPHVIZ]: https://graphviz.org/
 [HADOOP]: https://hadoop.apache.org/
@@ -60,13 +66,15 @@
 [MYSQL]: https://www.mysql.com/
 [MYTHTV]: https://www.mythtv.org/
 [NAGIOS]: https://www.nagios.org/
+[NEKTOSACT]: https://github.com/nektos/act
 [NETWARE]: https://en.wikipedia.org/wiki/NetWare
 [NGINX]: https://www.nginx.com/
 [OPENFIRE]: http://www.igniterealtime.org/projects/openfire/
 [OPENID]: https://www.openid.net/
 [OPENSTACK]: https://www.openstack.org/
+[PAGERDUTY]: https://www.pagerduty.com/
 [PAM]: https://en.wikipedia.org/wiki/Pluggable_authentication_module
-[PASTER]: http://www.pythonpaste.org/
+[PASTER]: https://pypi.org/project/Paste/
 [PERL]: https://www.perl.org/
 [PG]: https://www.postgresql.org/
 [PHP]: https://www.php.net/
@@ -79,6 +87,7 @@
 [SAMBA]: https://www.samba.org/
 [SAP]: https://www.sap.com/index.html
 [SBN]: https://www.business-software.com/product/sbn-complete/
+[SENDGRID]: https://sendgrid.com/
 [SLACK]: https://slack.com/
 [SOLARIS]: https://www.oracle.com/solaris/solaris11/
 [SQLALCHEMY]: https://www.sqlalchemy.org/
@@ -90,6 +99,7 @@
 [SYBASE]: https://www.sap.com/products/acquired-brands/what-is-sybase.html
 [TCL]: http://www.tcl.tk/
 [TEAMCITY]: https://www.jetbrains.com/teamcity/
+[TERRAFORM]: https://www.terraform.io/
 [TG]: https://www.turbogears.org/
 [TRINO]: https://trino.io/
 [TYLER]: https://www.tylernet.com/

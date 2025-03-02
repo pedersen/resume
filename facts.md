@@ -15,8 +15,3 @@ Bachelor's Degree
 Computer Science
 Michael J. Pedersen
 Pulsepoint
-
-
-Horizon Blue Cross Blue Shield Sales: 800-224-1234
-employer support for above: 800-225-1955
-LVI-8264785

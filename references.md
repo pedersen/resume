@@ -31,6 +31,11 @@ Ezra Suveyke
  : CTO at Pulsepoint__
    esuveyke@pulsepoint.com. 646-554-4848
 
+Farooq Chaudhry
+
+ : Manager at Pulsepoint__
+   Fchaudhry7@gmail.com 646-886-6234
+
 Greg Mirsky
 
  :  Coworker at Weight Watchers  

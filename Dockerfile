@@ -1,5 +1,5 @@
 ##################################
-FROM debian:bookworm-slim as builder
+FROM debian:bookworm-slim AS builder
 
 RUN \
     mkdir -p /usr/share/man/man1/ && \

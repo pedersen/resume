@@ -1,0 +1,34 @@
+#ifndef EIQ_JOB_ALL
+#define EIQ_JOB_ALL 1
+#include <functions.gpp>
+#define EIQ_JOB_HEADER ## EvolutionIQ - Senior Software Engineer\
+\
+New York City, NY - Feb 2024 - Current\
+#define EIQ_JOB_SUMMARY EvolutionIQ leverages cutting-edge AI and machine learning to revolutionize the insurance industry, optimizing claims management and accelerating individuals’ return to the workforce. In January 2025, EvolutionIQ was acquired by CCC Intelligent Solutions, further expanding its impact and innovation in the sector. \
+\
+As a Senior Software Engineer, I played a key role in delivering projects within the Platform Pipeline Infrastructure team.
+
+
+#define EIQ_JOB_BULLET_01 * Redesigned EvolutionIQ's CI/CD pipeline, enhancing efficiency in development workflows.
+#define EIQ_JOB_BULLET_02 * Fixed critical bugs in locally developed [GitHub Actions][GITHUBACTIONS], ensuring smooth and reliable environment promotion.
+#define EIQ_JOB_BULLET_03 * Built a template repository to guide EvolutionIQ teams in using [GitHub Actions][GITHUBACTIONS] for deployment, as well as setting up data pipelines with [Dagster][DAGSTER].
+#define EIQ_JOB_BULLET_04 * Developed a Python-based CI/CD library to manage complex actions beyond [Bash][BASH]'s capabilities.
+#define EIQ_JOB_BULLET_05 * Implemented [nektos/act][NEKTOSACT] to enable developers to test build and deploy actions locally before committing to [GitHub][GITHUB].
+#define EIQ_JOB_BULLET_06 * Refined [data retention policies][BIGQUERYRETENTION] to guarantee compliance and ensure critical data availability for legal requirements.
+#define EIQ_JOB_BULLET_07 * Implemented SLA monitoring with [Grafana][GRAFANA], [SendGrid][SENDGRID], and [PagerDuty][PAGERDUTY] to proactively detect and alert customers and engineers about overnight job failures, ensuring swift issue resolution.
+#define EIQ_JOB_BULLET_08 * On-call support on a rotating basis.
+#define EIQ_JOB_BULLET_09 * Orchestrated [Google Cloud][GCP] infrastructure with [Terraform][TERRAFORM], managing [GKE][GKE], [BigQuery][GBQ], and developer virtual machines for scalability and efficiency.
+
+
+
+#define EIQ_JOB_BULLETS_ALL \
+EIQ_JOB_BULLET_09 \
+EIQ_JOB_BULLET_01 \
+EIQ_JOB_BULLET_02 \
+EIQ_JOB_BULLET_03 \
+EIQ_JOB_BULLET_04 \
+EIQ_JOB_BULLET_05 \
+EIQ_JOB_BULLET_06 \
+EIQ_JOB_BULLET_07 \
+EIQ_JOB_BULLET_08
+#endif
