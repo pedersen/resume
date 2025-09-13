@@ -1,11 +1,19 @@
 .PHONY: build
 
 build:
+	rm -rf docs
 	rsync -avP ${HOME}/zettel/products.md ./products.md
 	docker build -t spectralhawke/resume:latest .
+	docker create --name resume spectralhawke/resume:latest
+	docker cp resume:/usr/share/nginx/html ./docs
+	touch docs/.nojekyll
+	docker rm resume
 
 push: build
 	docker push spectralhawke/resume:latest
+	git add output
+	git commit
+	git push
 
 dev: build
 	docker run -ti -p 8080:80 spectralhawke/resume:latest
