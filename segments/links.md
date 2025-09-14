@@ -1,4 +1,4 @@
-[3PAR]: https://www.hpe.com/us/en/storage/3par.html
+[3PAR]: https://en.wikipedia.org/wiki/3PAR
 [ACTIVEDIRECTORY]: https://en.wikipedia.org/wiki/Active_Directory
 [AIX]: https://www.ibm.com/products/aix
 [ALLUXIO]: https://www.alluxio.io/
