@@ -132,6 +132,8 @@
             <p>As a Senior Software Engineer, I played a key role in delivering projects within the Platform Pipeline
             Infrastructure team.</p>
             <ul>
+            <li>Created infrastructure to provide ephemeral environments, allowing testing of code branches before
+            sending those code changes to the company at large.</li>
             <li>Orchestrated <a href="https://cloud.google.com/">Google Cloud</a> infrastructure with <a
             href="https://www.terraform.io/">Terraform</a>, managing <a
             href="https://cloud.google.com/kubernetes-engine">GKE</a>, <a
@@ -608,6 +610,47 @@
             Certified Professional Data Engineer</a> (Jan 2024)<br />
             <em>Online Course - Google</em></p>
             <h1 id="project-history">Project History</h1>
+            <h2 id="ephemeral-environments">Ephemeral Environments</h2>
+            <table style="width:88%;">
+            <colgroup>
+            <col style="width: 10%" />
+            <col style="width: 76%" />
+            </colgroup>
+            <tbody>
+            <tr class="odd">
+            <td style="text-align: left;"><strong>Period</strong></td>
+            <td style="text-align: center;">2025-2026</td>
+            </tr>
+            <tr class="even">
+            <td style="text-align: left;"><strong>Company</strong></td>
+            <td style="text-align: center;">EvolutionIQ</td>
+            </tr>
+            <tr class="odd">
+            <td style="text-align: left;"><strong>Tools</strong></td>
+            <td style="text-align: center;"><a href="https://dagster.io/">Dagster</a>, <a
+            href="https://www.git-scm.com/">Git</a>, <a href="https://helm.sh/">Helm</a>, <a
+            href="https://www.terraform.io/">Terraform</a></td>
+            </tr>
+            <tr class="even">
+            <td style="text-align: left;"><strong>Platform</strong></td>
+            <td style="text-align: center;"><a href="https://github.com/">GitHub</a>, <a
+            href="https://kubernetes.io/">Kubernetes</a></td>
+            </tr>
+            </tbody>
+            </table>
+            <p>EvolutionIQ needed a way for developers to test large scale operations in isolation from other
+            developers. I spearheaded the solution known as “Ephemeral Environments.” For this, we would spin up a
+            private namespace in the <a href="https://kubernetes.io/">Kubernetes</a> cluster, private datasets in <a
+            href="https://cloud.google.com/bigquery">Google Big Query</a>, configure appropriate service accounts, and
+            finally a <a href="https://dagster.io/">Dagster</a> code location to give the developer a full private and
+            isolated workspace which would mimic production in means of operation and scale.</p>
+            <ul>
+            <li>Updated code as needed to allow it to work in Ephemeral Environments, removing hardcoded values.</li>
+            <li>Configured <a href="https://helm.sh/">Helm</a> charts and <a
+            href="https://www.terraform.io/">Terraform</a> to manage the resources needed for the ephemeral
+            environments.</li>
+            <li>Tested multiple jobs for each tenant to verify that they ran successfully.</li>
+            </ul>
             <h2 id="migrate-to-new-data-center">Migrate To New Data Center</h2>
             <table style="width:88%;">
             <colgroup>

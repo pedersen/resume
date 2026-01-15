@@ -36,6 +36,7 @@
 [GRAFANA]: https://grafana.com/
 [GRAPHVIZ]: https://graphviz.org/
 [HADOOP]: https://hadoop.apache.org/
+[HELM]: https://helm.sh/
 [HG]: https://www.mercurial-scm.org/
 [HIVE]: https://hive.apache.org/
 [HIPAA]: https://en.wikipedia.org/wiki/Health_Insurance_Portability_and_Accountability_Act

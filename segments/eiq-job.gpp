@@ -18,10 +18,12 @@ As a Senior Software Engineer, I played a key role in delivering projects within
 #define EIQ_JOB_BULLET_07 * Implemented SLA monitoring with [Grafana][GRAFANA], [SendGrid][SENDGRID], and [PagerDuty][PAGERDUTY] to proactively detect and alert customers and engineers about overnight job failures, ensuring swift issue resolution.
 #define EIQ_JOB_BULLET_08 * On-call support on a rotating basis.
 #define EIQ_JOB_BULLET_09 * Orchestrated [Google Cloud][GCP] infrastructure with [Terraform][TERRAFORM], managing [GKE][GKE], [BigQuery][GBQ], and developer virtual machines for scalability and efficiency.
+#define EIQ_JOB_BULLET_10 * Created infrastructure to provide ephemeral environments, allowing testing of code branches before sending those code changes to the company at large.
 
 
 
 #define EIQ_JOB_BULLETS_ALL \
+EIQ_JOB_BULLET_10 \
 EIQ_JOB_BULLET_09 \
 EIQ_JOB_BULLET_01 \
 EIQ_JOB_BULLET_02 \
@@ -31,4 +33,17 @@ EIQ_JOB_BULLET_05 \
 EIQ_JOB_BULLET_06 \
 EIQ_JOB_BULLET_07 \
 EIQ_JOB_BULLET_08
+
+#define EIQ_JOB_PRJ_NAME_EPH_ENV Ephemeral Environments
+#define EIQ_JOB_PRJ_PERIOD_EPH_ENV 2025-2026
+#define EIQ_JOB_PRJ_COMPANY_EPH_ENV EvolutionIQ
+#define EIQ_JOB_PRJ_TOOLS_EPH_ENV [Dagster][DAGSTER], [Git][GIT], [Helm][HELM], [Terraform][TERRAFORM]
+#define EIQ_JOB_PRJ_PLATFORM_EPH_ENV [GitHub][GITHUB], [Kubernetes][KUBERNETES]
+#define EIQ_JOB_PRJ_SUMMARY_EPH_ENV EvolutionIQ needed a way for developers to test large scale operations in isolation from other developers. I spearheaded the solution known as "Ephemeral Environments." For this, we would spin up a private namespace in the [Kubernetes][KUBERNETES] cluster, private datasets in [Google Big Query][GBQ], configure appropriate service accounts, and finally a [Dagster][DAGSTER] code location to give the developer a full private and isolated workspace which would mimic production in means of operation and scale.
+#define EIQ_JOB_PRJ_BULLETS_EPH_ENV * Updated code as needed to allow it to work in Ephemeral Environments, removing hardcoded values. \
+* Configured [Helm][HELM] charts and [Terraform][TERRAFORM] to manage the resources needed for the ephemeral environments. \
+* Tested multiple jobs for each tenant to verify that they ran successfully.
+
+#defeval EIQ_JOB_PRJ_EPH_ENV JOB_PROJECT(EIQ_JOB_PRJ_NAME_EPH_ENV, EIQ_JOB_PRJ_PERIOD_EPH_ENV, EIQ_JOB_PRJ_COMPANY_EPH_ENV, EIQ_JOB_PRJ_TOOLS_EPH_ENV, EIQ_JOB_PRJ_PLATFORM_EPH_ENV, EIQ_JOB_PRJ_SUMMARY_EPH_ENV, EIQ_JOB_PRJ_BULLETS_EPH_ENV)
+
 #endif
