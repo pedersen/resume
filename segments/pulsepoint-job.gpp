@@ -420,7 +420,7 @@ In the end, this was deemed non-feasible for the number of combinations we would
 #define PP_JOB_PRJ_COMPANY_VERTICA Pulsepoint
 #define PP_JOB_PRJ_TOOLS_VERTICA [Vertica][VERTICA], [Trino][TRINO]
 #define PP_JOB_PRJ_PLATFORM_VERTICA [CentOS Linux][CENTOS]
-#define PP_JOB_PRJ_SUMMARY_VERTICA Pulsepoint had used [Vertica][VERTICA], but we were outgrowing it in 2017. In 2018, when we came up for the most recent support renewal, we had fully outgrown it and needed to replace it with something else. After trying out several other options (including [Clickhouse][CLICKHOUSE], [Trino][TRINO], [MariaDB][MARIODB], and others), we settled on Trino as the option that provided us with the best capabilities while being nearest to the performance that [Vertica][VERTICA] provided.
+#define PP_JOB_PRJ_SUMMARY_VERTICA Pulsepoint had used [Vertica][VERTICA], but we were outgrowing it in 2017. In 2018, when we came up for the most recent support renewal, we had fully outgrown it and needed to replace it with something else. After trying out several other options (including [Clickhouse][CLICKHOUSE], [Trino][TRINO], [MariaDB][MARIADB], and others), we settled on Trino as the option that provided us with the best capabilities while being nearest to the performance that [Vertica][VERTICA] provided.
 #define PP_JOB_PRJ_BULLETS_VERTICA * Performance tested existing [Vertica][VERTICA] queries.\
 * Stood up several competitors and compared their performance using the same queries.\
 * Compared maintenance of these environments to Vertica.\
